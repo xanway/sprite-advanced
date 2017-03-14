@@ -59,6 +59,18 @@ box容器为用于包裹其他UI组件的基础布局容器，采用flexbox模�
 >
 > [touchCancel  意外导致当前touch过程中断时触发](#sj_5)  
 
+**注：**   
+
+- 当快速点击时事件的执行顺序为touchDown->touchUp->click  
+
+- 当长按时事件的执行顺序为touchDown->longTouch->touchUp
+
+- 当按住并移动时事件的执行顺序为touchDown->touchMove->touchUp  (touchCancel)  
+ 
+- 当长按并移动时事件的执行顺序为touchDown->longTouch->touchMove->touchUp (touchCancel)  
+ 
+- android在执行touchDown后马上执行touchMove（不管有没有移动）。
+
 <span id="sj_1">**公共事件**</span>  
 
 [参见公共事件章节](https://gitdocument.exmobi.cn/sprite-begin/ggsj.html)，包括：  
