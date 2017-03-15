@@ -1,4 +1,4 @@
-<h1>box组件使用 </h1>
+# box组件使用 
 
 ----------
 
@@ -6,14 +6,14 @@ box容器为用于包裹其他UI组件的基础布局容器，采用flexbox模�
 
 注：文本不支持直接放置于box容器中，请用&lt;text&gt;标签包裹使用。
 
-## 属性 ##
+<h2 id="cid_0">属性</h2>
 
 **公共属性**  
 
 [参见公共属性章节](https://gitdocument.exmobi.cn/sprite-begin/ggsx.html)，包括：id、style、class；
 
 
-## 样式 ##  
+<h2 id="cid_1">样式</h2>
 
 **公共样式**  
 
@@ -44,7 +44,7 @@ box容器为用于包裹其他UI组件的基础布局容器，采用flexbox模�
 
 
 
-## 事件 ##
+<h2 id="cid_2">事件</h2>
 
 本节目录：
 
@@ -224,7 +224,7 @@ box1.on("touchCancel",function(e,param){
 ```
 
 
-## js方法 ##  
+<h2 id="cid_3">js方法</h2>
 
 **公共方法**  
 
@@ -323,7 +323,7 @@ jsonData getAbsoluteFrame() 获取组件在绘制窗口中的位置
 > String getInnerHTML() 动态获取容器内子节点xml
 
 
-## 示例 ##
+<h2 id="cid_4">示例</h2>
 
 示例代码1，测试box布局，参考演示应用示例：apps\yuanhongqian\spriteui\boxtest.uixml，代码中用到了官方封装的模板，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html")  
 
