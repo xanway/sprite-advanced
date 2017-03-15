@@ -40,7 +40,7 @@ box容器为用于包裹其他UI组件的基础布局容器，采用flexbox模�
 
 只支持本地图，当同时设置背景图及背景色时，背景图优先级别高于背景色。格式：background-image:url (url);
 
-> 本地图片url路径格式：res:前缀，file:前缀，相对路径
+> 本地图片url路径格式：res:前缀，file:前缀，相对路径；
 
 
 
@@ -69,7 +69,7 @@ box容器为用于包裹其他UI组件的基础布局容器，采用flexbox模�
  
 - 当长按并移动时事件的执行顺序为touchDown->longTouch->touchMove->touchUp (touchCancel)  
  
-- android在执行touchDown后马上执行touchMove（不管有没有移动）。
+- android在执行touchDown后基本上会马上执行touchMove（对移动事件监听比较灵敏）。
 
 <span id="sj_1">**公共事件**</span>  
 
@@ -91,7 +91,8 @@ event事件对象包括：
 > 
 > timestamp：事件触发的时间戳,单位毫秒，数字类型
  
-param对象为Json对象，定义如下：
+param对象为Json对象，定义如下：  
+
 >  x：按下时x轴坐标值；
 > 
 >  y：按下时y轴坐标值；  
@@ -100,7 +101,7 @@ param对象为Json对象，定义如下：
 
 - 只要有按下去的动作touchDown一定会触发，一般用于做UI组件点击下去的效果。
 
-- 对应android，只要touchDown触发，即便不移动touchMove也会触发。
+- 对应android，只要touchDown触发，基本上touchMove也会触发。
  
 示例：  
 
@@ -130,7 +131,7 @@ event事件对象包括：
 > 
 > target：触发事件的目标组件，dom对象；
 > 
-> timestamp：事件触发的时间戳,单位毫秒，数字类型
+> timestamp：事件触发的时间戳,单位毫秒，数字类型；
     
 param对象为Json对象，定义如下：  
 
@@ -145,7 +146,7 @@ param对象为Json对象，定义如下：
 ![image/box_1.png](image/box_1.png)  
 
 
-**注：** 当touchMove触发后，就不会触发click事件了。
+**注：** 当长时间移动触发touchMove后，就不会触发click事件了。
 
 示例： 
 
@@ -166,7 +167,7 @@ event事件对象包括：
 > 
 > target：触发事件的目标组件，dom对象；
 > 
-> timestamp：事件触发的时间戳,单位毫秒，数字类型
+> timestamp：事件触发的时间戳,单位毫秒，数字类型；
 
 param对象为Json对象，定义如下：
 
@@ -199,7 +200,7 @@ event事件对象包括：
 > 
 > target：触发事件的目标组件，dom对象； 
 > 
-> timestamp：事件触发的时间戳,单位毫秒，数字类型
+> timestamp：事件触发的时间戳,单位毫秒，数字类型；
 
 param对象为Json对象，定义如下：  
 
