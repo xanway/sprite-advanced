@@ -502,7 +502,9 @@ jsonData getAbsoluteFrame() 获取组件在绘制窗口中的位置
     </ui>
 </page>
 ```
+代码效果图：
 
+<img src="image/box_4.gif" width="250"/>  
 
 
 
