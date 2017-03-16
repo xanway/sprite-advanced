@@ -55,6 +55,8 @@ line组件用于绘制直线，支持颜色，方向（横/竖），线型（实
 
 对于横线来说，该值定义宽度，对于竖线来说，该值定义高度
 
+注：在垂直布局中，交叉布局为stretch的时候，默认填充容器宽度。
+
 <h2 id="cid_2">事件</h2>
 
 无 
@@ -76,6 +78,8 @@ line组件用于绘制直线，支持颜色，方向（横/竖），线型（实
 
 [动画相关](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_1)，包括： 
  
+> [void startAnimation(jsonData,function)  启动UI组件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_1)   
+> 
 > [void startAnimator(jsonData,function)  启动UI组件属性动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_2)   
 > 
 > [void startKeyFrameAnimator(jsonData,function)  启动UI组件关键帧动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_3)  
