@@ -230,9 +230,7 @@ text文本控件用于显示文本展示，text内部仅支持放置需要显示
 
 代码效果：
 
-<img src="image/text_1.png" width="250"/>  
-
-<img src="image/text_2.png" width="250"/>  
+<img src="image/text_1.png" width="250"/><img src="image/text_2.png" width="250"/>  
 
 
 
