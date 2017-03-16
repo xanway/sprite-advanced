@@ -1,4 +1,4 @@
-# 进阶教程
+# text组件使用 
 
 ----------
 
@@ -148,7 +148,7 @@ text文本控件用于显示文本展示，text内部仅支持放置需要显示
 <h2 id="cid_4">示例</h2>  
 
 
-示例代码1，测试text布局样式，参考演示应用示例：apps\yuanhongqian\spriteui\text.uixml，代码中用到了官方封装的模板，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
+示例代码1，测试text布局样式，参考演示应用示例：apps\yuanhongqian\spriteui\text.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
 
 ```html
 
@@ -230,7 +230,7 @@ text文本控件用于显示文本展示，text内部仅支持放置需要显示
 
 代码效果：
 
-<img src="image/text_1.png" width="250"/><img src="image/text_2.png" width="250"/>  
+<img src="image/text_1.png" width="250"/>  <img src="image/text_2.png" width="250"/>  
 
 
 
