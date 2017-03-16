@@ -280,10 +280,6 @@ box1.on("touchCancel",function(e,param){
 >
 > [bool hasAttr(attrName)  节点是否具有该属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_10) 
 >
-> [void setText(content)  设置节点文本内容](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_11)
->
-> [void getText(content)  获取节点文本内容](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_12)
-> 
 > [void setStyle(styleName,styleValue)  设置节点样式值](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_13)  
 >
 > [String getStyle(styleName)  获取节点样式值](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_14)   
