@@ -230,97 +230,97 @@ box1.on("touchCancel",function(e,param){
 
 [事件相关](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_0)，包括：
 
-> void on(messageName,function) 组件注册事件的触发函数
+> [void on(messageName,function)   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
 > 
-> void fire(messageName,params) 组件事件的触发函数
+> [void fire(messageName,params)  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
 > 
-> void off(messageName,function) 组件移除事件的触发函数
-> 
-> Array getOn(messageName) 获取已绑定的事件的触发函数
+> [void off(messageName,function)  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
+>  
+> [Array getOn(messageName)  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
 
 [动画相关](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_1)，包括： 
 
-> void startAnimation(jsonData,function) 启动UI组件动画
+> [void startAnimation(jsonData,function)  启动UI组件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_1)   
 > 
-> void startAnimator(jsonData,function) 启动UI组件属性动画
+> [void startAnimator(jsonData,function)  启动UI组件属性动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_2)   
 > 
-> void startKeyFrameAnimator(jsonData,function) 启动UI组件关键帧动画
-> 
-> void releaseAnimator() 结束控件动画
+> [void startKeyFrameAnimator(jsonData,function)  启动UI组件关键帧动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_3)  
+>  
+> [void  releaseAnimator()  结束控件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_4)   
 
 [尺寸和位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_2)，包括：  
 
-jsonData getFrame() 获取组件在父容器中的位置
-
-void setFrame(frame) 设置组件在父容器中的位置
-
-jsonData getCenter() 获取组件中心点在父容器中的位置
-
-jsonData getAbsoluteFrame() 获取组件在绘制窗口中的位置
+> [jsonData getFrame()  获取组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#cchwz_1)   
+> 
+> [void setFrame(frame)  设置组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#cchwz_2)   
+> 
+> [jsonData getCenter()  获取组件中心点在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#cchwz_3)  
+>  
+> [jsonData getAbsoluteFrame()  获取组件在绘制窗口中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#cchwz_4)   
 
 [普通Dom节点操作](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_3)，包括：  
 
-> domObj getParent() 获取父节点
+> [domObj getParent()  获取父节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_1)   
 > 
-> domObj getNext() 获取同级下一个节点
+> [domObj getNext()  获取同级下一个节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_2)   
 > 
-> domObj getPrevious() 获取同级前一个节点
+> [domObj getPrevious()  获取同级前一个节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_3)  
 > 
-> void remove() 从父容器中移除自身
+> [void remove()  从父容器中移除自身](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_4)  
 > 
-> domObj clone(isDeep) 对当前Dom节点进行克隆
+> [domObj clone(isDeep)  对当前Dom节点进行克隆](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_5)  
+>  
+> [void setAttr(attrName,attrValue)  设置节点属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_6)   
+>
+> [String getAttr(attrName)  获取节点属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_7) 
+>
+> [Json getAttrs()  获取节点所有属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_8) 
+>
+> [void removeAttr(attrName)  移除节点属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_9) 
+>
+> [bool hasAttr(attrName)  节点是否具有该属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_10) 
+>
+> [void setText(content)  设置节点文本内容](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_11)
+>
+> [void getText(content)  获取节点文本内容](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_12)
 > 
-> void setAttr(attrName,attrValue) 设置节点属性
-> 
-> String getAttr(attrName) 获取节点属性
-> 
-> Json getAttrs() 获取节点所有属性
-> 
-> void removeAttr(attrName) 移除节点属性
-> 
-> bool hasAttr(attrName) 节点是否具有该属性
-> 
-> void setText(content) 设置节点文本内容
-> 
-> void getText(content) 获取节点文本内容
-> 
-> void setStyle(styleName,styleValue) 设置节点样式值
-> 
-> String getStyle(styleName) 获取节点样式值
-> 
-> void clearStyle(styleName) 移除节点样式值
-> 
-> void setClassStyle(className，domobj) 设置节点对应Class样式
-> 
-> String getClassStyle() 获取节点已设置Class样式
-> 
-> String getTag() 获取UI组件类型
-> 
-> String getId() 获取UI组件Id标识
+> [void setStyle(styleName,styleValue)  设置节点样式值](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_13)  
+>
+> [String getStyle(styleName)  获取节点样式值](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_14)   
+>
+> [void clearStyle(styleName)  移除节点样式值](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_15)    
+>
+> [void setClassStyle(className，domobj)   设置节点对应Class样式](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_16) 
+>  
+> [String getClassStyle()  获取节点已设置Class样式](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_17)  
+>  
+> [String getTag()  获取UI组件类型](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_18)  
+>  
+> [String getId()  获取UI组件Id标识](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_19) 
 
 [容器类Dom节点操作](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_4)：包括：
 
-> domObj getElement (id) 根据Id获取容器内UI控件对象
+> [domObj getElement (id)  根据Id获取容器内UI控件对象](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_1)   
 > 
-> Array getElements(rule) 根据特定规则获取容器内UI控件对象集
+> [Array getElements(rule)  根据特定规则获取容器内UI控件对象集](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_2)   
 > 
-> Array getChildren() 容器获取子节点集
-> 
-> domObj getFirstChild() 容器获取首子节点
-> 
-> domObj getLastChild() 容器获取尾节点
-> 
-> void appendChild(domObj) 容器添加子节点至尾部
-> 
-> void insertBefore(domObj,beforeDomObj) 容器在指定的已有的子节点之前插入新节点
-> 
-> void insertAfter (domObj,afterDomObj) 容器在指定的已有的子节点之后插入新节点
-> 
-> void replaceChild(newDomObj,oldDomObj) 容器替换子节点
-> 
-> void clear() 清空容器内所有子节点
-> 
-> String getInnerHTML() 动态获取容器内子节点xml
+> [Array getChildren()  容器获取子节点集](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_3)  
+>  
+> [domObj getFirstChild()  容器获取首子节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_4) 
+>  
+> [domObj getLastChild()  容器获取尾节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_5) 
+>  
+> [void appendChild(domObj)  容器添加子节点至尾部](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_6) 
+>  
+> [void insertBefore(domObj,beforeDomObj)  容器在指定的已有的子节点之前插入新节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_7) 
+>  
+> [void insertAfter (domObj,afterDomObj)  容器在指定的已有的子节点之后插入新节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_8) 
+>  
+> [void replaceChild(newDomObj,oldDomObj)  容器替换子节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_9) 
+>  
+> [void clear()  清空容器内所有子节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_10) 
+>  
+> [String getInnerHTML()  动态获取容器内子节点xml](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_11)   
 
 
 <h2 id="cid_4">示例</h2>
