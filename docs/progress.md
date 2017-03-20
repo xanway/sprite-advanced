@@ -436,7 +436,7 @@ progress组件用于展现圆形进度条效果，支持环状 ，饼状样式 �
 
 代码效果：
 
-<img src="image/progress_1.gif" width="250"/>  
+<img src="image/progress_1.gif" width="250"/>   
  
 
 
