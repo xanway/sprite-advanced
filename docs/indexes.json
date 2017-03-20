@@ -37,6 +37,10 @@
 					"mdlink": "textfield"
 				},
 				{
+					"subject": "textarea组件的使用",
+					"mdlink": "textarea"
+				},
+				{
 					"subject": "scroll组件的使用",
 					"mdlink": "scroll"
 				},
