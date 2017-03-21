@@ -129,7 +129,7 @@ bool型，【true，false】
 
 <span id="sx_10">**returnKeyType**</span>  
 
-<code>设置弹出输入法</code>    
+<code>设置弹出输入法return键显示样式</code>    
 
 return键显示样式，取值为【default，go，search，next，send】
   
