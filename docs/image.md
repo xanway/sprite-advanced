@@ -17,8 +17,6 @@ image图片组件支持加载点九图,固定采用拉伸模式，图片以 .9.p
 
 [参见公共属性章节](https://gitdocument.exmobi.cn/sprite-begin/ggsx.html)，包括：id、style、class；
 
-
-
 **src**    
 
 <code>需加载图片路径</code>  
@@ -67,6 +65,8 @@ image图片组件支持加载点九图,固定采用拉伸模式，图片以 .9.p
 > 外边距
 > 
 > 背景
+>
+> 显影 
 > 
 > flexbox布局：align-self，flex
 
@@ -128,7 +128,7 @@ image图片组件支持加载点九图,固定采用拉伸模式，图片以 .9.p
 
 点9图拉伸。上，右，下，左四个不拉伸区域长度，用于iOS系统拉伸点九图使用  
 
-> 注：Android无需设置  
+**注：** Android无需设置  
 
 示例： 
 
