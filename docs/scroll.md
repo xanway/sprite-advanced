@@ -900,7 +900,7 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
 <img src="image/scroll_3.gif" width="250"/>  
 
 
-示例代码3，利用scrollChange事件和滚动弹性效果实现图片拉动放大效果(仅ios支持)，代码如下：
+示例代码3，利用scrollChange事件和滚动弹性效果实现图片拉动放大效果(仅ios支持)，参考演示示例apps\yuanhongqian\sprite_xiaoguo\scroll3.uixml，代码如下：
 
 ```html
 
