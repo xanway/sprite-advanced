@@ -49,9 +49,13 @@
 					"mdlink": "refresh"
 				},
 				{
-					"subject": "list和ListAdpter组件的使用",
+					"subject": "list组件的使用",
 					"mdlink": "list_listadpter"
 				},
+				{
+					"subject": "ListAdpter组件的使用",
+					"mdlink": "list_listadpter"
+				},				
 				{
 					"subject": "grid组件的使用",
 					"mdlink": "grid"
