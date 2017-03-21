@@ -184,7 +184,7 @@ param对象为Json对象，定义如下：
 ```
 
 
-**scrollStop**
+<span id="sj_4">**scrollStop**</span>
 
 <code>滚动结束时触发</code>     
 
@@ -480,7 +480,7 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
 <h2 id="cid_4">示例</h2>  
 
 
-示例代码1，测试scroll事件和仿佛，参考演示应用示例：apps\yuanhongqian\spriteui\scroll.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
+示例代码1，测试scroll事件和方法，参考演示应用示例：apps\yuanhongqian\spriteui\scroll.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
 
 ```html
 <page>
@@ -675,7 +675,6 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
 示例代码2，实现scroll拖动，内容顶部悬浮效果，参考演示示例apps\yuanhongqian\sprite_xiaoguo\scroll2.uixml，代码如下：
 
 ```html
-
 <page>
     <script>
         <![CDATA[
