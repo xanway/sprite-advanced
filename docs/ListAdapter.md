@@ -153,7 +153,7 @@ event事件对象包括：
 <h2 id="cid_4">示例</h2>  
 
 
-[参考list组件示例](https://gitdocument.exmobi.cn/sprite_advanced/list.html#cid_4)
+[参考list组件示例](https://gitdocument.exmobi.cn/sprite_advanced/list.html#cid_5)
  
 
 
