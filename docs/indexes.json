@@ -50,11 +50,11 @@
 				},
 				{
 					"subject": "list组件的使用",
-					"mdlink": "list_listadpter"
+					"mdlink": "list"
 				},
 				{
 					"subject": "ListAdpter组件的使用",
-					"mdlink": "list_listadpter"
+					"mdlink": "Listadpter"
 				},				
 				{
 					"subject": "grid组件的使用",
