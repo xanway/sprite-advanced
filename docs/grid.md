@@ -300,7 +300,7 @@ grid网格布局组件，用于多行多列网状结构显示，cell单元格宽
                   rtext.on("click", function (e) {
 
                         childeren[0].setStyle("visibility", "hidden");
-                        for (var i = 0; i < childeren.length; i++) {
+                        for (var i = childeren.length -1 ; i >= 0; i--) {
                               if (i != 0) {
                                     var json = childeren[i - 1].getFrame();
                                     var jsonData = {};
@@ -327,8 +327,6 @@ grid网格布局组件，用于多行多列网状结构显示，cell单元格宽
                                     }, 10);
                               }
                         }
-
-
                   });
             });
 
@@ -450,6 +448,9 @@ grid网格布局组件，用于多行多列网状结构显示，cell单元格宽
 
                                     </box>
                               </box>
+
+
+
                   </scroll>
             </box>
       </ui>
