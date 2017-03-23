@@ -268,7 +268,7 @@ grid网格布局组件，用于多行多列网状结构显示，cell单元格宽
 
 <img src="image/grid_1.gif" width="250"/>  
  
-示例代码1，测试grid基本布局及删除，示例代码参考apps\yuanhongqian\sprite_xiaoguo\grid.uixml
+示例代码2，测试grid基本布局及删除，示例代码参考apps\yuanhongqian\sprite_xiaoguo\grid.uixml
 
 ```html
 
