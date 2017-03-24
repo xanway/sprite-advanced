@@ -13,71 +13,71 @@
 			"group": "Sprite基础组件使用",
 			"contains": [
 				{
-					"subject": "box组件的使用",
+					"subject": "box 弹性盒子组件",
 					"mdlink": "box"
 				},
 				{
-					"subject": "text组件的使用",
+					"subject": "text 文本展示组件",
 					"mdlink": "text"
 				},
 				{
-					"subject": "line组件的使用",
+					"subject": "line 线条组件",
 					"mdlink": "line"
 				},
 				{
-					"subject": "progress组件的使用",
+					"subject": "progress 进度条组件",
 					"mdlink": "progress"
 				},
 				{
-					"subject": "image组件的使用",
+					"subject": "image 图片展示组件",
 					"mdlink": "image"
 				},
 				{
-					"subject": "textfield组件的使用",
+					"subject": "textfield 单行文本输入框组件",
 					"mdlink": "textfield"
 				},
 				{
-					"subject": "textarea组件的使用",
+					"subject": "textarea 多行文本输入框组件",
 					"mdlink": "textarea"
 				},
 				{
-					"subject": "scroll组件的使用",
+					"subject": "scroll 滚动容器组件",
 					"mdlink": "scroll"
 				},
 				{
-					"subject": "refresh组件的使用",
+					"subject": "refresh 刷新组件",
 					"mdlink": "refresh"
 				},
 				{
-					"subject": "list组件的使用",
+					"subject": "list 列表组件",
 					"mdlink": "list"
 				},
 				{
-					"subject": "ListAdpter组件的使用",
+					"subject": "ListAdpter 列表适配器组件",
 					"mdlink": "ListAdapter"
 				},				
 				{
-					"subject": "grid组件的使用",
+					"subject": "grid 网格组件",
 					"mdlink": "grid"
 				},
 				{
-					"subject": "slider组件的使用",
+					"subject": "slider 滑动容器组件",
 					"mdlink": "slider"
 				},
 				{
-					"subject": "iconfont组件的使用",
+					"subject": "iconfont 字体图片组件",
 					"mdlink": "iconfont"
 				},
 				{
-					"subject": "video组件的使用",
+					"subject": "video 视频播放组件",
 					"mdlink": "video"
 				},
 				{
-					"subject": "webview组件的使用",
+					"subject": "webview 浏览器组件",
 					"mdlink": "webview"
 				},
 				{
-					"subject": "handsign组件的使用",
+					"subject": "handsign 手写涂鸦组件",
 					"mdlink": "handsign"
 				}
 			 ]
@@ -86,9 +86,174 @@
 			"group": "Sprite基础功能组件使用(js接口)",
 			"contains": [
 				{
-					"subject": "App",
+					"subject": "App 应用信息操作类",
 					"mdlink": "app"
+				},
+				{
+					"subject": "window 页面操作类",
+					"mdlink": "window"
+				},
+				{
+					"subject": "document 页面Dom操作类",
+					"mdlink": "document"
+				},
+				{
+					"subject": "Device 终端设备操作类",
+					"mdlink": "Device"
+				},
+				{
+					"subject": "Native 原生程序相关操作类",
+					"mdlink": "Native"
+				},
+				{
+					"subject": "Encryption 字符串编解码类",
+					"mdlink": "Encryption"
+				},
+				{
+					"subject": "Time 定时器操作类",
+					"mdlink": "Time"
+				},
+				{
+					"subject": "Http 网络连接类",
+					"mdlink": "Http"
+				},
+				{
+					"subject": "File 文件操作类",
+					"mdlink": "File"
+				},
+				{
+					"subject": "Db 数据库操作类",
+					"mdlink": "Db"
+				},
+				{
+					"subject": "DbCipher 加密数据库操作类",
+					"mdlink": "DbCipher"
+				},
+				{
+					"subject": "UI 界面相关操作类",
+					"mdlink": "UI"
+				},
+				{
+					"subject": "MemCache 内存缓存读取类",
+					"mdlink": "MemCache"
+				},
+				{
+					"subject": "DiskCache 磁盘缓存读取类",
+					"mdlink": "DiskCache"
+				},
+				{
+					"subject": "Clipboard 系统剪切板读取类",
+					"mdlink": "Clipboard"
+				},
+				{
+					"subject": "Barcode 条码/二维码扫码操作类",
+					"mdlink": "Barcode"
+				},
+				{
+					"subject": "Camera 拍照，摄像操作类",
+					"mdlink": "Camera"
+				},
+				{
+					"subject": "Console 日志输出类",
+					"mdlink": "Console"
+				},
+				{
+					"subject": "XmlDocument 创建xml对象类",
+					"mdlink": "XmlDocument"
+				},
+				{
+					"subject": "XmlElement xml节点操作类",
+					"mdlink": "XmlElement"
+				},
+				{
+					"subject": "Pixel px与dp转换类",
+					"mdlink": "Pixel"
+				},
+				{
+					"subject": "AccessAuth 鉴权组件类",
+					"mdlink": "AccessAuth"
+				},
+				{
+					"subject": "VideoUtil 视频操作类",
+					"mdlink": "VideoUtil"
+				},
+				{
+					"subject": "Phone 电话操作类",
+					"mdlink": "Phone"
+				},
+				{
+					"subject": "Sms 短信操作类",
+					"mdlink": "Sms"
+				},
+				{
+					"subject": "Contact 通讯录操作类",
+					"mdlink": "Contact"
+				},
+				{
+					"subject": "AudioPlay 音频播放操作类",
+					"mdlink": "AudioPlay"
+				},
+				{
+					"subject": "AudioRecord 录音操作类",
+					"mdlink": "AudioRecord"
+				},
+				{
+					"subject": "ImageUtil 图片处理工具类",
+					"mdlink": "ImageUtil"
+				},
+				{
+					"subject": "MapUtil 地图工具类",
+					"mdlink": "MapUtil"
+				},
+				{
+					"subject": "IapPay 苹果虚拟支付工具类",
+					"mdlink": "IapPay"
+				},
+				{
+					"subject": "WeiXin 微信操作工具类",
+					"mdlink": "WeiXin"
+				},
+				{
+					"subject": "Qq 操作工具类",
+					"mdlink": "Qq"
+				},
+				{
+					"subject": "WeiBo 新浪微博操作工具类",
+					"mdlink": "WeiBo"
+				},
+				{
+					"subject": "Location 定位操作类",
+					"mdlink": "Location"
+				},
+				{
+					"subject": "BaiduLocation 百度定位类",
+					"mdlink": "BaiduLocation"
+				},
+				{
+					"subject": "AliPay 支付宝工具类",
+					"mdlink": "AliPay"
+				},
+				{
+					"subject": "BaiduVoice 百度语音识别类",
+					"mdlink": "BaiduVoice"
+				},
+				{
+					"subject": "BaiduTts 百度语音合成类",
+					"mdlink": "BaiduTts"
+				},
+				{
+					"subject": "SangforVpn 深信服Vpn工具类",
+					"mdlink": "SangforVpn"
+				},
+				{
+					"subject": "Bugly 腾讯崩溃日志上报类",
+					"mdlink": "Bugly"
+				},
+				{
+					"subject": "ExMobiPush ExMobi推送工具类",
+					"mdlink": "ExMobiPush"
 				}
+				
 			 ]
         },
 		{
