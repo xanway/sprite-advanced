@@ -335,6 +335,9 @@ NativePage.executeScript("abc('123')");
 
 <h2 id="cid_6">示例</h2>  
 
+
+示例代码，测试webview事件和方法，参考演示应用示例：apps\yuanhongqian\spriteui\webview.uixml，代码中用到了官方封装的titlebar等组件，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
+
 ```html
 <page>
     <script>
@@ -411,7 +414,6 @@ NativePage.executeScript("abc('123')");
 
             });
 
-
             var btn2 = document.getElement("test2");
             btn2.on("click", function (e) {
 
@@ -423,7 +425,6 @@ NativePage.executeScript("abc('123')");
             });
 
         });
-
 
     ]]>
     </script>
@@ -438,10 +439,6 @@ NativePage.executeScript("abc('123')");
         <box class="rootBox" id="box">
 
             <titlebar title="webview测试" id="title" ltext="返回" style="height: 66;padding:20 0 0 0" />
-
-
-
-
             <tabbar id="tabbarid1" bindid="sliderid" style="color:#909090;background-color: #ffffff;" />
             <slider style="flex:1" id="sliderid">
                 <box style="flex:1;">
