@@ -327,13 +327,142 @@ scriptText：需要执行外部uixml页面脚本方法，必选项，字符串�
 示例：
 
 ```javascript
-//abc方法在uixmll页面中，并且传参给abc方法
+//abc方法在uixml页面中，并且传参给abc方法
 NativePage.executeScript("abc('123')");
 ```
 
 
+
 <h2 id="cid_6">示例</h2>  
 
+```html
+<page>
+    <script>
+        <![CDATA[
+        var index = 1;
+        var window = require("Window");
+        var document = require("Document");
+        var ui = require("UI");
+        require("titlebarUI");
+        require("buttonUI");
+        require("tabbarUI");
 
-暂无：
+
+        function alert(msg) {
+            var json = {};
+            json.title = "提示";
+            json.content = msg;
+            json.buttonText = "确定";
+            ui.alert(json);
+        }
+
+        window.on("loaded", function () {
+            //触发回调 监听顶层box 根据id区分
+
+            var webview = document.getElement("webview");
+            var webview1 = document.getElement("webview1");
+
+            var tabbarid1 = document.getElement("tabbarid1");
+
+            var sliderid = document.getElement("sliderid");
+
+            var json = {};
+            var datas = new Array();
+
+            var itemJson = {};
+            itemJson.text = "网页html";
+            datas.push(itemJson);
+
+            var itemJson = {};
+            itemJson.text = "本地html";
+            datas.push(itemJson);
+
+            json.datas = datas;
+            tabbarid1.loadData(json);
+
+            webview.on("plusready", function (e) {
+
+                // alert("uixml:webview加载完毕");
+            });
+            webview1.on("titleChange", function (e, param) {
+                alert(param.title + param.url);
+            });
+
+            //titlebar关闭页面
+            var title = document.getElement("title");
+            title.on("ltextClick", function (e) {
+                var json = {};
+                window.close(json);
+
+            });
+
+            var btn = document.getElement("test");
+            btn.on("click", function (e) {
+                webview.executeScript("clickTest()");
+
+            });
+            var btn1 = document.getElement("test1");
+            btn1.on("click", function (e) {
+
+                if (webview1.canBack())
+                    webview1.back();
+                else
+                    alert("不能后退呀");
+
+            });
+
+
+            var btn2 = document.getElement("test2");
+            btn2.on("click", function (e) {
+
+                if (webview1.canForward())
+                    webview1.forward();
+                else
+                    alert("不能前进呀");
+
+            });
+
+        });
+
+
+    ]]>
+    </script>
+    <style>
+        @import url(res:spritetest/css/import.css);
+        button {
+            margin: 5 5 5 5;
+            width: 120;
+        }
+    </style>
+    <ui>
+        <box class="rootBox" id="box">
+
+            <titlebar title="webview测试" id="title" ltext="返回" style="height: 66;padding:20 0 0 0" />
+
+
+
+
+            <tabbar id="tabbarid1" bindid="sliderid" style="color:#909090;background-color: #ffffff;" />
+            <slider style="flex:1" id="sliderid">
+                <box style="flex:1;">
+                    <box style="flex-direction:row">
+                        <button value="回退" id="test1" />
+                        <button value="前进" id="test2" />
+
+                    </box>
+                    <webview style="progress-color:red;flex:1" id="webview1" progress="false" bridge="false" url="https://www.baidu.com" />
+                </box>
+                <box>
+                    <button value="执行脚本" id="test" />
+                    <webview style="progress-color:red;flex:1" id="webview" bridge="true" url="res:yuanhongqian/spriteui/webview.html" />
+                </box>
+
+            </slider>
+        </box>
+    </ui>
+</page>
+
+```
+
+<img src="image/webview_1.png" width="250"/>    <img src="image/webview_2.png" width="250"/>
 
