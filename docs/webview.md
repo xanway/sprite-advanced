@@ -1,0 +1,339 @@
+# webview组件使用 
+
+----------
+
+webview组件，用于标识html页面展示。一般用于图文混排的页面使用，比如新闻详情页。也可以用于嵌套一个webapp应用。
+
+**注：**  uixml相对html来说是窗口的概念，html页面内部跳转都将在窗口内部跳转，如果窗口关闭则整个html页面全部关闭。
+
+
+
+<h2 id="cid_1">属性</h2>   
+
+
+**公共属性**  
+
+[参见公共属性章节](https://gitdocument.exmobi.cn/sprite-begin/ggsx.html)，包括：id、style、class；  
+
+
+**url**  
+
+<code>浏览器控件需加载页面地址</code>
+
+支持本地页面方式加载（res:  , file:）,也支持网络页面方式加载(http://，https://) 
+
+
+**bridge**  
+
+<code>是否注入桥接Ap</code>   
+
+注入后可在浏览器中使用本地能力Js函数，[true，false]
+
+> true：注入桥接Api  
+> 
+> false：不注入（默认）
+
+
+**zoom**  
+
+<code>浏览器加载页面是否支持缩放</code>   
+
+取值 [true，false ]  
+
+> true：支持缩放  
+> 
+> false：不支持缩放（默认）
+
+
+**checkSsl**  
+
+<code>访问https网站时是否校验ssl证书</code> 
+
+取值 [true，false]  
+
+> true：校验ssl证书 （默认）
+> 
+> false：不校验ssl证书  
+
+**注：** 仅Android支持，iOS固定校验ssl证书 
+
+
+
+**progress**  
+
+<code>网络url加载时顶部进度条是否显示</code>  
+
+取值  [true，false] 
+
+> tue：网络url加载时显示顶部进度条（默认）
+> 
+> false：网络url加载时不显示顶部进度条
+
+
+**bounces**  
+
+<code>浏览器是否支持弹动</code>  
+
+取值 [true，false] 
+
+> true：支持弹动  
+> 
+> false：不支持弹动
+
+**注：**  仅iOS支持
+
+
+
+
+<h2 id="cid_2">样式</h2>  
+
+**公共样式**  
+
+[参见公共样式章节](https://gitdocument.exmobi.cn/sprite-begin/ggys.html)，包括：  
+ 
+> 尺寸
+> 
+> 定位 
+>  
+> 外边距
+> 
+> 背景
+> 
+> flexbox布局：align-self，flex
+
+
+**progress-color**  
+
+<code>进度条颜色</code>  
+
+默认值：#00bf12
+
+
+
+
+<h2 id="cid_3">事件</h2>
+
+**plusready**  
+
+<code>页面加载完成后触发</code>
+
+event事件对象包括：   
+
+> type：事件类型，字符串类型，固定值：plusready
+> 
+> target：触发事件的目标组件，dom对象
+> 
+> timestamp：事件触发的时间戳,单位毫秒，数字类型
+
+
+
+**failed**  
+
+<code>页面加载失败后触发触发</code>  
+
+event事件对象包括： 
+  
+> type：事件类型，字符串类型，固定值：failed
+> 
+> target：触发事件的目标组件，dom对象
+> 
+> timestamp：事件触发的时间戳,单位毫秒，数字类型
+
+
+
+
+**titleChange**  
+
+<code>webview页面加载url，若标题更新则触发回调函</code>    
+
+event事件对象包括：    
+
+> type：事件类型，字符串类型，固定值：titleChange
+> 
+> target：触发事件的目标组件，dom对象
+> 
+> timestamp：事件触发的时间戳,单位毫秒，数字类型
+
+param对象为Json对象，定义如下：  
+
+> title：当前页面标题，字符串类型 
+> 
+> url：当前页面url，字符串类型
+
+
+
+
+<h2 id="cid_4">js方法</h2>   
+
+
+<span id="ff_1">**公共方法**</span>  
+
+[事件相关](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_0)，包括：
+
+> [void on(messageName,function)   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
+> 
+> [void fire(messageName,params)  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
+> 
+> [void off(messageName,function)  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
+>  
+> [Array getOn(messageName)  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
+
+[动画相关](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_1)，包括： 
+
+
+> [void startAnimation(jsonData,function)  启动UI组件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_1)  
+> 
+> [void startAnimator(jsonData,function)  启动UI组件属性动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_2)   
+> 
+> [void startKeyFrameAnimator(jsonData,function)  启动UI组件关键帧动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_3)  
+>  
+> [void  releaseAnimator()  结束控件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_4)   
+
+[尺寸和位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_2)，包括：  
+
+> [jsonData getFrame()  获取组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_1)   
+> 
+> [void setFrame(frame)  设置组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_2)   
+> 
+> [jsonData getCenter()  获取组件中心点在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_3)  
+>
+> [jsonData getAbsoluteFrame()  获取组件在绘制窗口中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_4)   
+
+
+[普通Dom节点操作](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_3)，包括：  
+
+> [domObj getParent()  获取父节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_1)   
+> 
+> [domObj getNext()  获取同级下一个节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_2)   
+> 
+> [domObj getPrevious()  获取同级前一个节点](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_3)  
+> 
+> [void remove()  从父容器中移除自身](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_4)  
+> 
+ 
+> [void setAttr(attrName,attrValue)  设置节点属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_6)   
+>
+> [String getAttr(attrName)  获取节点属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_7) 
+>
+> [Json getAttrs()  获取节点所有属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_8) 
+>
+> [void removeAttr(attrName)  移除节点属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_9) 
+>
+> [bool hasAttr(attrName)  节点是否具有该属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_10) 
+> 
+> [void setStyle(styleName,styleValue)  设置节点样式值](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_13)  
+>
+> [String getStyle(styleName)  获取节点样式值](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_14)   
+>
+> [void clearStyle(styleName)  移除节点样式值](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_15)    
+>
+> [void setClassStyle(className，domobj)   设置节点对应Class样式](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_16) 
+>  
+> [String getClassStyle()  获取节点已设置Class样式](https://gitdocument.exmobi.cn/sprite-begin/ggff.htm#ptdom_17)  
+>  
+> [String getTag()  获取UI组件类型](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_18)  
+>  
+> [String getId()  获取UI组件Id标识](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_19) 
+
+
+**void executeScript(scriptText)**  
+
+<code>执行webview控件加载html页面js脚本</code>  
+
+参数：  
+
+scriptText：需要执行webview控件内（page内）脚本方法，必选项，支持传递字符串类型变量
+
+返回值：无
+
+示例：
+
+```javascript
+var wb = document.getElement("wbid");
+//abc方法在html页面中，并且传参给abc方法
+wb.executeScript("abc('123')");
+```
+
+
+
+**void clearCache()**  
+
+<code>清理webview浏览器缓存</code> 
+
+参数：无 
+
+返回值：无
+
+
+**bool canBack()**  
+
+<code>基于已打开html页面是否支持回退</code>   
+
+参数：无  
+
+返回值：bool型 
+
+> true：支持回退
+> 
+> false：不支持回退
+
+
+
+**void back()**  
+
+<code>基于已打开html页面回退</code>    
+
+参数：无 
+
+返回值：无
+
+
+**bool canForward()**  
+
+<code>基于已打开html页面是否支持前进</code>  
+
+参数：无  
+
+返回值：bool型  
+
+> true：支持前进
+> 
+> false：不支持前进
+
+
+**void forward ()**  
+
+<code>基于已打开html页面前进</code>  
+
+参数：无  
+
+返回值：无
+
+
+<h2 id="cid_5">内置对象</h2>   
+
+在html页面内置NativePage对象用于实现webview内的html页面调用外部uixml页面JS。
+
+**String executeScript(scriptText)** 
+
+<code>webview控件内部调用外部uixml页面JS</code>  
+
+参数：
+
+scriptText：需要执行外部uixml页面脚本方法，必选项，字符串类型
+
+返回值：执行结果，字符类型，若无返回值则返回null
+
+示例：
+
+```javascript
+//abc方法在uixmll页面中，并且传参给abc方法
+NativePage.executeScript("abc('123')");
+```
+
+
+<h2 id="cid_6">示例</h2>  
+
+
+暂无：
+
