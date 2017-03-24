@@ -736,8 +736,6 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
                 alert("点击了item section:" + sectionindex + " position:" + position);
             });
 
-
-
             var disString = top.getAttr("distance");
             var dis = parseInt(disString);
             var topbutton = document.getElement("topbutton");
@@ -901,10 +899,7 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
                     var sectionJson = datas[sectionindex];
                     return sectionJson.cells.length;
                 });
-                adapter.on("getItem", function (e, pos, sectionindex) {
-                    var sectionJson = datas[sectionindex];
-                    return sectionJson.cells[pos];
-                });
+              
                 adapter.on("getSectionCount", function (e) {
                     return datas.length;
                 });

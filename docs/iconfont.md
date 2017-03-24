@@ -25,7 +25,6 @@ iconfont文字图组件用于文字图展示，支持通过css样式font-family�
 示例： 
 
 ```html
-
 <iconfont style="font-family:Material Design Icons;color:#549FF7;font-size:45;text-align:center;width:45;height:45">\u343c</iconfont>
 
 ``` 
@@ -212,7 +211,7 @@ Sprint平台内置了一套字体库，字体库文件下载：[http://pan.baidu
 <page>
     <script>
         <![CDATA[
-    var index = 1;
+
         var window = require("Window");
         var document = require("Document");
         var time = require("Time");
@@ -225,7 +224,7 @@ Sprint平台内置了一套字体库，字体库文件下载：[http://pan.baidu
         require("titlebarUI");
         require("buttonUI");
         require("switchUI");
-      
+
 
         var screenWidth = window.getScreenWidth();
         var s = 0;
@@ -246,44 +245,38 @@ Sprint平台内置了一套字体库，字体库文件下载：[http://pan.baidu
                 window.close(json);
             });
 
-            // initAdapter();
 
-            var str = '';
-            for (var i = 1; i <= e; i++) {
+            time.setTimeout(function () {
+                var str = '';
+                for (var i = 1; i <= e; i++) {
+                    var fonticon = '';
+                    var hex16 = i.toString(16).toUpperCase();
+                    if (hex16.length == 1) {
+                        fonticon = "00" + hex16;
+                    }
 
-                var fonticon = '';
-                var hex16 = i.toString(16).toUpperCase();
-                if (hex16.length == 1) {
+                    if (hex16.length == 2) {
+                        fonticon = "0" + hex16;
+                    }
 
-                    fonticon = "00" + hex16;
+                    if (hex16.length == 3) {
+                        fonticon = hex16;
+                    }
+
+                    str = str + '<box class="column-flex-center" style="width:60;height:60;margin:8 0 8 0">'
+                        + '<iconfont style="font-family:Material Design Icons;color:#549FF7;font-size:45;text-align:center;width:45;height:45">\\uF' + fonticon + '</iconfont>'
+                        + '<text style="font-size:13;text-align:center">\\uF' + fonticon + '</text>'
+                        + ' </box>';
                 }
-
-                if (hex16.length == 2) {
-
-                    fonticon = "0" + hex16;
-                }
-
-                if (hex16.length == 3) {
-
-                    fonticon = hex16;
-                }
-
-
-                str = str + '<box class="column-flex-center" style="width:60;height:60;margin:8 0 8 0">'
-                    + '<iconfont style="font-family:Material Design Icons;color:#549FF7;font-size:45;text-align:center;width:45;height:45">\\uF' + fonticon + '</iconfont>'
-                    + '<text style="font-size:13;text-align:center">\\uF' + fonticon + '</text>'
+                var xmlstr = '<box class="row-flex-start  align-items-start" style="flex-wrap:wrap;">'
+                    + '' + str + ''
                     + ' </box>';
-            }
+                var dom = document.createElementByXml(xmlstr);
+                scrollid.clear();
+                scrollid.appendChild(dom);
+                scrollid.refresh();
+            }, 10);
 
-
-            var xmlstr = '<box class="row-flex-start  align-items-start" style="flex-wrap:wrap;">'
-                + '' + str + ''
-                + ' </box>';
-
-            var dom = document.createElementByXml(xmlstr);
-            scrollid.clear();
-            scrollid.appendChild(dom);
-            document.refresh();
         });   
     ]]>
     </script>
@@ -294,7 +287,7 @@ Sprint平台内置了一套字体库，字体库文件下载：[http://pan.baidu
     <ui>
         <box class="full" style="background-color:#dddddd" id="box">
             <titlebar id="titleid" class="titlebar-hasstatus" style="background-color:#549FF7;title-color:#ffffff;right-color:#ffffff"
-                title="字体图" licon="res:yuanhongqian/image/back.png"></titlebar>   
+                title="字体图" licon="res:yuanhongqian/image/back.png"></titlebar>
                 <scroll class="flex1 " style="align-items:center;" id="scrollid">
                     <image style="height:40;width:40;margin:10" src="res:yuanhongqian/image/loading.gif" />
                 </scroll>
