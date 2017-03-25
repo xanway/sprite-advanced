@@ -133,17 +133,17 @@ Sprite采用CommonJS规范，通过require("模块标识")来实现对系统api�
 
 **VPN相关**  
 
-Sangfor：深信服vpn类 
+> Sangfor：深信服vpn类 
 
 **分享相关**  
 
-Qq：QQ分享操作类 
-
-WeiBo：微博分享操作类 
-
-WeiXin：微信分享操作类 
-
-ShareUtil：综合分享工具类，提供如一键分享等方法
+> Qq：QQ分享操作类 
+> 
+> WeiBo：微博分享操作类 
+> 
+> WeiXin：微信分享操作类 
+> 
+> ShareUtil：综合分享工具类，提供如一键分享等方法
 
 
 **推送push**  
@@ -212,48 +212,48 @@ ShareUtil：综合分享工具类，提供如一键分享等方法
 
 **内置功能组件**  
 
-> App
-> Window
-> Document
-> Device
-> Native
-> Encryption
-> Time
-> Http
-> NetInfo
-> File
-> UI
-> MemCache
-> DiskCache
-> Camera
-> Console
-> Pixel
-> ImageUtil
-> Location
+> App  
+> Window  
+> Document  
+> Device  
+> Native  
+> Encryption  
+> Time  
+> Http  
+> NetInfo  
+> File  
+> UI  
+> MemCache  
+> DiskCache  
+> Camera  
+> Console  
+> Pixel  
+> ImageUtil  
+> Location  
 
 
 **外置功能组件**  
 
-> Db
-> DbCipher
-> Barcode
-> XmlDocument
-> XmlElement
-> AccessAuth
-> VideoUtil
-> Phone
-> Sms
-> Contact
-> AudioPlay
-> AudioRecord
-> MapUtil
-> IapPay
-> WeiXin
-> Qq
-> WeiBo
-> BaiduLocation
-> AliPay
-> BaiduVoice
-> BaiduTts
-> SanforVpn
-> ExMobiPush
+> Db  
+> DbCipher  
+> Barcode  
+> XmlDocument  
+> XmlElement  
+> AccessAuth  
+> VideoUtil  
+> Phone  
+> Sms  
+> Contact  
+> AudioPlay  
+> AudioRecord  
+> MapUtil  
+> IapPay  
+> WeiXin  
+> Qq  
+> WeiBo  
+> BaiduLocation  
+> AliPay  
+> BaiduVoice  
+> BaiduTts  
+> SanforVpn  
+> ExMobiPush  

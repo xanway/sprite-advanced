@@ -86,7 +86,7 @@
 			"group": "Sprite基础功能组件使用(js接口)",
 			"contains": [
 				{
-					"subject": "js功能组件概述",
+					"subject": "JS功能组件概述",
 					"mdlink": "jsapi"
 				},
 				{
@@ -94,11 +94,11 @@
 					"mdlink": "app"
 				},
 				{
-					"subject": "window 页面操作类",
+					"subject": "Window 页面操作类",
 					"mdlink": "window"
 				},
 				{
-					"subject": "document 页面Dom操作类",
+					"subject": "Document 页面Dom操作类",
 					"mdlink": "document"
 				},
 				{
