@@ -25,7 +25,7 @@ webview组件，用于标识html页面展示。一般用于图文混排的页面
 
 **bridge**  
 
-<code>是否注入桥接Ap</code>   
+<code>是否注入桥接Api</code>   
 
 注入后可在浏览器中使用本地能力Js函数，[true，false]
 
@@ -461,5 +461,54 @@ NativePage.executeScript("abc('123')");
 
 ```
 
+
+webview.html页面代码：  
+
+```html
+<html>
+<head>
+    <script type="text/javascript">
+        var file = null;
+        var Student = null;
+        var ui = null;
+        document.addEventListener("plusready", function () {
+            //webview中需要在页面加载完毕的时候在require组件
+            ui = require("UI");
+            file = require("File");
+            init();
+        }, false);
+
+        function init() {
+            var res = file.isDir("res:spritetest/page");
+            alertTest("res:spritetest/page是否为目录，结果:" + res);
+
+        }
+
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function alertTest(msg) {
+            var json = {};
+            json.title = "提示";
+            json.duration = 1;
+            json.content = msg;
+            ui.toast(json);
+        }
+
+        function clickTest() {
+            var res = file.isDir("res:spritetest/page/index.uixml");
+            alertTest("res:spritetest/page/index.uixml是否为目录，结果:" + res);
+
+        }
+    </script>
+</head>
+
+<body>
+    测试在html里面调用本地能力，判断某一个文件是否是文件目录。
+    <input type="button" value="点击测试" onclick="javascript:clickTest()" />
+</body>
+</html>
+```
 <img src="image/webview_1.png" width="250"/>    <img src="image/webview_2.png" width="250"/>
 
