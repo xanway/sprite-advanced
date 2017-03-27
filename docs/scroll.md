@@ -113,6 +113,8 @@ scroll处于垂直滚动模式时，可以包裹refresh容器用于实现下拉�
 
 本节目录：
 
+> [公共事件 ](#sj_0) 
+> 
 > [scrollToBottom  滚动条滚动至底部时触发 ](#sj_1) 
 > 
 > [scrollStart  滚动开始时触发 ](#sj_2)
@@ -120,7 +122,19 @@ scroll处于垂直滚动模式时，可以包裹refresh容器用于实现下拉�
 >[ scrollChange  滚动时多次触发  ](#sj_3)
 > 
 >[ scrollStop  滚动结束时触发](#sj_4)
+  
 
+
+<span id="sj_0">**公共事件**</span>
+
+[参见公共事件章节](https://gitdocument.exmobi.cn/sprite-begin/ggsj.html)，包括：  
+
+> click事件
+> 
+> longTouch事件   
+
+
+  
 <span id="sj_1">**scrollToBottom**</span>   
 
 <code>滚动条滚动至底部时触发</code>    

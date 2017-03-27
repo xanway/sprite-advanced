@@ -113,6 +113,8 @@ webview组件，用于标识html页面展示。一般用于图文混排的页面
 
 <h2 id="cid_3">事件</h2>
 
+webview中的事件在uixml中通过webview组件对象来监听，如果在html页面中，可以通过document.addEventListener("事件名",function(){},false); 来监听。
+
 **plusready**  
 
 <code>页面加载完成后触发</code>
@@ -327,10 +329,19 @@ scriptText：需要执行外部uixml页面脚本方法，必选项，字符串�
 示例：
 
 ```javascript
+//示例一：可以放在某个按钮点击时触发
 //abc方法在uixml页面中，并且传参给abc方法
 NativePage.executeScript("abc('123')");
+
+
+//示例二：
+//页面加载的时候执行
+document.addEventListener("plusready", function () {
+          NativePage.executeScript("abc('123')");
+ }, false);
 ```
 
+**注：**  如果想在html页面加载的过程执行，需要放在plusready完成之后，如上述示例代码二。
 
 
 <h2 id="cid_6">示例</h2>  

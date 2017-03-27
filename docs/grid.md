@@ -68,6 +68,7 @@ grid网格布局组件，用于多行多列网状结构显示，cell单元格宽
 
 <h2 id="cid_3">事件</h2>
 
+**公共事件**
 
 [参见公共事件章节](https://gitdocument.exmobi.cn/sprite-begin/ggsj.html)，包括：  
 

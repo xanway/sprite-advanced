@@ -128,14 +128,6 @@ slider页布局容器一般用于以下几种典型场景：
 <h2 id="cid_3">事件</h2>
 
 
-[参见公共事件章节](https://gitdocument.exmobi.cn/sprite-begin/ggsj.html)，包括：  
-
-> click事件
-> 
-> longTouch事件
-
-
-
 **pageSelected**  
 
 <code>页面切换完成后触发</code>  
