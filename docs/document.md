@@ -140,7 +140,7 @@ document.refresh();
 
 
 
-<span id="ff_5">**domObj createElementByXml(xml,domObj)**</span>  
+<span id="ff_4">**domObj createElementByXml(xml,domObj)**</span>  
 
 <code>通过xml文本创建UI控件对象</code> 
 
@@ -167,7 +167,7 @@ document.refresh();
 ```
 
 
-<span id="ff_6">**void refresh()**</span>  
+<span id="ff_5">**void refresh()**</span>  
 
 <code>刷新页面Dom树</code> 
 
@@ -179,7 +179,7 @@ document.refresh();
 
 
 
-<span id="ff_7">**String getPathLocation()**</span>  
+<span id="ff_6">**String getPathLocation()**</span>  
 
 <code>获取本页面所在目录路径</code>  
 

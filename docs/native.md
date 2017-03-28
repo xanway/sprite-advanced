@@ -140,8 +140,6 @@ package：需查询apk应用包名，字符串类型，必选项
 **注：** 仅Android支持
 
 
-
-
 <span id="ff_4">**void installApk(apkPath,callFunction)**</span>  
 
 <code>安装指定路径apk安装包</code> 

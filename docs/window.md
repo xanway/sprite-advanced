@@ -331,6 +331,17 @@ window.on("result",function(e,data){
 
 <span id="ff_5">**int getScreenWidth()**</span>  
 
+<code>获取当前窗口绘制区域宽度</code> 
+
+参数：无  
+
+返回值：当前窗口绘制区域宽度，单位dp
+
+
+
+
+<span id="ff_6">**int getScreenHeight()**</span>  
+
 <code>获取当前窗口绘制区域高度</code> 
 
 参数：无  
@@ -338,7 +349,7 @@ window.on("result",function(e,data){
 返回值：当前窗口绘制区域高度，单位dp
 
 
-<span id="ff_6">**void setStatusBarMode(mode)**</span>  
+<span id="ff_7">**void setStatusBarMode(mode)**</span>  
 
 <code>设置窗口状态栏模式</code> 
 
@@ -355,7 +366,7 @@ mode：状态栏前景模式，字符串枚举型号，[default,light],必选项
 注：仅iOS支持
 
 
-<span id="ff_7">**void hideSip()**</span>  
+<span id="ff_8">**void hideSip()**</span>  
 
 <code>隐藏系统输入法</code>  
 
