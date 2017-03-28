@@ -305,7 +305,7 @@ window.on("result",function(e,data){
 });
 ```
 
-<span id="ff_3">**JsObj getData(**</span>  
+<span id="ff_3">**JsObj getData()**</span>  
 
 <code>获取上层窗口传递的数据</code>  
 
