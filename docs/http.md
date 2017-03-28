@@ -1,4 +1,4 @@
-# Http 定时器操作类
+# Http 网络连接类
 
 ----------
 
@@ -22,7 +22,8 @@ var http = require("Http");
 > [ String formSubmit (option,callFunction,requestProgressFunction,responseProgressFunction) 异步表单提交 ](#ff_1)
 >
 >[ String download(option,callFunction, responseProgressFunction)   异步文件下载 ](#ff_2)
-
+>
+>[ void cancel(id)   关闭http请求 ](#ff_3)
 
 
 <span id="ff_0">**String ajax(option,callFunction) **</span>  
@@ -98,18 +99,6 @@ Http.ajax(option, function (json) {
 <span id="ff_1">**String formSubmit (option,callFunction,requestProgressFunction,responseProgressFunction)**</span>  
 
 <code>异步表单提交</code>
-
-参数：  
-
-id：需要被关闭的定时器标识，字符串类型，必选项  
-
-返回值：无
-
-
-
-<span id="ff_2">**String setInterval (callFunction,interval)**</span>  
-
-<code>启动重复定时器</code>    
 
 向第三方http/https服务器上传包含二进制文件的表单数据，支持POST/PUT两种请求方式
 
@@ -305,3 +294,13 @@ httpId = Http.download(option, function(responseData){
 });
 
 ``` 
+
+<span id="ff_3">**void cancel(id)**</span>  
+
+<code>关闭http请求</code>   
+
+参数：  
+
+id：需要被关闭的http请求标识，字符串类型，必选项  
+
+返回值：无

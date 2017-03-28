@@ -122,6 +122,10 @@
 					"mdlink": "http"
 				},
 				{
+					"subject": "NetInfo 网络信息相关类",
+					"mdlink": "netinfo"
+				},
+				{
 					"subject": "File 文件操作类",
 					"mdlink": "file"
 				},
