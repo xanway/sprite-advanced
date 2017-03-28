@@ -175,6 +175,16 @@ grid网格布局组件，用于多行多列网状结构显示，cell单元格宽
 > [String getInnerHTML()  动态获取容器内子节点xml](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_11)  
 
 
+**void refresh()**  
+
+<code>刷新组件内布局</code>  
+
+参数：无
+
+返回值：无
+
+**注：** 刷新后组件区域不变，某些场景下可代替document.refresh()获得更好的刷新效果  
+
 
 
 <h2 id="cid_5">示例</h2>  

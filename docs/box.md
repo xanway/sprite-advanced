@@ -320,6 +320,19 @@ box1.on("touchCancel",function(e,param){
 > [String getInnerHTML()  动态获取容器内子节点xml](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#rqczdom_11)   
 
 
+**void refresh()**  
+
+<code>刷新组件内布局</code>  
+
+参数：无
+
+返回值：无
+
+**注：** 刷新后组件区域不变，某些场景下可代替document.refresh()获得更好的刷新效果  
+
+
+
+
 <h2 id="cid_4">示例</h2>
 
 示例代码1，测试box布局，参考演示应用示例：apps\yuanhongqian\spriteui\boxtest.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html")  

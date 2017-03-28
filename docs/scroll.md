@@ -215,31 +215,31 @@ event事件对象包括：
 
 本节目录：
 
-[公共方法](#ff_1)
-
-[void scrollTo(jsonData)   将容器内的当前内容滚动到指定位置](#ff_2)  
-
-[void scrollToType(jsonData)  将容器内的当前内容滚动到特定位置 ](#ff_3) 
-
-[void scrollToCtrl(jsonData)   将滚动条滚动至指定控所在位置  ](#ff_4)
-
-[void scrollToCtrlById(jsonData)  将滚动条滚动至指定id的控件所在位置](#ff_5)
-
-[void scrollBy(jsonData)  容器基于相对位置滚动 ](#ff_6) 
-
-[number getScrollX()  获取滚动容器x轴滚动点坐标  ](#ff_7)
-
-[number getScrollY()   获取滚动容器y轴动点坐标  ](#ff_8)
-
-[number getContentWidth()  获取滚动容器所包裹内容宽度](#ff_9)  
-
-[number getContentHeight()  获取滚动容器所包裹内容高度  ](#ff_10)
-
-[void setCaptureTouchEvent (caputueTouchEvent)  设置滚动容器是否拦截子组件touch事件](#ff_11)
-
-[bool getCaptureTouchEvent()   获取滚动容器是否拦截子组件touch事件](#ff_12) 
-
-
+> [公共方法](#ff_1)
+> 
+> [void scrollTo(jsonData)   将容器内的当前内容滚动到指定位置](#ff_2)  
+> 
+> [void scrollToType(jsonData)  将容器内的当前内容滚动到特定位置 ](#ff_3) 
+> 
+> [void scrollToCtrl(jsonData)   将滚动条滚动至指定控所在位置  ](#ff_4)
+> 
+> [void scrollToCtrlById(jsonData)  将滚动条滚动至指定id的控件所在位置](#ff_5)
+> 
+> [void scrollBy(jsonData)  容器基于相对位置滚动 ](#ff_6) 
+> 
+> [number getScrollX()  获取滚动容器x轴滚动点坐标  ](#ff_7)
+> 
+> [number getScrollY()   获取滚动容器y轴动点坐标  ](#ff_8)
+> 
+> [number getContentWidth()  获取滚动容器所包裹内容宽度](#ff_9)  
+> 
+> [number getContentHeight()  获取滚动容器所包裹内容高度  ](#ff_10)
+> 
+> [void setCaptureTouchEvent (caputueTouchEvent)  设置滚动容器是否拦截子组件touch事件](#ff_11)
+> 
+> [bool getCaptureTouchEvent()   获取滚动容器是否拦截子组件touch事件](#ff_12) 
+> 
+> [void refresh()   刷新组件内布局 ](#ff_13) 
 
 <span id="ff_1">**公共方法**</span>  
 
@@ -489,6 +489,18 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
 > true：拦截子组件touch事件
 > 
 > false：不拦截子组件touch事件
+
+
+
+<span id="ff_13">**void refresh()**</span>  
+
+<code>刷新组件内布局</code>  
+
+参数：无
+
+返回值：无
+
+**注：** 刷新后组件区域不变，某些场景下可代替document.refresh()获得更好的刷新效果  
 
 
 <h2 id="cid_4">示例</h2>  
