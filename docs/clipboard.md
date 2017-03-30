@@ -31,12 +31,10 @@ value：存入数据value值，字符串类型；
 示例：
 
 ```javascript
-
 //页面存入数据操作
 var clipboard = require("Clipboard");
 //存入数据
 clipboard.setData ("Sprite");
-
 ```
 
 
@@ -54,9 +52,7 @@ clipboard.setData ("Sprite");
 示例：
 
 ```javascript
-
 var clipboard = require("Clipboard");
 var str = clipboard.getData();
-
 ````
 
