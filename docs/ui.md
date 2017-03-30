@@ -275,8 +275,6 @@ callBackFun：结果回调函数，函数具有json类型入参，必选项，�
 > imagePath：选择图片文件全路径，字符串类型，取消选择返回null
 
 
-
-
 <span id="ff_10">**void selectImages(jsonData,callBackFun)**</span>  
 
 <code>选择设备中多张图片</code>  
@@ -298,5 +296,3 @@ callBackFun: 结果回调函数，必选项，函数具有json类型入参，入
 > code ：回应状态码，数字[0,-1]。0：用户选择图片成功；-1：用户取消选择图片；  
 > 
 > imagePaths：已选择所有图片全路径，字符串数组类型，若用户取消选择则返回空数组
-
-
