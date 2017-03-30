@@ -11,7 +11,7 @@ Clipboard 系统剪切板读取类，该缓存数据可用于设备不同程序�
 var clipboard = require("Clipboard"); 
 ```
 
-**注：** 该组件为内置功能组件。
+**注：** 该组件为外置功能组件，打包需要选择此功能。
 
 <h2 id="cid_1">js方法</h2>  
 
