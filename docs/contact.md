@@ -140,7 +140,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_1">**void getVcardById((jsonData，callbackFun)**</span>  
+<span id="ff_2">**void getVcardById((jsonData，callbackFun)**</span>  
 
 <code>根据用户标识查询用户信息</code>    
 
@@ -204,7 +204,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_2">**void getVcardsByName((jsonData，callbackFun)**</span>  
+<span id="ff_3">**void getVcardsByName((jsonData，callbackFun)**</span>  
 
 <code>根据用户名查询用户信息</code>  
 
@@ -264,4 +264,340 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 >   
 >   -         other：其他邮件，字符类型
       
+返回值：无
+
+
+<span id="ff_4">**void addVcard(jsonData，callbackFun)**</span>  
+
+<code>添加用户信息至通讯录</code>   
+
+参数：  
+
+jsonData：需添加用户信息参数，Json对象，定义如下：
+
+> name：用户姓名，字符串类型，必选项；
+> 
+> groupId：用户所属群组标识，字符串类型，可选项；
+> 
+> mobile：手机号码，字符串类型，可选项；
+> 
+> company：公司，字符串类型，可选项；
+> 
+> birthday：生日，字符串类型，可选项；
+> 
+> address：地址，字符串类型，可选项；
+> 
+> note：备注，字符串类型，可选项；
+> 
+>  phones：联系人电话信息，数组类型，数组成员为Json对象，，可选项，定义如下：
+>  
+> -  custom：常用电话，字符串类型；
+> 
+> -    home：家庭电话，字符串类型；
+> 
+> -   work：工作电话，字符串类型；
+> 
+> -   faxWork：工作传真，字符串类型；
+> 
+> -   faxHome：家庭传真，字符串类型；
+> 
+> -   pager：寻呼机，字符串类型；
+> 
+> -   other：其他，字符类型；  
+> 
+> emails：联系人邮件信息，数组类型，数组成员为Json对象，可选项，定义如下：
+> 
+> -   custom：常用邮件，字符串类型；
+> 
+> -    home：家庭邮件，字符串类型；
+> 
+> -    work：工作邮件，字符串类型；
+> 
+> -    other：其他邮件，字符类型
+
+callBackFun：操作回调函数，函数具有json类型入参，入参定义如下：
+
+code：回应状态码，数字[0,-1]。0：添加成功；-1：添加失败；
+
+id：用户标识，字符串类型；
+
+返回值：无
+
+
+
+<span id="ff_5">**void deleteVcard(jsonData，callbackFun)**</span>  
+
+<code>从通讯录中移除用户信息</code>   
+
+参数：  
+
+jsonData：需移除用户信息参数，Json对象，定义如下：
+
+> id：用户标识，字符串类型，必选项；  
+
+callBackFun：操作回调函数，函数具有json类型入参，入参定义如下：
+
+> code：回应状态码，数字[0,-1]
+> 
+> - 0：移除用户成功；
+> 
+> - -1：移除用户失败；
+
+返回值：无
+
+
+<span id="ff_6">**void deleteVcard(jsonData，callbackFun)**</span>  
+
+<code>从通讯录中移除用户信息</code> 
+
+
+参数：  
+
+jsonData：需移除用户信息参数，Json对象，定义如下：
+
+>   id：用户标识，字符串类型，必选项；
+ 
+callBackFun：操作回调函数，函数具有json类型入参，入参定义如下：
+
+> code：回应状态码，数字[0,-1]
+> 
+> - 0：移除用户成功；
+> 
+> - -1：移除用户失败；
+
+返回值：无
+
+
+
+<span id="ff_7">**void updateVcard(jsonData，callbackFun)**</span>  
+
+<code>更新用户信息至通讯录</code>   
+
+
+参数：
+jsonData：需更新用户信息参数，Json对象，定义如下： 
+
+> id：用户标识，字符串类型，必选项；
+> 
+> name：用户姓名，字符串类型，可选项；
+> 
+> groupId：用户所属群组标识，字符串类型，可选项；
+> 
+> mobile：手机号码，字符串类型，可选项；
+> 
+> company：公司，字符串类型，可选项；
+> 
+> birthday：生日，字符串类型，可选项；
+> 
+> address：地址，字符串类型，可选项；
+> 
+> note：备注，字符串类型，可选项；
+> 
+> phones：联系人电话信息，数组类型，数组成员为Json对象，，可选项，定义如下：
+> 
+> -     custom：常用电话，字符串类型；
+> 
+> -     home：家庭电话，字符串类型；
+> 
+> -     work：工作电话，字符串类型；
+> 
+> -     faxWork：工作传真，字符串类型；
+> 
+> -     faxHome：家庭传真，字符串类型；
+> 
+> -     pager：寻呼机，字符串类型；
+> 
+> -     other：其他，字符类型；
+> 
+> emails：联系人邮件信息，数组类型，数组成员为Json对象，可选项，定义如下：
+> 
+> -     custom：常用邮件，字符串类型；
+> 
+> -     home：家庭邮件，字符串类型；
+> 
+> -     work：工作邮件，字符串类型；
+> 
+> -     other：其他邮件，字符类型
+> 
+callBackFun：操作回调函数，函数具有json类型入参，入参定义如下： 
+
+> code：回应状态码，数字[0,-1]
+> 
+> - 0：更新成功；
+> 
+> - -1：更新失败；  
+
+返回值：无
+
+
+
+<span id="ff_8">**void moveVcard(jsonData，callbackFun)**</span>  
+
+<code>移动用户至指定群组</code> 
+
+
+参数： 
+
+jsonData：需移除用户信息参数，Json对象，定义如下：  
+
+>     id：用户标识，字符串类型，必选项；
+>     
+>     groupId：群组标识，字符串类型，必选项；
+
+callBackFun：操作回调函数，函数具有json类型入参，入参定义如下：
+
+> code：回应状态码，数字[0,-1]
+> 
+> - 0：移动用户成功；
+> 
+> - -1：移动用户失败；
+
+
+返回值：无
+
+
+<span id="ff_9">**void getGroups(callbackFun)**</span>  
+
+<code>获取通讯录已存在群组信息</code> 
+
+参数：  
+
+callBackFun：操作回调函数，函数具有json类型入参，入参定义如下：
+
+> code：回应状态码，数字[0,-1]
+> 
+> -  0：查询成功；
+> 
+> -  -1：查询失败；
+> 
+> datas：数组类型，数组成员为Json对象，定义如下：
+> 
+> - groupId：群组标识，字符串类型；
+> 
+> - groupName：群组名，字符串类型；
+> 
+> - groupType：群组类型，数字，[0,1]
+> 
+>  -  0：系统群组，
+>  
+>  -  1：自定义群组；
+
+返回值：无
+
+
+
+<span id="ff_10">**void getGroupById(jsonData ,callbackFun)**</span>  
+
+<code>获取通讯录中指定群组信息</code>  
+
+
+参数：
+jsonData：查询参数，Json对象，定义如下：
+
+- groupId：群组id，字符串类型，必选项；
+
+callBackFun：操作回调函数，函数具有json类型入参，入参定义如下：  
+
+> code：回应状态码，数字[0,-1]
+> 
+> 0：查询成功；
+> 
+> -1：查询失败； 
+> 
+> data：Json对象，定义如下：  
+> 
+> -     groupId：群组标识，字符串类型；
+> 
+> -     groupName：群组名，字符串类型；
+> 
+> -     groupType：群组类型，数字，[0,1]
+> 
+>   -        0：系统群组，
+>   
+>   -        1：自定义群组；  
+
+返回值：无
+
+
+
+<span id="ff_11">**void addGroup(jsonData，callbackFun)**</span>  
+
+<code>添加群组至通讯录</code>  
+
+参数： 
+
+jsonData：需添加群组信息参数，Json对象，定义如下： 
+
+> groupName：群组名，字符串类型，可选项； 
+> 
+> groupType：群组类型，数字，可选项，[0,1]
+> 
+> -  0：系统群组，
+> 
+> - 1：自定义群组；
+> 
+>  注：仅Android支持
+
+callBackFun：操作回调函数，函数具有json类型入参，入参定义如下：
+
+> code：回应状态码，数字[0,-1]
+> 
+> -  0：添加成功；
+> 
+> -  -1：添加失败；
+> 
+> groupId：群组标识，字符串类型；
+
+返回值：无
+
+
+<span id="ff_12">**void deleteGroup(jsonData，callbackFun)**</span>  
+
+<code>从通讯录中移除群组</code>   
+
+从通讯录中移除群组，只移除群组，不删除群组包含用户信息  
+
+参数： 
+
+jsonData：需移除群组信息参数，Json对象，定义如下：
+
+> groupId：群组标识，字符串类型，必选项；
+
+callBackFun：操作回调函数，函数具有json类型入参，入参定义如下：
+
+> code：回应状态码，数字[0,-1]
+> 
+> - 0：移除群组成功；
+> 
+> - -1：移除群组失败；
+
+返回值：无
+
+
+<span id="ff_13">**void updateGroup(jsonData，callbackFun)**</span>  
+
+<code>更新群组至通讯录</code> 
+
+参数：  
+
+jsonData：需更新群组信息参数，Json对象，定义如下： 
+
+> groupId：群组标识，字符串类型，必选项；
+> 
+> groupName：群组名，字符串类型，可选项；
+> 
+> groupType：群组类型，数字，可选项，[0,1]
+> 
+> - 0：系统群组，
+> 
+> - 1：自定义群组；
+
+callBackFun：操作回调函数，函数具有json类型入参，入参定义如下： 
+> 
+> code：回应状态码，数字[0,-1]  
+> 
+> - 0：更新群组成功；
+> 
+> - -1：更新群组失败；
+
 返回值：无
