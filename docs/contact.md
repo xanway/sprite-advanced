@@ -346,30 +346,8 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_6">**void deleteVcard(jsonData，callbackFun)**</span>  
 
-<code>从通讯录中移除用户信息</code> 
-
-
-参数：  
-
-jsonData：需移除用户信息参数，Json对象，定义如下：
-
->   id：用户标识，字符串类型，必选项；
- 
-callBackFun：操作回调函数，函数具有json类型入参，入参定义如下：
-
-> code：回应状态码，数字[0,-1]
-> 
-> - 0：移除用户成功；
-> 
-> - -1：移除用户失败；
-
-返回值：无
-
-
-
-<span id="ff_7">**void updateVcard(jsonData，callbackFun)**</span>  
+<span id="ff_6">**void updateVcard(jsonData，callbackFun)**</span>  
 
 <code>更新用户信息至通讯录</code>   
 
@@ -431,7 +409,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_8">**void moveVcard(jsonData，callbackFun)**</span>  
+<span id="ff_7">**void moveVcard(jsonData，callbackFun)**</span>  
 
 <code>移动用户至指定群组</code> 
 
@@ -456,7 +434,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_9">**void getGroups(callbackFun)**</span>  
+<span id="ff_8">**void getGroups(callbackFun)**</span>  
 
 <code>获取通讯录已存在群组信息</code> 
 
@@ -486,7 +464,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_10">**void getGroupById(jsonData ,callbackFun)**</span>  
+<span id="ff_9">**void getGroupById(jsonData ,callbackFun)**</span>  
 
 <code>获取通讯录中指定群组信息</code>  
 
@@ -520,7 +498,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_11">**void addGroup(jsonData，callbackFun)**</span>  
+<span id="ff_10">**void addGroup(jsonData，callbackFun)**</span>  
 
 <code>添加群组至通讯录</code>  
 
@@ -551,7 +529,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_12">**void deleteGroup(jsonData，callbackFun)**</span>  
+<span id="ff_11">**void deleteGroup(jsonData，callbackFun)**</span>  
 
 <code>从通讯录中移除群组</code>   
 
@@ -574,7 +552,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_13">**void updateGroup(jsonData，callbackFun)**</span>  
+<span id="ff_12">**void updateGroup(jsonData，callbackFun)**</span>  
 
 <code>更新群组至通讯录</code> 
 
