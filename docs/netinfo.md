@@ -91,7 +91,7 @@ event事件对象包括：
 
 > type：事件类型，字符串类型，固定值：netChanged；
 > 
-> target：触发事件的目标组件，window类；
+> target：触发事件的目标组件，NetInfo类；
 > 
 > timestamp：事件触发的时间戳,单位毫秒，数字类型
 

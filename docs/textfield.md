@@ -13,25 +13,25 @@ textfield文本输入组件允许用户通过键盘输入文本的基本组件�
 > 
 >[ name  控件名称](#sx_2)
 > 
->[ type  输入类型](sx_3)
+>[ type  输入类型](#sx_3)
 >  
-> [keyboardType  弹出输入法键盘类型](sx_4)
+> [keyboardType  弹出输入法键盘类型](#sx_4)
 >   
-> [capitalize  是否要自动将特定字符切换为大写](sx_5)
+> [capitalize  是否要自动将特定字符切换为大写](#sx_5)
 >   
-> [autoCorrect  是否进行拼写纠错](sx_6)
+> [autoCorrect  是否进行拼写纠错](#sx_6)
 >   
-> [prompt  提示语](sx_7)
+> [prompt  提示语](#sx_7)
 >   
-> [value  文本内容](sx_8)
+> [value  文本内容](#sx_8)
 >   
-> [maxLength  输入字符的最大长度](sx_9)
+> [maxLength  输入字符的最大长度](#sx_9)
 >   
-> [returnKeyType   设置弹出输入法return键显示样式](sx_10)
+> [returnKeyType   设置弹出输入法return键显示样式](#sx_10)
 >   
-> [disabled  是否禁用该控件](sx_11)
+> [disabled  是否禁用该控件](#sx_11)
 >   
->[ clearButtonMode  文本框右侧“清除”按钮显示模式 ](sx_12) 
+>[ clearButtonMode  文本框右侧“清除”按钮显示模式 ](#sx_12) 
 
 
 
