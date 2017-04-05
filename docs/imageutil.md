@@ -1,4 +1,4 @@
-# ImageUtil 电话操作类
+# ImageUtil 图片处理工具类
 
 ----------
 
@@ -34,6 +34,7 @@ var imageutil = require("ImageUtil");
 缩放图片并保存到目标文件，结果通过回调函数返回   
 
 参数：  
+
 jsonData，缩放传递参数，Json对象，定义如下：  
 
 > source：需要裁剪原图片路径，支持res:，file:前缀的本地路径，字符串类型，必选项；
@@ -69,6 +70,7 @@ callBackFun，结果回调函数，函数具有json类型入参，入参定义�
 <code>根据缩放比例缩放图片并保存到目标</code>    
 
 参数：
+
 jsonData，缩放传递参数，Json对象，定义如下：  
 
 > source：需要转换原图片路径，支持res:，file:前缀的本地路径，字符串类型，必选项；
@@ -103,6 +105,7 @@ callBackFun，结果回调函数，函数具有json类型入参，入参定义�
 <code>根据缩放后文件大小缩放图片并保存到目标文件</code>   
 
 参数：
+
 jsonData，缩放传递参数，Json对象，定义如下：  
 
 > source：需要转换原图片路径，支持res:，file:前缀的本地路径，字符串类型，必选项；
