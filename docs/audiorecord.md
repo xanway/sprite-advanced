@@ -58,7 +58,29 @@ jsonData：录音设置信息，Json对象
 **注：**  停止录音后不能继续，再次开始后重新开始。
 
 
-<span id="ff_2">**number getVolumeRate()**</span>  
+
+
+
+
+<span id="ff_2">**number getStatus()**</span>  
+
+<code>当前录音状态</code> 
+
+参数：无 
+
+返回值：数字枚举型，[0,1]
+
+> 0：未录音；
+> 
+> 1：正在录音；
+
+
+
+
+
+
+
+<span id="ff_3">**number getVolumeRate()**</span>  
 
 <code>获取实时录音音量比例</code> 
 
@@ -67,6 +89,9 @@ jsonData：录音设置信息，Json对象
 返回值：当前音量，[0-1]，0为最小，1位最大，增减比例0.1  
 
 **注：** 使用定时器与该函数组合，可实现类似微信录音实时音量效果
+
+
+
 
 
 
