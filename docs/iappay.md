@@ -79,11 +79,6 @@ callBackFun：查询有效商品列表回调，该回调函数具有Json对象�
 
 返回值：无 
 
-
-
-
-
-
 <span id="ff_2">**void pay(dataJson, callBackFun)**</span>  
 
 <code>购买虚拟商品</code> 
