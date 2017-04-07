@@ -186,3 +186,4 @@ param对象为Json对象，定义如下：
 > operators：运营商信息，数字，定位类型为 network时可用，仅Android支持
 
 **注： ** 由于ios的百度定位sdk没有提供详细地理位置信息， ios如果想要获取地理位置详细描述信息需要开发者通过经纬度直接去百度官方定位接口获取。可以参考接口说明：[http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-geocoding](http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-geocoding)
+
