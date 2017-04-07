@@ -222,7 +222,7 @@ callbackFun：分享回调，该函数具有json类型入参，入参定义如�
 
 
 
-<span id="ff_7">**void shareText(jsonData，callBackFun)**</span>  
+<span id="ff_7">**void shareMusic(jsonData，callBackFun)**</span>  
 
 <code>分享音乐到QQ空间/QQ好友</code>
 
