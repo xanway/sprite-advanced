@@ -335,7 +335,7 @@ box1.on("touchCancel",function(e,param){
 
 <h2 id="cid_4">示例</h2>
 
-示例代码1，测试box布局，参考演示应用示例：apps\yuanhongqian\spriteui\boxtest.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html")  
+示例代码1，测试box布局，参考演示应用示例：apps\yuanhongqian\spriteui\boxtest.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/sprite-official-ui/index.html](https://gitdocument.exmobi.cn/sprite-official-ui/index.html "https://gitdocument.exmobi.cn/sprite-official-ui/index.html")  
 
 ```html
 <page>

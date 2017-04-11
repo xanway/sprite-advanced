@@ -229,6 +229,6 @@ event事件对象包括：
 
 示例：
 
-效果参考：[Sprite官方UI组件 audioplay组件 ](https://gitdocument.exmobi.cn/spriteui/audioplay.html) 
+效果参考：[Sprite官方UI组件 audioplay组件 ](https://gitdocument.exmobi.cn/sprite-official-ui/audioplay.html) 
 
 组件源码参考：  [https://github.com/yuanhongqian/SpriteUI/blob/master/src/sprite_component/audioplay/audioplay.component](https://github.com/yuanhongqian/SpriteUI/blob/master/src/sprite_component/audioplay/audioplay.component)

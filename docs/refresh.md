@@ -238,7 +238,7 @@ refresh容器复位隐藏，一般刷新完毕后调用该方法
 
 <h2 id="cid_4">示例</h2>  
 
-示例代码1，测试refresl事件和方法，参考演示应用示例：apps\yuanhongqian\spriteui\scroll+refresh.uixml，代码中用到了官方封装的组件titlebar，封装组件的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
+示例代码1，测试refresl事件和方法，参考演示应用示例：apps\yuanhongqian\spriteui\scroll+refresh.uixml，代码中用到了官方封装的组件titlebar，封装组件的使用可参考[https://gitdocument.exmobi.cn/sprite-official-ui/index.html](https://gitdocument.exmobi.cn/sprite-official-ui/index.html "https://gitdocument.exmobi.cn/sprite-official-ui/index.html") 
 
 ```html 
 
@@ -389,7 +389,7 @@ refresh容器复位隐藏，一般刷新完毕后调用该方法
 <img src="image/refresh_1.gif" width="250"/>  
  
 
-示例代码2，实现自定义刷新效果，仿大众点评下拉图片切换，，参考演示示例apps\yuanhongqian\sprite_xiaoguo\dzdprefresh.uixml，代码中用到了官方封装的模板titlebar、popmenu、gridmenu，封装组件的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") ，代码如下：
+示例代码2，实现自定义刷新效果，仿大众点评下拉图片切换，，参考演示示例apps\yuanhongqian\sprite_xiaoguo\dzdprefresh.uixml，代码中用到了官方封装的模板titlebar、popmenu、gridmenu，封装组件的使用可参考[https://gitdocument.exmobi.cn/sprite-official-ui/index.html](https://gitdocument.exmobi.cn/sprite-official-ui/index.html "https://gitdocument.exmobi.cn/sprite-official-ui/index.html") ，代码如下：
 
 ```html
 

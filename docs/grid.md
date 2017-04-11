@@ -190,7 +190,7 @@ grid网格布局组件，用于多行多列网状结构显示，cell单元格宽
 <h2 id="cid_5">示例</h2>  
 
 
-示例代码1，测试grid事件和方法，参考演示应用示例：apps\yuanhongqian\spriteui\grid.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
+示例代码1，测试grid事件和方法，参考演示应用示例：apps\yuanhongqian\spriteui\grid.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/sprite-official-ui/index.html](https://gitdocument.exmobi.cn/sprite-official-ui/index.html "https://gitdocument.exmobi.cn/sprite-official-ui/index.html") 
 
 ```html
 <page>

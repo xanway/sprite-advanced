@@ -205,7 +205,7 @@ Sprint平台内置了一套字体库，字体库文件下载：[http://pan.baidu
 <h2 id="cid_5">示例</h2>  
 
 
-示例代码，测试iconfont展现，参考演示应用示例：apps\yuanhongqian\sprite_xiaoguo\iconfont.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
+示例代码，测试iconfont展现，参考演示应用示例：apps\yuanhongqian\sprite_xiaoguo\iconfont.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/sprite-official-ui/index.html](https://gitdocument.exmobi.cn/sprite-official-ui/index.html "https://gitdocument.exmobi.cn/sprite-official-ui/index.html") 
 
 ```html
 <page>

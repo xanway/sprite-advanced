@@ -143,6 +143,6 @@ event事件对象包括：
 
 示例：
 
-效果参考：[Sprite官方UI组件 audiorecord组件 ](https://gitdocument.exmobi.cn/spriteui/audiorecord.html) 
+效果参考：[Sprite官方UI组件 audiorecord组件 ](https://gitdocument.exmobi.cn/sprite-official-ui/audiorecord.html) 
 
 组件源码参考：  [https://github.com/yuanhongqian/SpriteUI/blob/master/src/sprite_component/audiorecord/audiorecord.component](https://github.com/yuanhongqian/SpriteUI/blob/master/src/sprite_component/audiorecord/audiorecord.component)

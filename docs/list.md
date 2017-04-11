@@ -579,7 +579,7 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
 <h2 id="cid_5">示例</h2>  
 
 
-示例代码1，测试list事件和方法，参考演示应用示例：apps\yuanhongqian\spriteui\list.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
+示例代码1，测试list事件和方法，参考演示应用示例：apps\yuanhongqian\spriteui\list.uixml，代码中用到了官方封装的模板titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/sprite-official-ui/index.html](https://gitdocument.exmobi.cn/sprite-official-ui/index.html "https://gitdocument.exmobi.cn/sprite-official-ui/index.html") 
 
 ```html
 <page>

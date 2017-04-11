@@ -388,7 +388,7 @@ returnKeyType：弹出输入法return键显示样式，取值为【default，go�
 
 <h2 id="cid_4">示例</h2>  
 
-示例代码，测试textarea布局样式和功能，参考演示应用示例：apps\yuanhongqian\spriteui\textarea.uixml，代码中用到了官方封装的模板组件titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
+示例代码，测试textarea布局样式和功能，参考演示应用示例：apps\yuanhongqian\spriteui\textarea.uixml，代码中用到了官方封装的模板组件titlebar，模板的使用可参考[https://gitdocument.exmobi.cn/sprite-official-ui/index.html](https://gitdocument.exmobi.cn/sprite-official-ui/index.html "https://gitdocument.exmobi.cn/sprite-official-ui/index.html") 
 
 ```html
 

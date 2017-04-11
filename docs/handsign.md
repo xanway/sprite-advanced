@@ -199,7 +199,7 @@ callBackFun：保存图片回调，该回调函数具有Json对象入参，定�
 <h2 id="cid_5">示例</h2>  
 
 
-示例代码，测试handsign事件和方法，参考演示应用示例：apps\yuanhongqian\spriteui\handsign.uixml，代码中用到了官方封装的titlebar等组件，模板的使用可参考[https://gitdocument.exmobi.cn/spriteui/index.html](https://gitdocument.exmobi.cn/spriteui/index.html "https://gitdocument.exmobi.cn/spriteui/index.html") 
+示例代码，测试handsign事件和方法，参考演示应用示例：apps\yuanhongqian\spriteui\handsign.uixml，代码中用到了官方封装的titlebar等组件，模板的使用可参考[https://gitdocument.exmobi.cn/sprite-official-ui/index.html](https://gitdocument.exmobi.cn/sprite-official-ui/index.html "https://gitdocument.exmobi.cn/sprite-official-ui/index.html") 
 
 ```html
 
