@@ -16,17 +16,17 @@ var sangforvpn = require("SangforVpn");
 
 本节目录：
 
-[void init(jsonData,callBackFun)    初始化深信服Vpn服务器 ](#ff_0) 
-
-[void login(jsonData,callBackFun)  登录深信服Vpn服务器 ](#ff_1)
-
-[void logout(callBackFun)  注销深信服Vpn服务器 ](#ff_2) 
-
-[void smsLogin(jsonData,callBackFun)  启动深信服vpn短信验证码登录 ](#ff_3) 
-
-[void smsRefresh() 向vpn服务器发送通知重新获取短信验证码](#ff_4)
-
-[number getVpnStatus()  返回深信服vpn当前连接状态](#ff_5)
+> [void init(jsonData,callBackFun)    初始化深信服Vpn服务器 ](#ff_0) 
+> 
+> [void login(jsonData,callBackFun)  登录深信服Vpn服务器 ](#ff_1)
+> 
+> [void logout(callBackFun)  注销深信服Vpn服务器 ](#ff_2) 
+> 
+> [void smsLogin(jsonData,callBackFun)  启动深信服vpn短信验证码登录 ](#ff_3) 
+> 
+> [void smsRefresh() 向vpn服务器发送通知重新获取短信验证码](#ff_4)
+> 
+> [number getVpnStatus()  返回深信服vpn当前连接状态](#ff_5)
 
 
 
