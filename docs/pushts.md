@@ -60,7 +60,7 @@ ExMobi Push并非Sprite的默认模块，若应用需要使用ExMobi推送，则
 
 **第一步：**
 
-在exmobi6或者exmobi6的服务器上配置PNS的接入地址，一般情况下服务器部署的时候已经配置好，这里我们只需要查看下该配置项，如图：
+在exmobi6的服务器上配置PNS的接入地址，一般情况下服务器部署的时候已经配置好，这里我们只需要查看下该配置项，如图：
 
 <img src="image/push_1.png"/>
 
@@ -104,7 +104,7 @@ exmobipush.on("message", function (e, param) {
     var osv = device.getOsVersion().split(".")[0];
     var os = device.getOs();
     if (Number(osv) < 10 && os.toUpperCase() == "IOS") {
-        //处理ios10以下系统 收到push逻辑，如果应用开启状态并且在前台收到push，不希望立即跳转页面，这里用alert提示框提示下。
+        //处理ios10以下系统 在应用开启状态并且在前台收到push h 在状态栏上没有提示，这里处理下。
 
         var title = param.content.title;
         var param1 = param.content.param.param1;
@@ -315,7 +315,7 @@ out.print(str);
 
 **第五步：**
 
-把开发好的服务端代码上传到ExMobi6平台，exmobi6的方式开发的可以从“服务管理”上传，exmobi5的应用工程可以通过“应用管理”上传，具体exmobi6服务端的使用可以参考[《ExMobi6服务接入指南》](https://gitdocument.exmobi.cn/exmobi6-server-access-guide/index.html)
+把开发好的服务端代码上传到ExMobi6平台，war包方式开发的可以从“服务管理”上传，exmobi5的应用工程可以通过“应用管理”上传，具体exmobi6服务端的使用可以参考[《ExMobi6服务接入指南》](https://gitdocument.exmobi.cn/exmobi6-server-access-guide/index.html)
 
 
 **第六步：**
@@ -324,9 +324,10 @@ out.print(str);
 
 <img src="image/push_4.png"/>
 
-关于esn的获取自行通过 device.getEsn() 获取。
+关于esn的获取自行通过sprite客户端Device工具类 device.getEsn() 获取。  
 
-手机上呈现效果如图：
+手机上呈现效果如图：  
+
 <img src="image/push_5.png" width="250"/>  <img src="image/push_6.png"  width="250"/>
 
 
