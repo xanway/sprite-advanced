@@ -15,7 +15,7 @@ Sprite采用CommonJS规范，通过require("模块标识")来实现对系统api�
 
 **基础类**  
 
-> [App：应用信息获取类](https://gitdocument.exmobi.cn/sprite_advanced/app.html)
+> [App：应用信息获取类](https://gitdocument.exmobi.cn/sprite-advanced/app.html)
 > 
 > Window：页面操作相关类
 > 

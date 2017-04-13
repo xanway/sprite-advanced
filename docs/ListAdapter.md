@@ -203,7 +203,7 @@ jsonData：刷新参数，json格式，定义如下：
 <h2 id="cid_4">示例</h2>   
 
 
-[参考list组件示例](https://gitdocument.exmobi.cn/sprite_advanced/list.html#cid_5)
+[参考list组件示例](https://gitdocument.exmobi.cn/sprite-advanced/list.html#cid_5)
  
 
 

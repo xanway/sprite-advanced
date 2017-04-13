@@ -40,7 +40,7 @@ list支持普通模式及Section分组模式，可根据实际使用场景使用
 
 **refresh**  
 
-list处于垂直滚动模式时，可以包裹refresh容器用于实现下拉刷新及上拉刷新效果，[详见refresh容器章节](https://gitdocument.exmobi.cn/sprite_advanced/refresh.html)。
+list处于垂直滚动模式时，可以包裹refresh容器用于实现下拉刷新及上拉刷新效果，[详见refresh容器章节](https://gitdocument.exmobi.cn/sprite-advanced/refresh.html)。
 
 
 
