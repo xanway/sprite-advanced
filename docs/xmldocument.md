@@ -18,7 +18,7 @@ var xmldocument = require("XmlDocument");
 <h2 id="cid_1">js方法</h2>  
 
 
-<span id="ff_0">**XmlElement createElementByString(xml)**</span>  
+<span id="ff_0">**createElementByString(xml: string): XmlElement**</span>  
 
 <code>通过xml文本创建XmlElement对象</code>     
 
@@ -30,7 +30,7 @@ xml： xml文本数据，字符串类型
 
 
 
-<span id="ff_1">**XmlElement createElementByFile(xmlFilePath)**</span>  
+<span id="ff_1">**createElementByFile(xmlFilePath:string):XmlElement**</span>  
 
 <code>读取xml文件创建XmlElement对象</code>   
 

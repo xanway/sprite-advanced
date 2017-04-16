@@ -17,30 +17,30 @@ var audioplay = require("AudioPlay");
 
 本节目录：
 
->[ void init(jsonData)  初始化当前播放音频信息 ](#ff_0)
+>[ init(jsonData:object): void  初始化当前播放音频信息 ](#ff_0)
 > 
-> [void start()  播放音频 ](#ff_1)
+> [start(): void  播放音频 ](#ff_1)
 > 
->[ void pause()  暂停播放音频](#ff_2)
+>[ pause(): void  暂停播放音频](#ff_2)
 > 
->[ void stop()  停止播放音频](#ff_3)
+>[ stop(): void  停止播放音频](#ff_3)
 >
->[void seekTo(position)  定位到音频的某一点并播放](#ff_4)
+>[seekTo(position:number): void  定位到音频的某一点并播放](#ff_4)
 >
->[int getStatus()  当前音频播放状态](#ff_5)
+>[getStatus(): number  当前音频播放状态](#ff_5)
 >
->[int getDuration()  读取音频的总长度](#ff_6)
+>[getDuration(): number  读取音频的总长度](#ff_6)
 >
->[int getCurrentPosition()  读取音频目前播放位置](#ff_7)
+>[getCurrentPosition(): number  读取音频目前播放位置](#ff_7)
 >
->[void beep(audioPath)  播放本地音频文件](#ff_8)
+>[beep(audioPath:string): void  播放本地音频文件](#ff_8)
 
 
 
 
 
 
-<span id="ff_0">**void init(jsonData)**</span>  
+<span id="ff_0">**init(jsonData:object): void**</span>  
 
 <code>初始化当前播放音频信息</code>  
 
@@ -63,7 +63,7 @@ jsonData：当前播放音频信息，Json对象
 **注：** 播放之前必须先初始化
 
 
-<span id="ff_1">**void start()**</span>  
+<span id="ff_1">**start(): void**</span>  
 
 <code>播放音频</code>
  
@@ -76,7 +76,7 @@ jsonData：当前播放音频信息，Json对象
 
 
 
-<span id="ff_2">**void pause()**</span>  
+<span id="ff_2">**pause(): void**</span>  
 
 <code>暂停播放音频</code>   
 
@@ -85,7 +85,7 @@ jsonData：当前播放音频信息，Json对象
 返回值：无
 
 
-<span id="ff_3">**void stop()**</span>  
+<span id="ff_3">**stop(): void**</span>  
 
 <code>停止播放音频</code>  
 
@@ -94,7 +94,7 @@ jsonData：当前播放音频信息，Json对象
 返回值：无
 
 
-<span id="ff_4">**void seekTo(position)**</span>  
+<span id="ff_4">**seekTo(position:number): void**</span>  
 
 <code>定位到音频的某一点并播放</code> 
 
@@ -104,7 +104,7 @@ position：毫秒数，取值范围大于0小于音频文件播放时间
 
 返回值：无
 
-<span id="ff_5">**int getStatus()**</span>  
+<span id="ff_5">**getStatus(): number**</span>  
 
 <code>当前音频播放状态</code> 
 
@@ -119,7 +119,7 @@ position：毫秒数，取值范围大于0小于音频文件播放时间
 > 2：暂停状态；
 
 
-<span id="ff_6">**int getDuration()**</span>  
+<span id="ff_6">**getDuration(): number**</span>  
 
 <code>读取音频的总长度</code>  
 
@@ -128,7 +128,7 @@ position：毫秒数，取值范围大于0小于音频文件播放时间
 返回值：音频的长度，数字类型，单位毫秒
 
 
-<span id="ff_7">**int getCurrentPosition()**</span>  
+<span id="ff_7">**getCurrentPosition(): number**</span>  
 
 <code>读取音频目前播放位置</code>  
 
@@ -139,7 +139,7 @@ position：毫秒数，取值范围大于0小于音频文件播放时间
 **注：** iOS仅支持秒级精度
 
 
-<span id="ff_8">**void beep(audioPath)**</span>  
+<span id="ff_8">**beep(audioPath:string): void**</span>  
 
 <code>播放本地音频文件</code>   
 
@@ -170,13 +170,13 @@ audioPath：本地音频文件路径，res: file: 前缀，字符串类型
 
 事件的操作支持以下方法：
 
-> [void on(messageName,function)   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
+> [on(messageName:string,callback:Function): void   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
 > 
-> [void fire(messageName,params)  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
+> [fire(messageName:string,params:Array&lt;any&gt;): void  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
 > 
-> [void off(messageName,function)  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
+> [off(messageName:string,callback:Function): void  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
 >  
-> [Array getOn(messageName)  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
+> [getOn(messageName:string): Array&lt;Function&gt;  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
 
 
 

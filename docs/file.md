@@ -17,58 +17,58 @@ var file = require("File");
 
 本节目录：
 
->[ bool isDir(path)   判断指定路径文件是否为文件夹 ](#ff_0)
+>[ isDir(path:string): boolean   判断指定路径文件是否为文件夹 ](#ff_0)
 > 
-> [bool fileExist(path)   判断指定路径文件是否存在 ](#ff_1)
+> [fileExist(path:string): boolean   判断指定路径文件是否存在 ](#ff_1)
 >
->[ bool dirExist(path)   判断指定路径目录是否存在  ](#ff_2)
+>[ dirExist(path:string): boolean   判断指定路径目录是否存在  ](#ff_2)
 >
-> [bool makeDir(path)  创建指定文件夹 ](#ff_3)
+> [makeDir(path:string): boolean  创建指定文件夹 ](#ff_3)
 > 
->[int getFileSize(path)   获取指定文件大小 ](#ff_4)
+>[getFileSize(path:string): number   获取指定文件大小 ](#ff_4)
 > 
-> [Json getFileInfo(path)   获取文件相关信息 ](#ff_5)
+> [getFileInfo(path:string): object   获取文件相关信息 ](#ff_5)
 >
->[ String readTextFile(path)   读取文本类型文件（同步方式）  ](#ff_6)
+>[ readTextFile(path:string):string   读取文本类型文件（同步方式）  ](#ff_6)
 >
-> [void readTextFileAsyn(path,callFunction)  读取文本类型文件（异步方式） ](#ff_7)
+> [readTextFileAsyn(path:string,callFunction:Function): void  读取文本类型文件（异步方式） ](#ff_7)
 >
->[ bool writeTextFile(jsonData, text)   将字符串写入文本类型文件(同步方式) ](#ff_8)
+>[ writeTextFile(jsonData:object, text:string): boolean   将字符串写入文本类型文件(同步方式) ](#ff_8)
 > 
-> [void writeTextFileAsyn(jsonData, text,callFunction)  将字符串写入文本类型文件（异步方式） ](#ff_9)
+> [writeTextFileAsyn(jsonData:object,text:string,callFunction:Function):void  将字符串写入文本类型文件（异步方式） ](#ff_9)
 >
->[ bool copyFile(jsonData)   拷贝文件（同步方式）  ](#ff_10)
+>[ copyFile(jsonData:object): boolean   拷贝文件（同步方式）  ](#ff_10)
 >
-> [void copyFileAsyn(jsonData,callFunction)  拷贝文件（异步方式） ](#ff_11)
+> [copyFileAsyn(jsonData:object,callFunction:Function): void  拷贝文件（异步方式） ](#ff_11)
 > 
->[bool deleteFile(jsonData)   删除文件（同步方式） ](#ff_12)
+>[deleteFile(jsonData:object): boolean   删除文件（同步方式） ](#ff_12)
 > 
-> [void deleteFileAsyn(jsonData,callFunction)  删除文件（异步方式） ](#ff_13)
+> [deleteFileAsyn(jsonData:object,callFunction:Function): void  删除文件（异步方式） ](#ff_13)
 >
->[ bool moveFile(jsonData)   移动文件（同步方式 ） ](#ff_14)
+>[ moveFile(jsonData:object): boolean   移动文件（同步方式 ） ](#ff_14)
 >
-> [void moveFileAsyn(jsonData,callFunction)   移动文件（异步方式） ](#ff_15)
+> [moveFileAsyn(jsonData:object,callFunction:Function): void   移动文件（异步方式） ](#ff_15)
 > 
-> [void copyDirAsyn(jsonData,callFunction)   拷贝文件夹（异步方式） ](#ff_16)
+> [copyDirAsyn(jsonData:object,callFunction:Function): void   拷贝文件夹（异步方式） ](#ff_16)
 > 
-> [void deleteDirAsyn(jsonData,callFunction)   删除文件夹（异步方式） ](#ff_17)
+> [deleteDirAsyn(jsonData:object,callFunction:Function): void   删除文件夹（异步方式） ](#ff_17)
 > 
-> [void moveDirAsyn(jsonData,callFunction)   移动文件夹（异步方式） ](#ff_18)
+> [moveDirAsyn(jsonData:object,callFunction:Function): void   移动文件夹（异步方式） ](#ff_18)
 > 
-> [Array listFiles(jsonData)   返回文件夹下的子文件（同步方式） ](#ff_19)
+> [listFiles(jsonData:object): Array&lt;string&gt;   返回文件夹下的子文件（同步方式） ](#ff_19)
 > 
-> [Array listFilesAsyn(jsonData, callFunction)   返回文件夹下的子文件（异步方式）](#ff_20)
+> [listFilesAsyn(jsonData:object,callFunction:Function): Array&lt;string&gt;   返回文件夹下的子文件（异步方式）](#ff_20)
 > 
-> [String md5(path)  返回文件md5值 ](#ff_21)
+> [md5 (path:string): string  返回文件md5值 ](#ff_21)
 > 
-> [void zip(jsonData, callFunction)  压缩文件/文件夹至指定目录](#ff_22)
+> [zip(jsonData:object,callFunction:Function): void  压缩文件/文件夹至指定目录](#ff_22)
 > 
-> [void unZip(jsonData, callFunction)   解压文件至指定路径 ](#ff_23) 
+> [unZip(jsonData:object,callFunction:Function): void   解压文件至指定路径 ](#ff_23) 
 > 
-> [String getAbsolutePath(path)  获取res:开头的本地url地址对应的绝对路径 ](#ff_24) 
+> [getAbsolutePath (path:string): string  获取res:开头的本地url地址对应的绝对路径 ](#ff_24) 
 
 
-<span id="ff_0">**bool isDir(path)**</span>  
+<span id="ff_0">**isDir(path:string): boolean**</span>  
 
 <code>判断指定路径文件是否为文件夹</code>    
 
@@ -86,7 +86,7 @@ path：本地文件名，res: file: 前缀
 
 
 
-<span id="ff_1">**bool fileExist(path);**</span>  
+<span id="ff_1">**fileExist(path:string): boolean;**</span>  
 
 <code>判断指定路径文件是否存在</code>
 
@@ -103,7 +103,7 @@ path：本地文件名，res: file: 前缀
 
 
 
-<span id="ff_2">**bool dirExist(path)**</span>  
+<span id="ff_2">**dirExist(path:string): boolean**</span>  
 
 <code>判断指定路径目录是否存在</code>   
 
@@ -119,7 +119,7 @@ path：本地目录名，res: file: 前缀
 
 
 
-<span id="ff_3">**bool makeDir(path)**</span>  
+<span id="ff_3">**makeDir(path:string): boolean**</span>  
 
 <code>创建指定文件夹</code>  
 
@@ -134,7 +134,7 @@ path：需要创建目录名，res: file: 前缀
 > false：文件不存在；
 
 
-<span id="ff_4">**int getFileSize(path)**</span>  
+<span id="ff_4">**getFileSize(path:string): number**</span>  
 
 <code>获取指定文件大小</code>  
 
@@ -146,7 +146,7 @@ path：本地文件名，res: file: 前缀
 
 
 
-<span id="ff_5">**Json getFileInfo(path)**</span>  
+<span id="ff_5">**getFileInfo(path:string): object**</span>  
 
 <code>获取文件相关信息</code>  
 
@@ -167,7 +167,7 @@ path：本地文件名，res: file: 前缀
 **注：** 若文件不存在则返回null
 
 
-<span id="ff_6">**String readTextFile(path)**</span>  
+<span id="ff_6">**readTextFile(path:string):string**</span>  
 
 <code>读取文本类型文件（同步方式）</code>  
 
@@ -180,7 +180,7 @@ path：本地文件名，res: file: 前缀
 返回值：读取文件文本，字符串类型，若读取失败则返回null
 
 
-<span id="ff_7">**void readTextFileAsyn(path,callFunction)**</span>  
+<span id="ff_7">**readTextFileAsyn(path:string,callFunction:Function): void**</span>  
 
 <code>读取文本类型文件（异步方式）</code>  
 
@@ -198,7 +198,7 @@ callFunction：读取完毕回调函数
 
 
 
-<span id="ff_8">**bool writeTextFile(jsonData, text)**</span>  
+<span id="ff_8">**writeTextFile(jsonData:object, text:string): boolean**</span>  
 
 <code>将字符串写入文本类型文件（同步方式）</code>  
 
@@ -227,7 +227,7 @@ text：需要写入文本，字符串类型，必选项；
 
 
 
-<span id="ff_9">**void writeTextFileAsyn(jsonData, text,callFunction)**</span>  
+<span id="ff_9">**writeTextFileAsyn(jsonData:object,text:string,callFunction:Function):void**</span>  
 
 <code>将字符串写入文本类型文件（异步方式）</code>  
 
@@ -257,7 +257,7 @@ callFunction：写入完毕回调函数，参数为数字，标识写入是否�
 
 
 
-<span id="ff_10">**bool copyFile(jsonData)**</span>  
+<span id="ff_10">**copyFile(jsonData:object): boolean**</span>  
 
 <code>拷贝文件（同步方式）</code>  
 
@@ -278,7 +278,7 @@ jsonData：拷贝文件参数，Json对象，定义如下：
 > false：拷贝失败；
 
 
-<span id="ff_11">**void copyFileAsyn(jsonData,callFunction)**</span>  
+<span id="ff_11">**copyFileAsyn(jsonData:object,callFunction:Function): void**</span>  
 
 <code>拷贝文件（异步方式）</code>  
 
@@ -302,7 +302,7 @@ callFunction：拷贝文件回调函数，存在数字类型入参标识拷贝�
 返回值：无 
 
 
-<span id="ff_12">**bool deleteFile(jsonData)**</span>  
+<span id="ff_12">**deleteFile(jsonData:object): boolean**</span>  
 
 <code>删除文件（同步方式）</code>  
 
@@ -322,7 +322,7 @@ jsonData：删除文件参数，Json对象，定义如下：
 
 
 
-<span id="ff_13">**void deleteFileAsyn(jsonData,callFunction)**</span>  
+<span id="ff_13">**deleteFileAsyn(jsonData:object,callFunction:Function): void**</span>  
 
 <code>删除文件（异步方式）</code>  
 
@@ -344,7 +344,7 @@ callFunction：删除文件回调函数，存在数字类型入参标识删除�
 返回值：无  
 
 
-<span id="ff_14">**bool moveFile(jsonData)**</span>  
+<span id="ff_14">**moveFile(jsonData:object): boolean**</span>  
 
 <code>移动文件（同步方式）</code>  
 
@@ -366,7 +366,7 @@ jsonData：拷贝文件参数，Json对象，定义如下：
 
 
 
-<span id="ff_15">**void moveFileAsyn(jsonData,callFunction)**</span>  
+<span id="ff_15">**moveFileAsyn(jsonData:object,callFunction:Function): void**</span>  
 
 <code>移动文件（异步方式）</code>  
 
@@ -389,7 +389,7 @@ callFunction：移动文件回调函数，参数为数字，标识移动是否�
 返回值：无 
 
 
-<span id="ff_16">**void copyDirAsyn(jsonData,callFunction)**</span>  
+<span id="ff_16">**copyDirAsyn(jsonData:object,callFunction:Function): void**</span>  
 
 <code>拷贝文件夹（异步方式）</code>   
 
@@ -410,7 +410,7 @@ callFunction：拷贝文件夹回调函数，参数为数字，标识拷贝是�
 返回值：无 
 
 
-<span id="ff_17">**void deleteDirAsyn(jsonData,callFunction)**</span>  
+<span id="ff_17">**deleteDirAsyn(jsonData:object,callFunction:Function): void**</span>  
 
 <code>删除文件夹（异步方式）</code>   
 
@@ -430,7 +430,7 @@ callFunction：删除文件夹回调函数，参数为数字，标识删除是�
 返回值：无 
 
 
-<span id="ff_18">**void moveDirAsyn(jsonData,callFunction)**</span>  
+<span id="ff_18">**moveDirAsyn(jsonData:object,callFunction:Function): void**</span>  
 
 <code>移动文件夹（异步方式）</code>   
 
@@ -453,7 +453,7 @@ callFunction：移动文件夹回调函数，参数为数字，标识移动是�
 **注：** 原始文件夹与目的文件夹非同级  
 
 
-<span id="ff_19">**Array listFiles(jsonData)**</span>  
+<span id="ff_19">**listFiles(jsonData:object): Array&lt;string&gt;**</span>  
 
 <code>返回文件夹下的子文件（同步方式）</code>  
 
@@ -477,7 +477,7 @@ jsonData：查询参数，Json对象，定义如下：
 
 
 
-<span id="ff_20">**Array listFilesAsyn(jsonData, callFunction)**</span>  
+<span id="ff_20">**listFilesAsyn(jsonData:object,callFunction:Function): Array&lt;string&gt;**</span>  
 
 <code>返回文件夹下的子文件（异步方式）</code>  
 
@@ -505,7 +505,7 @@ callFunction：返回子文件回调函数
 返回值：无 
 
 
-<span id="ff_21">**Array listFilesAsyn(jsonData, callFunction)**</span>  
+<span id="ff_21">**md5 (path:string): string**</span>  
 
 <code>返回文件md5值</code>    
 
@@ -516,7 +516,7 @@ path：本地文件路径，res: file: 前缀
 返回值：文件md5值，字符串类型，字母小写
 
 
-<span id="ff_22">** zip(jsonData, callFunction)**</span>  
+<span id="ff_22">** zip(jsonData,callFunction)**</span>  
 
 <code>压缩文件/文件夹至指定目录</code>  
 
@@ -541,7 +541,7 @@ callFunction：压缩回调函数，入参Json对象，定义如下：
 >    dstPath：压缩成功后文件全路径，字符串类型；
 
 
-<span id="ff_23">**void unZip(jsonData, callFunction)**</span>  
+<span id="ff_23">**unZip(jsonData:object,callFunction:Function): void**</span>  
 
 <code>解压文件至指定路径</code>  
 
@@ -566,7 +566,7 @@ callFunction：解压回调函数，入参Json对象，定义如下：
 >  dstPath：解压成功后文件全路径，字符串类型；
 
 
-<span id="ff_24">**String getAbsolutePath(path)**</span>  
+<span id="ff_24">**getAbsolutePath (path:string): string**</span>  
 
 <code>获取res:开头的本地url地址对应的绝对路径</code>  
 

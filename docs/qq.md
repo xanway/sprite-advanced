@@ -17,29 +17,29 @@ var qq = require("Qq");
 
 >**QQ登陆**
 >
->[bool isQQInstalled()   QQ是否安装 ](#ff_0)
+>[isQQInstalled(): boolean   QQ是否安装 ](#ff_0)
 > 
-> [void login(jsonData，callBackFun)  启动QQ进行登录用户授权认证 ](#ff_1)
+> [login(jsonData:object,callBackFun:Function): void  启动QQ进行登录用户授权认证 ](#ff_1)
 > 
-> [bool isLogin()    QQ用户是否已经登录](#ff_2)
+> [isLogin(): boolean    QQ用户是否已经登录](#ff_2)
 >
-> [void logout()    登出QQ ](#ff_3)
+> [logout(): void    登出QQ ](#ff_3)
 >
-> [void getUserInfo(jsonData，callBackFun)   获取授权QQ用户信息 ](#ff_4)
+> [getUserInfo(jsonData:object,callBackFun:Function): void   获取授权QQ用户信息 ](#ff_4)
 >
 >**QQ分享**
 >
-> [void shareImage(jsonData，callBackFun)   分享图片到QQ好友 ](#ff_5)
+> [shareImage(jsonData:object,callBackFun:Function): void   分享图片到QQ好友 ](#ff_5)
 >
-> [void shareNews(jsonData，callBackFun)   分享新闻（图文信息）到QQ空间/QQ好友 ](#ff_6)
+> [shareNews(jsonData:object,callBackFun:Function): void   分享新闻（图文信息）到QQ空间/QQ好友 ](#ff_6)
 >
-> [void shareMusic(jsonData，callBackFun)  分享音乐到QQ空间/QQ好友 ](#ff_7)
+> [shareMusic(jsonData:object,callBackFun:Function): void  分享音乐到QQ空间/QQ好友 ](#ff_7)
 
 
 
 
 
-<span id="ff_0">**bool isQQInstalled()**</span>  
+<span id="ff_0">**isQQInstalled(): boolean**</span>  
 
 <code>QQ是否安装</code>  
 
@@ -53,7 +53,7 @@ var qq = require("Qq");
 
 
 
-<span id="ff_1">**void login(jsonData，callBackFun)**</span>  
+<span id="ff_1">**login(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>启动QQ进行登录用户授权认证</code> 
 
@@ -86,7 +86,7 @@ callbackFun：QQ登录用户授权认证回调，该函数具有json类型入参
 
 
 
-<span id="ff_2">**bool isLogin() **</span>  
+<span id="ff_2">**isLogin(): boolean **</span>  
 
 <code>QQ用户是否已经登录</code> 
 
@@ -100,7 +100,7 @@ callbackFun：QQ登录用户授权认证回调，该函数具有json类型入参
 
 
 
-<span id="ff_3">**void logout()**</span>  
+<span id="ff_3">**logout(): void**</span>  
 
 <code>登出QQ</code> 
 
@@ -112,7 +112,7 @@ callbackFun：QQ登录用户授权认证回调，该函数具有json类型入参
 
 
 
-<span id="ff_4">**void getUserInfo(jsonData，callBackFun)**</span>  
+<span id="ff_4">**getUserInfo(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>获取授权QQ用户信息</code>   
 
@@ -163,7 +163,7 @@ callbackFun：QQ登录用户授权认证回调，该函数具有json类型入参
 
 
 
-<span id="ff_5">**void shareImage(jsonData，callBackFun)**</span>  
+<span id="ff_5">**shareImage(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>分享图片到QQ好友</code>  
 
@@ -185,7 +185,7 @@ callbackFun：分享回调，该函数具有json类型入参，入参定义如�
 返回值：无
 
 
-<span id="ff_6">**void shareNews(jsonData，callBackFun)**</span>  
+<span id="ff_6">**shareNews(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>分享新闻（图文信息）到QQ空间/QQ好友</code>
 
@@ -222,7 +222,7 @@ callbackFun：分享回调，该函数具有json类型入参，入参定义如�
 
 
 
-<span id="ff_7">**void shareMusic(jsonData，callBackFun)**</span>  
+<span id="ff_7">**shareMusic(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>分享音乐到QQ空间/QQ好友</code>
 

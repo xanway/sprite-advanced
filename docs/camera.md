@@ -15,7 +15,7 @@ var camera = require("Camera");
 
 <h2 id="cid_1">js方法</h2>  
 
-<span id="ff_0">**void start(jsonData,callFunction) **</span>  
+<span id="ff_0">**start(jsonData:object,callFunction:Function): void **</span>  
 
 <code>启动系统拍照/摄像界面</code>    
 

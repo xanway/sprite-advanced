@@ -17,29 +17,29 @@ var window = require("Window");
 
 本节目录：
 
->[ void open(jsonData)   打开新窗口（通过地址） ](#ff_0)
+>[ open(jsonData:object): void   打开新窗口（通过地址） ](#ff_0)
 > 
-> [void openData(jsonData)  打开新窗口（通过内容）](#ff_1)
+> [openData(jsonData:object): void  打开新窗口（通过内容）](#ff_1)
 > 
->[ void close(jsonData)  关闭当前窗口  ](#ff_2)
+>[ close(jsonData:object): void  关闭当前窗口  ](#ff_2)
 > 
-> [JsObj getData()  获取上层窗口传递的数据](#ff_3)
+> [getData(): object  获取上层窗口传递的数据](#ff_3)
 > 
-> [String getOrientation()  获取当前窗口屏幕横竖屏状态  ](#ff_4)
+> [getOrientation(): string  获取当前窗口屏幕横竖屏状态  ](#ff_4)
 > 
->[ int getScreenWidth()  获取当前窗口绘制区域宽度  ](#ff_5)
+>[ getScreenWidth(): number  获取当前窗口绘制区域宽度  ](#ff_5)
 > 
-> [int getScreenHeight()  获取当前窗口绘制区域高度  ](#ff_6)
+> [getScreenHeight(): number  获取当前窗口绘制区域高度  ](#ff_6)
 > 
-> [void executeScript(scriptText)    设置窗口状态栏模式](#ff_7)  
+> [executeScript(scriptText:string): void    设置窗口状态栏模式](#ff_7)  
 > 
->[ void hideSip()   隐藏系统输入法  ](#ff_8)
+>[ hideSip(): void   隐藏系统输入法  ](#ff_8)
 
 
 
 
 
-<span id="ff_0">**void open(jsonData)**</span>  
+<span id="ff_0">**open(jsonData:object): void**</span>  
 
 <code>打开新窗口（通过地址）</code>  
 
@@ -156,7 +156,7 @@ function openpagetest(){
 }
 ```
 
-<span id="ff_1">**void openData(jsonData)**</span>  
+<span id="ff_1">**openData(jsonData:object): void**</span>  
 
 <code>打开新窗口（通过内容）</code>
 
@@ -274,7 +274,7 @@ function openpagetest(){
 ```
 
 
-<span id="ff_2">**void close(jsonData)**</span>  
+<span id="ff_2">**close(jsonData:object): void**</span>  
 
 <code>关闭当前窗口</code>   
 
@@ -305,7 +305,7 @@ window.on("result",function(e,data){
 });
 ```
 
-<span id="ff_3">**JsObj getData()**</span>  
+<span id="ff_3">**getData(): object**</span>  
 
 <code>获取上层窗口传递的数据</code>  
 
@@ -316,7 +316,7 @@ window.on("result",function(e,data){
 返回值：上层窗口传递的数据，支持数字类型，字符串类型，数组类型，JSON类型
 
 
-<span id="ff_4">**String getOrientation()**</span>  
+<span id="ff_4">**getOrientation(): string**</span>  
 
 <code>获取当前窗口屏幕横竖屏状态</code> 
 
@@ -329,7 +329,7 @@ window.on("result",function(e,data){
 > portrait：竖屏；
 
 
-<span id="ff_5">**int getScreenWidth()**</span>  
+<span id="ff_5">**getScreenWidth(): number**</span>  
 
 <code>获取当前窗口绘制区域宽度</code> 
 
@@ -340,7 +340,7 @@ window.on("result",function(e,data){
 
 
 
-<span id="ff_6">**int getScreenHeight()**</span>  
+<span id="ff_6">**getScreenHeight(): number**</span>  
 
 <code>获取当前窗口绘制区域高度</code> 
 
@@ -349,7 +349,7 @@ window.on("result",function(e,data){
 返回值：当前窗口绘制区域高度，单位dp
 
 
-<span id="ff_7">**void setStatusBarMode(mode)**</span>  
+<span id="ff_7">**setStatusBarMode(mode:string): void**</span>  
 
 <code>设置窗口状态栏模式</code> 
 
@@ -366,7 +366,7 @@ mode：状态栏前景模式，字符串枚举型号，[default,light],必选项
 注：仅iOS支持
 
 
-<span id="ff_8">**void hideSip()**</span>  
+<span id="ff_8">**hideSip(): void**</span>  
 
 <code>隐藏系统输入法</code>  
 
@@ -379,15 +379,29 @@ mode：状态栏前景模式，字符串枚举型号，[default,light],必选项
 
 事件的操作支持以下方法：
 
-> [void on(messageName,function)   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
+> [on(messageName:string,callback:Function): void   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
 > 
-> [void fire(messageName,params)  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
+> [fire(messageName:string,params:Array&lt;any&gt;): void  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
 > 
-> [void off(messageName,function)  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
+> [off(messageName:string,callback:Function): void  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
 >  
-> [Array getOn(messageName)  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
+> [getOn(messageName:string): Array&lt;Function&gt;  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
 
-**loaded**  
+本节目录：
+
+[loaded  页面加载完成后触发 ](#sj_1)
+
+[animator  页面开窗动画完毕后触发](#sj_2)  
+
+[resume  页面激活时触发](#sj_3)  
+
+[pause  页面被覆盖时触发](#sj_4)
+
+[destroy  页面被销毁时触发](#sj_5)
+
+[result  接收上层页面关闭回传数据](#sj_6)
+
+<span id="sj_1">**loaded**</span>  
 
 <code>页面加载完成后触发</code>  
 
@@ -412,7 +426,7 @@ window.on("loaded",function(){
 
 
 
-**animator**  
+<span id="sj_2">**animator**</span>  
 
 <code>页面开窗动画完毕后触发</code>  
 
@@ -438,7 +452,7 @@ window.on("animator",function(){
 ```
 
 
-**resume**  
+<span id="sj_3">**resume**</span>  
 
 <code>页面激活时触发</code>  
 
@@ -462,11 +476,10 @@ event事件对象包括：
 ```javascript
 var window = require("Window");
 window.on("resume",function(){
-
 });
 ```
 
-**pause**  
+<span id="sj_4">**pause**</span>  
 
 <code>页面被覆盖时触发</code>  
 
@@ -482,9 +495,9 @@ event事件对象包括：
 
 
 
-**destroy**  
+<span id="sj_5">**destroy**</span>  
 
-<code>监听设备横竖屏切换时触发</code>   
+<code>页面被销毁时触发</code>   
 
 event事件对象包括： 
 
@@ -495,7 +508,7 @@ event事件对象包括：
 > timestamp：事件触发的时间戳,单位毫秒，数字类型 
 
 
-**result**  
+<span id="sj_6">**result**</span>  
 
 <code>接收上层页面关闭回传数据</code>   
 

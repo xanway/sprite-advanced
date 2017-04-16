@@ -17,13 +17,13 @@ var iappay = require("IapPay");
 本节目录： 
 
 
->[ bool canMakePay()   是否支持虚拟支付功能 ](#ff_0)
+>[ canMakePay(): boolean   是否支持虚拟支付功能 ](#ff_0)
 > 
-> [void getProducts(jsonData, callBackFun)  获取有效商品详细信息列表 ](#ff_1)
+> [getProducts(jsonData:object,callBackFun:Function): void  获取有效商品详细信息列表 ](#ff_1)
 > 
-> [void pay(dataJson, callBackFun)   购买虚拟商品 ](#ff_2)
+> [pay(dataJson:string, callBackFun:Function): void   购买虚拟商品 ](#ff_2)
 >
-> [void restore(callBackFun)    恢复用户以前购买过的所有商品交易 ](#ff_3)
+> [restore(callBackFun:Function): void    恢复用户以前购买过的所有商品交易 ](#ff_3)
 
 
 
@@ -47,7 +47,7 @@ var iappay = require("IapPay");
 
 
 
-<span id="ff_1">**void getProducts(jsonData, callBackFun)**</span>  
+<span id="ff_1">**getProducts(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>获取有效商品详细信息列表</code>   
 
@@ -79,7 +79,7 @@ callBackFun：查询有效商品列表回调，该回调函数具有Json对象�
 
 返回值：无 
 
-<span id="ff_2">**void pay(dataJson, callBackFun)**</span>  
+<span id="ff_2">**pay(dataJson:string, callBackFun:Function): void**</span>  
 
 <code>购买虚拟商品</code> 
 
@@ -111,7 +111,7 @@ callBackFun：购买商品回调，该回调函数具有Json对象入参，定�
 
 
 
-<span id="ff_3">**void restore(callBackFun)**</span>  
+<span id="ff_3">**restore(callBackFun:Function): void**</span>  
 
 <code>恢复用户以前购买过的所有商品交易</code>  
 

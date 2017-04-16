@@ -18,40 +18,40 @@ var bugly = require("Bugly");
 
 > **异常上报**
 > 
-> [void init(jsonData)  启动Bugly错误日志收集](#ff_0)
+> [init(jsonData:object): void  启动Bugly错误日志收集](#ff_0)
 > 
-> [void setUserId(userId)  设置用户Id，用于精确定位到应用中某个用户异常 ](#ff_1)
+> [setUserId(userId:string): void  设置用户Id，用于精确定位到应用中某个用户异常 ](#ff_1)
 > 
-> [String getUserId()  获取用户Id ](#ff_2)
+> [getUserId(): string  获取用户Id ](#ff_2)
 > 
-> [void setTag(tag)  设置自定义标签](#ff_3)
+> [setTag(tag:number): void  设置自定义标签](#ff_3)
 > 
-> [int getTag()   获取当前设置标签值](#ff_4)
+> [getTag(): number   获取当前设置标签值](#ff_4)
 > 
-> [void setUserData(jsonData)  设置自定义Map参数](#ff_5)
+> [setUserData(jsonData:object): void  设置自定义Map参数](#ff_5)
 > 
-> [String getUserData(key)  获取已设置自定义Map参数](#ff_6)
+> [getUserData(key:string): string  获取已设置自定义Map参数](#ff_6)
 > 
-> [String getSdkVersion()  获取Bugly SDK版本号](#ff_7)
+> [getSdkVersion(): string  获取Bugly SDK版本号](#ff_7)
 > 
-> [String getDeviceId()  获取设备Id](#ff_8)
+> [getDeviceId(): string  获取设备Id](#ff_8)
 > 
 > 
 > **自定义日志**
 > 
-> [void verbose(log)  Bugly基础日志输出](#ff_9)
+> [verbose(log:string): void  Bugly基础日志输出](#ff_9)
 > 
-> [void debug(log)  Bugly调试日志输出](#ff_10)
+> [debug(log:string): void  Bugly调试日志输出](#ff_10)
 > 
-> [void info(log)  Bugly信息日志输出](#ff_11)
+> [info(log:string): void  Bugly信息日志输出](#ff_11)
 > 
-> [void warn(log)  Bugly告警日志输出  ](#ff_12)
+> [warn(log:string): void  Bugly告警日志输出  ](#ff_12)
 > 
-> [void error(log)  Bugly错误日志输出](#ff_13)
+> [error(log:string): void  Bugly错误日志输出](#ff_13)
 
 
 
-<span id="ff_0">**void init(jsonData)**</span>  
+<span id="ff_0">**init(jsonData:object): void**</span>  
 
 <code>启动Bugly错误日志收集</code>  
 
@@ -76,7 +76,7 @@ jsonData，Bugly参数设置，Json类型，定义如下：
 **注：** 该方法建议放置于应用启动入口js中
 
 
-<span id="ff_1">**void setUserId(userId)**</span>  
+<span id="ff_1">**setUserId(userId:string): void**</span>  
 
 <code>设置用户Id</code>  
 
@@ -90,7 +90,7 @@ userId：应用系统中用户Id，字符串类型，必选项；
 
 
 
-<span id="ff_2">**String getUserId()**</span>  
+<span id="ff_2">**getUserId(): string**</span>  
 
 <code>获取用户Id</code>  
 
@@ -100,7 +100,7 @@ userId：应用系统中用户Id，字符串类型，必选项；
 
 
 
-<span id="ff_3">**void setTag(tag)**</span>  
+<span id="ff_3">**setTag(tag:number): void**</span>  
 
 <code>设置自定义标签</code> 
 
@@ -113,7 +113,7 @@ tag：自定义标签值，在Bugly标签管理中配置生成，数字类型，
 返回值：无 
 
 
-<span id="ff_4">**int getTag()**</span>  
+<span id="ff_4">**getTag(): number**</span>  
 
 <code>获取当前设置标签值</code>  
 
@@ -121,7 +121,7 @@ tag：自定义标签值，在Bugly标签管理中配置生成，数字类型，
 
 返回值：当前设置标签值，数字类型
 
-<span id="ff_5">**void setUserData(jsonData)**</span>  
+<span id="ff_5">**setUserData(jsonData:object): void**</span>  
 
 <code>设置自定义Map参数</code>
 
@@ -134,7 +134,7 @@ jsonData：需设置的自定义key-value参数，随崩溃日志产生时上报
 **注：** 最多可以有9对自定义的key-value（超过则添加失败），key限长50字节、value限长200字节，过长截断 
 
 
-<span id="ff_6">**String getUserData(key)**</span>  
+<span id="ff_6">**getUserData(key:string): string**</span>  
 
 <code>获取已设置自定义Map参数</code>
 
@@ -145,7 +145,7 @@ key：需获取自定义数据key值，字符串类型，必选项
 返回值：自定义数据value值，字符串类型 
 
 
-<span id="ff_7">**String getSdkVersion()**</span>  
+<span id="ff_7">**getSdkVersion(): string**</span>  
 
 <code>获取Bugly SDK版本号</code>
 
@@ -153,7 +153,7 @@ key：需获取自定义数据key值，字符串类型，必选项
 
 返回值：Bugly SDK版本号，字符串类型
 
-<span id="ff_8">**String getDeviceId ()**</span>  
+<span id="ff_8">**getDeviceId (): string**</span>  
 
 <code>获取设备Id</code>
 
@@ -163,7 +163,7 @@ key：需获取自定义数据key值，字符串类型，必选项
 
 **注：** 仅iOS支持
 
-<span id="ff_9">**void verbose(log)**</span>  
+<span id="ff_9">**verbose(log:string): void**</span>  
 
 <code>Bugly基础日志输出</code>
 
@@ -174,7 +174,7 @@ log：需要输出日志，字符串类型，必选项
 返回值：无
 
 
-<span id="ff_10">**void debug(log)**</span>  
+<span id="ff_10">**debug(log:string): void**</span>  
 
 <code>Bugly调试日志输出</code>
 
@@ -186,7 +186,7 @@ log：需要输出日志，字符串类型，必选项
 
 
 
-<span id="ff_11">**void info(log)**</span>  
+<span id="ff_11">**info(log:string): void**</span>  
 
 <code>Bugly信息日志输出</code>
 
@@ -197,7 +197,7 @@ log：需要输出字符串，字符串类型，必选项
 返回值：无
 
 
-<span id="ff_12">**void warn(log)**</span>  
+<span id="ff_12">**warn(log:string): void**</span>  
 
 <code>Bugly告警日志输出</code>
 
@@ -208,7 +208,7 @@ log：需要输出字符串，字符串类型，必选项
 返回值：无
 
 
-<span id="ff_13">**void error(log)**</span>  
+<span id="ff_13">**error(log:string): void**</span>  
 
 <code>Bugly错误日志输出</code>
 

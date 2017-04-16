@@ -17,13 +17,13 @@ va raudiorecord = require("AudioRecord");
 
 本节目录：
 
->[ void start(jsonData)   开始录音 ](#ff_0)
+>[ start(jsonData:object): void   开始录音 ](#ff_0)
 > 
-> [void stop()  停止录音 ](#ff_1)
+> [stop(): void  停止录音 ](#ff_1)
 > 
->[ number getStatus()  当前录音状态](#ff_2)
+>[ getStatus(): number  当前录音状态](#ff_2)
 > 
->[ number getVolumeRate()  获取实时录音音量比例](#ff_3)
+>[ getVolumeRate(): number  获取实时录音音量比例](#ff_3)
 
 
 
@@ -31,7 +31,7 @@ va raudiorecord = require("AudioRecord");
 
 
 
-<span id="ff_0">** void start(jsonData) **</span>  
+<span id="ff_0">** start(jsonData:object): void **</span>  
 
 <code>开始录音</code>  
 
@@ -47,7 +47,7 @@ jsonData：录音设置信息，Json对象
 
 
 
-<span id="ff_1">**void stop()**</span>  
+<span id="ff_1">**stop(): void**</span>  
 
 <code>停止录音</code>  
 
@@ -62,7 +62,7 @@ jsonData：录音设置信息，Json对象
 
 
 
-<span id="ff_2">**number getStatus()**</span>  
+<span id="ff_2">**getStatus(): number**</span>  
 
 <code>当前录音状态</code> 
 
@@ -80,7 +80,7 @@ jsonData：录音设置信息，Json对象
 
 
 
-<span id="ff_3">**number getVolumeRate()**</span>  
+<span id="ff_3">**getVolumeRate(): number**</span>  
 
 <code>获取实时录音音量比例</code> 
 
@@ -108,13 +108,13 @@ jsonData：录音设置信息，Json对象
 
 事件的操作支持以下方法：
 
-> [void on(messageName,function)   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
+> [on(messageName:string,callback:Function): void   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
 > 
-> [void fire(messageName,params)  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
+> [fire(messageName:string,params:Array&lt;any&gt;): void  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
 > 
-> [void off(messageName,function)  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
+> [off(messageName:string,callback:Function): void  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
 >  
-> [Array getOn(messageName)  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
+> [getOn(messageName:string): Array&lt;Function&gt;  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
 
 
 

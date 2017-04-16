@@ -3,7 +3,6 @@
 ----------
 
 
-
 App应用信息操作类是应用级的，如果在某个页面使用App做事件监听，只要这个页面没有被关闭，就会影响整个应用，所以开发者在使用这个App类的时候，如果只希望当前页面受到事件监听的影响，可以通过window类来isTop()方法判断当前页面窗口是否是置顶窗口。 比如我们监听back返回键时，事件里面做了当前窗口关闭，如果不做判断，那么所有页面只要是监听了返回事件的都会触发，所有页面就全部关闭了。
 
 使用时需要在js中引入 ：
@@ -14,10 +13,21 @@ var app = require("App");
 
 **注：** 该组件为内置功能组件。
 
-<h2 id="cid_1">js方法</h2>   
+<h2 id="cid_1">js方法</h2>
+
+本节目录：
+
+> [exit(content:string): void  退出程序，弹出alert提示](#ff_1)
+> 
+> [exitNoAsk(): void  直接退出程序 ](#ff_2) 
+> 
+> [background(): void  切换程序至后台](#ff_3)
+> 
+> [reload(): void  重启程序](#ff_4)
 
 
-**void exit(content)**  
+
+<span id="ff_1">**exit(content:string): void**</span>  
 
 <code>退出程序，弹出alert提示</code>  
 
@@ -40,7 +50,7 @@ title.on("rtextClick", function (e) {
 
 ```
 
-**void exitNoAsk()**  
+<span id="ff_2">**exitNoAsk(): void**</span>  
 
 <code>直接退出程序</code> 
 
@@ -59,7 +69,7 @@ title.on("rtextClick", function (e) {
 
 
 
-**void background()**  
+<span id="ff_2">**background(): void**</span>  
 
 <code>切换程序至后台</code>    
 
@@ -71,7 +81,7 @@ title.on("rtextClick", function (e) {
 
 
 
-**void reload()**  
+<span id="ff_3">**reload(): void**</span>  
 
 <code>重启程序</code>  
 
@@ -84,15 +94,30 @@ title.on("rtextClick", function (e) {
 
 事件的操作支持以下方法：
 
-> [void on(messageName,function)   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
+> [on(messageName:string,callback:Function): void   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
 > 
-> [void fire(messageName,params)  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
+> [fire(messageName:string,params:Array&lt;any&gt;): void  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
 > 
-> [void off(messageName,function)  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
+> [off(messageName:string,callback:Function): void  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
 >  
-> [Array getOn(messageName)  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
+> [getOn(messageName:string): Array&lt;Function&gt;  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
 
-**back**  
+本节目录：
+
+[back  监听点击设备返回键触发 ](#sj_1) 
+
+[menu   监听点击设备菜单键触发](#sj_2)  
+
+[activate  监听程序从后台被切换至前台时执行触发 ](#sj_3)
+
+[inactivate  监听程序从前台被切换至后台时执行触发](#sj_4)
+
+[orientation  监听设备横竖屏切换时触发](#sj_4) 
+
+[launch  应用程序被启动时触发](#sj_5)
+
+
+<span id="sj_1">**back**</span>  
 
 <code>监听点击设备返回键触发</code>  
 
@@ -114,7 +139,7 @@ app.on("back",function(){
 });
 ```
 
-**menu**  
+<span id="sj_2">**menu**</span>  
 
 <code>监听点击设备菜单键触发</code>  
 
@@ -137,7 +162,7 @@ app.on("menu",function(){
 });
 ```
 
-**activate**  
+<span id="sj_3">**activate**</span>  
 
 
 <code>监听程序从后台被切换至前台时执行触发</code>  
@@ -160,7 +185,7 @@ app.on("activate",function(){
 });
 ```
 
-**inactivate**  
+<span id="sj_4">**inactivate**</span>  
 
 <code>监听程序从前台被切换至后台时执行触发</code>  
 
@@ -173,7 +198,7 @@ event事件对象包括：
 > timestamp：事件触发的时间戳,单位毫秒，数字类型
 
 
-**orientation**  
+<span id="sj_5">**orientation**</span>  
 
 <code>监听设备横竖屏切换时触发</code>   
 
@@ -205,7 +230,7 @@ app.on("orientation",function(e,orientation){
 ```
 
 
-**launch**  
+<span id="sj_6">**launch**</span>  
 
 <code>应用程序被启动时触发</code> 
 

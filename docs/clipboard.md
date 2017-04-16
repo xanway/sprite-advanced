@@ -16,7 +16,7 @@ var clipboard = require("Clipboard");
 <h2 id="cid_1">js方法</h2>  
 
 
-<span id="ff_0">**void setData(value)**</span>  
+<span id="ff_0">**setData(value:string): void**</span>  
 
 <code>设置程序剪切板</code>    
 
@@ -34,20 +34,20 @@ value：存入数据value值，字符串类型；
 //页面存入数据操作
 var clipboard = require("Clipboard");
 //存入数据
-clipboard.setData ("Sprite");
+clipboard.setData("Sprite");
 ```
 
 
 
 
-<span id="ff_1">**String getData()**</span>  
+<span id="ff_1">**getData(): string**</span>  
 
 <code>读取程序剪切板</code>
 
 参数：无 
 
 
-返回值：存入数据value值，支持数字，字符串，数组，JSON类型，若获取失败则返回null；
+返回值：存入数据value值，字符串，若获取失败则返回null；
 
 示例：
 

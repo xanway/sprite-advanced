@@ -28,22 +28,22 @@ var console = require("Console");
 
 本节目录：
 
->[ void setFilePath(filePath)  设置日志文件保存路径 ](#ff_0)
+>[ setFilePath(filePath:string): void  设置日志文件保存路径 ](#ff_0)
 > 
-> [String getFilePath()  获取日志文件保存路径 ](#ff_1)
+> [getFilePath(): string  获取日志文件保存路径 ](#ff_1)
 >
->[ void debug(log)   调试日志输出  ](#ff_2)
+>[ debug(log:string): void   调试日志输出  ](#ff_2)
 >
->[ void log(log)   标准日志输出  ](#ff_3)
+>[ log(log:string): void   标准日志输出  ](#ff_3)
 >
->[ void info(log)   信息日志输出  ](#ff_4)
+>[ info(log:string): void   信息日志输出  ](#ff_4)
 >
->[ void warn(log)   告警日志输出  ](#ff_5)  
+>[ warn(log:string): void   告警日志输出  ](#ff_5)  
 >
->[ void error(log)  错误日志输出  ](#ff_6)  
+>[ error(log:string): void  错误日志输出  ](#ff_6)  
 
 
-<span id="ff_0">**void setFilePath(filePath)**</span>  
+<span id="ff_0">**setFilePath(filePath:string): void**</span>  
 
 <code>启动系统拍照/设置日志文件保存路径</code>    
 
@@ -56,7 +56,7 @@ filePath：日志输出路径，支持res: file：前缀，字符串类型，必
 **注：**  需要设置日志文件保存路径后日志方可正常输出
 
 
-<span id="ff_1">**String getFilePath()**</span>  
+<span id="ff_1">**getFilePath(): string**</span>  
 
 <code>获取日志文件保存路径</code>   
 
@@ -65,7 +65,7 @@ filePath：日志输出路径，支持res: file：前缀，字符串类型，必
 返回值：日志保存路径，字符串类型，若未设置则返回null
 
 
-<span id="ff_2">**void debug(log)**</span>  
+<span id="ff_2">**debug(log:string): void**</span>  
 
 <code>调试日志输出</code> 
 
@@ -76,7 +76,7 @@ log：需要输出日志，字符串类型，必选项
 返回值：无  
 
 
-<span id="ff_3">**void log(log)**</span>  
+<span id="ff_3">**log(log:string): void**</span>  
 
 <code>标准日志输出</code> 
 
@@ -87,7 +87,7 @@ log：需要输出日志，字符串类型，必选项
 返回值：无
 
 
-<span id="ff_4">**void info(log)**</span>  
+<span id="ff_4">**info(log:string): void**</span>  
 
 <code>信息日志输出</code> 
 
@@ -98,7 +98,7 @@ log：需要输出日志，字符串类型，必选项
 返回值：无
 
 
-<span id="ff_5">**void warn(log)**</span>  
+<span id="ff_5">**warn(log:string): void**</span>  
 
 <code>告警日志输出</code> 
 
@@ -109,7 +109,7 @@ log：需要输出日志，字符串类型，必选项
 返回值：无
 
 
-<span id="ff_6">**void error(log)**</span>  
+<span id="ff_6">**error(log:string): void**</span>  
 
 <code>错误日志输出</code> 
 

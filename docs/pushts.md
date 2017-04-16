@@ -243,7 +243,7 @@ app.on("launch", function (e, jsonData) {
             });
 
 
-            var jsondata = window.getData();
+            var = window.getData(): object;
             console.log(JSON.stringify(jsondata));
             document.getElement("titletext").setText("得到的标题为：" + jsondata.title);
             document.getElement("paramtext").setText("得到的参数为：" + jsondata.param1 + "；" + jsondata.param2);

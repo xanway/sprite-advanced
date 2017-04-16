@@ -15,7 +15,7 @@ var baidutts = require("BaiduTts");
 <h2 id="cid_1">js方法</h2>  
 
 
-<span id="ff_0">**void play(jsonData,callBackFun)**</span>  
+<span id="ff_0">**play(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>启动百度语音TTS播放</code>  
 

@@ -17,24 +17,24 @@ var document = require("Document");
 
 本节目录：
 
->[ domObj getElement (id)  根据Id获取页面内UI控件对象 ](#ff_0)
+>[ getElement(id:string): IElement  根据Id获取页面内UI控件对象 ](#ff_0)
 > 
-> [ Array getElements(rule)  根据特定规则获取页面内UI控件对象集 ](#ff_1)
+> [ getElements(rule:string): Array&lt;IElement&gt;  根据特定规则获取页面内UI控件对象集 ](#ff_1)
 > 
->[ domObj getRootElement()  获取页面根对象  ](#ff_2)
+>[ getRootElement(): IElement  获取页面根对象  ](#ff_2)
 > 
-> [domObj createElement(tagName，propsData,domObj)  创建UI控件对象 ](#ff_3)
+> [createElement(tagName:string,propsData:object,domObj:IElement): IElement  创建UI控件对象 ](#ff_3)
 > 
-> [domObj createElementByXml(xml,domObj)  通过xml文本创建UI控件对象  ](#ff_4)
+> [createElementByXml(xml:string,domObj:IElement):IElement  通过xml文本创建UI控件对象  ](#ff_4)
 > 
->[ void refresh()  刷新页面Dom树  ](#ff_5)
+>[ refresh(): void  刷新页面Dom树  ](#ff_5)
 > 
->[ String getPathLocation()  获取本页面所在目录路径  ](#ff_6)
+>[ getPathLocation(): string  获取本页面所在目录路径  ](#ff_6)
 
 
 
 
-<span id="ff_0">**domObj getElement (id)**</span>  
+<span id="ff_0">**getElement(id:string): IElement**</span>  
 
 <code>根据Id获取页面内UI控件对象</code>  
 
@@ -45,7 +45,7 @@ id：UI组件的唯一标识，字符串类型；
 返回值：控件dom对象，若查找失败则返回null
 
 
-<span id="ff_1">**Array getElements(rule)**</span>  
+<span id="ff_1">**getElements(rule:string): Array&lt;IElement&gt;**</span>  
 
 <code>根据特定规则获取页面内UI控件对象集</code>
 
@@ -80,7 +80,7 @@ if(arrayObj.length != 0){
 ```
 
 
-<span id="ff_2">**domObj getRootElement()**</span>  
+<span id="ff_2">**getRootElement(): IElement**</span>  
 
 <code>获取页面根对象</code>   
 
@@ -100,7 +100,7 @@ if(rootObj !=null){
 ```
 
 
-<span id="ff_3">**domObj createElement(tagName，propsData,domObj)**</span>  
+<span id="ff_3">**createElement(tagName:string,propsData:object,domObj:IElement): IElement**</span>  
 
 <code>创建UI控件对象</code>  
 
@@ -140,7 +140,7 @@ document.refresh();
 
 
 
-<span id="ff_4">**domObj createElementByXml(xml,domObj)**</span>  
+<span id="ff_4">**createElementByXml(xml:string,domObj:IElement):IElement**</span>  
 
 <code>通过xml文本创建UI控件对象</code> 
 
@@ -161,13 +161,13 @@ domObj：当前js运行环境对象，可选参数，component模板中使用，
 
 var popxmlstr = '<box id="box_1" ><text>123</text></box>';
 //创建一个box
-var popmenuobj = document.createElementByXml(popxmlstr);
+var popmenu= document.createElementByXml(popxmlstr:string): object;
 popbgid.appendChild(popmenuobj);  
 document.refresh();
 ```
 
 
-<span id="ff_5">**void refresh()**</span>  
+<span id="ff_5">**refresh(): void**</span>  
 
 <code>刷新页面Dom树</code> 
 
@@ -179,7 +179,7 @@ document.refresh();
 
 
 
-<span id="ff_6">**String getPathLocation()**</span>  
+<span id="ff_6">**getPathLocation(): string**</span>  
 
 <code>获取本页面所在目录路径</code>  
 

@@ -14,7 +14,7 @@ var alipay = require("AliPay");
 
 <h2 id="cid_1">js方法</h2>  
 
-<span id="ff_0">**void pay(jsonData，callBackFun) **</span>  
+<span id="ff_0">**pay(jsonData:object,callBackFun:Function): void **</span>  
 
 <code>调用支付宝进行商品支付</code>  
 

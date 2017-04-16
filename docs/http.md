@@ -23,7 +23,7 @@ var http = require("Http");
 >
 >[ String download(option,callFunction, responseProgressFunction)   异步文件下载 ](#ff_2)
 >
->[ void cancel(id)   关闭http请求 ](#ff_3)
+>[ cancel(id:string): void   关闭http请求 ](#ff_3)
 
 
 <span id="ff_0">**String ajax(option,callFunction) **</span>  
@@ -295,7 +295,7 @@ httpId = Http.download(option, function(responseData){
 
 ``` 
 
-<span id="ff_3">**void cancel(id)**</span>  
+<span id="ff_3">**cancel(id:string): void**</span>  
 
 <code>关闭http请求</code>   
 

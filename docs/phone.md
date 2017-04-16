@@ -16,16 +16,16 @@ var phone = require("Phone");
 
 本节目录：
 
->[ void tel(phone)  拨打指定号码 ](#ff_0)
+>[ tel(phone:string): void  拨打指定号码 ](#ff_0)
 > 
-> [void openSystemDial(phone)  启动系统拨号界面 ](#ff_1)
+> [openSystemDial(phone:string): void  启动系统拨号界面 ](#ff_1)
 > 
-> [void faceTime(faceTimeNumber)   调用IOS平台系统的FaceTime进行视频通话 ](#ff_2)
+> [faceTime(faceTimeNumber:string): void   调用IOS平台系统的FaceTime进行视频通话 ](#ff_2)
 > 
-> [void getCallRecords(jsonData,callbackFun)    获取系统通话记录 ](#ff_3)
+> [getCallRecords(jsonData:object,callBackFun:Function): void    获取系统通话记录 ](#ff_3)
 > 
 
-<span id="ff_0">**void tel(phone) **</span>  
+<span id="ff_0">**tel(phone:string): void **</span>  
 
 <code>拨打指定号码</code>     
 
@@ -37,7 +37,7 @@ phone：需要拨打电话号码，字符串类型，必选项；
 
 
 
-<span id="ff_1">**void openSystemDial(phone)**</span>  
+<span id="ff_1">**openSystemDial(phone:string): void**</span>  
 
 <code>启动系统拨号界面</code>   
 
@@ -50,7 +50,7 @@ phone：需要预制的电话号码，字符串类型，可选项
 **注：** 仅Android支持
 
 
-<span id="ff_2">**void faceTime(faceTimeNumber)**</span>  
+<span id="ff_2">**faceTime(faceTimeNumber:string): void**</span>  
 
 <code>调用IOS平台系统的FaceTime进行视频通话</code> 
 
@@ -63,7 +63,7 @@ faceTimeNumber：进行视频通话的号码，字符串类型，必选项，当
 **注：** 仅iOS平台支持
 
 
-<span id="ff_3">**void getCallRecords(jsonData,callbackFun)**</span>  
+<span id="ff_3">**getCallRecords(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>获取系统通话记录</code>  
 

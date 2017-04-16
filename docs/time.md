@@ -17,18 +17,18 @@ var time = require("Time");
 
 本节目录：
 
->[ String setTimeout(callFunction,timeout)   启动单次定时器 ](#ff_0)
+>[ setTimeout(callFunction:Function,timeout:number): string   启动单次定时器 ](#ff_0)
 > 
-> [ void clearTimeout(id)  关闭单次定时器 ](#ff_1)
+> [ clearTimeout(id:string): void  关闭单次定时器 ](#ff_1)
 >
->[ String setInterval (callFunction,interval)   启动重复定时器  ](#ff_2)
+>[ setInterval (callFunction:Function,interval:number): string   启动重复定时器  ](#ff_2)
 >
-> [void clearInterval(id)  关闭重复定时器 ](#ff_3)
+> [clearInterval(id:string): void  关闭重复定时器 ](#ff_3)
 
 
 
 
-<span id="ff_0">**String setTimeout(callFunction,timeout)**</span>  
+<span id="ff_0">**setTimeout(callFunction:Function,timeout:number): string**</span>  
 
 <code>启动单次定时器</code>    
 
@@ -45,7 +45,7 @@ timeout：延时时间，数字类型，单位毫秒
 
 
 
-<span id="ff_1">**void clearTimeout(id)**</span>  
+<span id="ff_1">**clearTimeout(id:string): void**</span>  
 
 <code>关闭单次定时器</code>
 
@@ -57,7 +57,7 @@ id：需要被关闭的定时器标识，字符串类型，必选项
 
 
 
-<span id="ff_2">**String setInterval (callFunction,interval)**</span>  
+<span id="ff_2">**setInterval (callFunction:Function,interval:number): string**</span>  
 
 <code>启动重复定时器</code>   
 
@@ -72,7 +72,7 @@ interval：间隔时间，数字类型，单位毫秒
 返回值：定时器标识，字符串类型
 
 
-<span id="ff_3">**void clearInterval(id)**</span>  
+<span id="ff_3">**clearInterval(id:string): void**</span>  
 
 <code>关闭重复定时器</code>  
 

@@ -16,18 +16,18 @@ var imageutil = require("ImageUtil");
 
 本节目录：
 
->[ void scale(jsonData,callBackFun)   缩放图片并保存到目标文件 ](#ff_0)
+>[ scale(jsonData:object,callBackFun:Function): void   缩放图片并保存到目标文件 ](#ff_0)
 > 
-> [void scaleByRate(jsonData,callBackFun)  根据缩放比例缩放图片并保存到目标文件 ](#ff_1)
+> [scaleByRate(jsonData:object,callBackFun:Function): void  根据缩放比例缩放图片并保存到目标文件 ](#ff_1)
 > 
-> [void scaleByFileSize (jsonData,callBackFun)   根据缩放后文件大小缩放图片并保存到目标文件 ](#ff_2)
+> [scaleByFileSize (jsonData:object,callBackFun:Function): void   根据缩放后文件大小缩放图片并保存到目标文件 ](#ff_2)
 > 
-> [void clip(jsonData,callBackFun)    启动图片裁剪界面 ](#ff_3)
+> [clip(jsonData:object,callBackFun:Function): void    启动图片裁剪界面 ](#ff_3)
 > 
-> [void screenShot(jsonData, callFunction)  启动截屏](#ff_4)
+> [screenShot(jsonData:object,callFunction:Function): void  启动截屏](#ff_4)
 
 
-<span id="ff_0">**void scale(jsonData,callBackFun)**</span>  
+<span id="ff_0">**scale(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>缩放图片并保存到目标文件</code>  
 
@@ -65,7 +65,7 @@ callBackFun，结果回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_1">**void scaleByRate(jsonData,callBackFun)**</span>
+<span id="ff_1">**scaleByRate(jsonData:object,callBackFun:Function): void**</span>
 
 <code>根据缩放比例缩放图片并保存到目标</code>    
 
@@ -100,7 +100,7 @@ callBackFun，结果回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_2">**void scaleByFileSize (jsonData,callBackFun)**</span>  
+<span id="ff_2">**scaleByFileSize (jsonData:object,callBackFun:Function): void**</span>  
 
 <code>根据缩放后文件大小缩放图片并保存到目标文件</code>   
 
@@ -130,7 +130,7 @@ callBackFun，结果回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_3">**void clip(jsonData,callBackFun)**</span>  
+<span id="ff_3">**clip(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>启动图片裁剪界面</code> 
 
@@ -159,7 +159,7 @@ callBackFun，结果回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_4">**void screenShot(jsonData, callFunction)**</span>  
+<span id="ff_4">**screenShot(jsonData:object,callFunction:Function): void**</span>  
 
 <code>启动截屏</code>  
 

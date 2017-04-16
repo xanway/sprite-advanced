@@ -16,36 +16,36 @@ var contact = require("contact");
 
 本节目录：
 
->[ void getBasicVcards(jsonData，callbackFun)  获取通讯录用户基础信息 ](#ff_0)
+>[ getBasicVcards(jsonData:object,callBackFun:Function): void  获取通讯录用户基础信息 ](#ff_0)
 > 
-> [void getVcards(jsonData，callbackFun)   获取通讯录用户信息 ](#ff_1)
+> [getVcards(jsonData:object,callBackFun:Function): void   获取通讯录用户信息 ](#ff_1)
 > 
-> [void getVcardById((jsonData，callbackFun)   根据用户标识查询用户信息 ](#ff_2)
+> [getVcardById((jsonData:object,callBackFun:Function): void   根据用户标识查询用户信息 ](#ff_2)
 > 
-> [void getVcardsByName((jsonData，callbackFun)   根据用户名查询用户信息 ](#ff_3)
+> [getVcardsByName((jsonData:object,callBackFun:Function): void   根据用户名查询用户信息 ](#ff_3)
 > 
-> [void addVcard(jsonData，callbackFun)   添加用户信息至通讯录 ](#ff_4)
+> [addVcard(jsonData:object,callBackFun:Function): void   添加用户信息至通讯录 ](#ff_4)
 > 
-> [void deleteVcard(jsonData，callbackFun)   从通讯录中移除用户信息 ](#ff_5)
+> [deleteVcard(jsonData:object,callBackFun:Function): void   从通讯录中移除用户信息 ](#ff_5)
 > 
-> [void updateVcard(jsonData，callbackFun)   更新用户信息至通讯录 ](#ff_6)
+> [updateVcard(jsonData:object,callBackFun:Function): void   更新用户信息至通讯录 ](#ff_6)
 > 
-> [void moveVcard(jsonData，callbackFun)  移动用户至指定群组 ](#ff_7)
+> [moveVcard(jsonData:object,callBackFun:Function): void  移动用户至指定群组 ](#ff_7)
 > 
-> [void getGroups(callbackFun)  获取通讯录已存在群组信息 ](#ff_8)
+> [getGroups(callBackFun:Function): void  获取通讯录已存在群组信息 ](#ff_8)
 > 
-> [void getGroupById(jsonData ,callbackFun)  获取通讯录中指定群组信息 ](#ff_9)
+> [getGroupById(jsonData :string,callBackFun:Function): void  获取通讯录中指定群组信息 ](#ff_9)
 > 
-> [void addGroup(jsonData，callbackFun)  添加群组至通讯录 ](#ff_10)
+> [addGroup(jsonData:object,callBackFun:Function): void  添加群组至通讯录 ](#ff_10)
 > 
-> [void deleteGroup(jsonData，callbackFun)  从通讯录中移除群组 ](#ff_11)
+> [deleteGroup(jsonData:object,callBackFun:Function): void  从通讯录中移除群组 ](#ff_11)
 > 
-> [void updateGroup(jsonData，callbackFun) 更新群组至通讯录 ](#ff_12)
+> [updateGroup(jsonData:object,callBackFun:Function): void 更新群组至通讯录 ](#ff_12)
 
 
 
 
-<span id="ff_0">**void getBasicVcards(jsonData，callbackFun)**</span>  
+<span id="ff_0">**getBasicVcards(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>获取通讯录用户基础信息</code>     
 
@@ -75,7 +75,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_1">**void getVcards(jsonData，callbackFun)**</span>  
+<span id="ff_1">**getVcards(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>获取通讯录用户信息</code>   
 
@@ -140,7 +140,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_2">**void getVcardById((jsonData，callbackFun)**</span>  
+<span id="ff_2">**getVcardById((jsonData:object,callBackFun:Function): void**</span>  
 
 <code>根据用户标识查询用户信息</code>    
 
@@ -204,7 +204,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_3">**void getVcardsByName((jsonData，callbackFun)**</span>  
+<span id="ff_3">**getVcardsByName((jsonData:object,callBackFun:Function): void**</span>  
 
 <code>根据用户名查询用户信息</code>  
 
@@ -267,7 +267,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_4">**void addVcard(jsonData，callbackFun)**</span>  
+<span id="ff_4">**addVcard(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>添加用户信息至通讯录</code>   
 
@@ -325,7 +325,7 @@ id：用户标识，字符串类型；
 
 
 
-<span id="ff_5">**void deleteVcard(jsonData，callbackFun)**</span>  
+<span id="ff_5">**deleteVcard(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>从通讯录中移除用户信息</code>   
 
@@ -347,7 +347,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_6">**void updateVcard(jsonData，callbackFun)**</span>  
+<span id="ff_6">**updateVcard(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>更新用户信息至通讯录</code>   
 
@@ -409,7 +409,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_7">**void moveVcard(jsonData，callbackFun)**</span>  
+<span id="ff_7">**moveVcard(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>移动用户至指定群组</code> 
 
@@ -418,9 +418,9 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 jsonData：需移除用户信息参数，Json对象，定义如下：  
 
->     id：用户标识，字符串类型，必选项；
+>  id：用户标识，字符串类型，必选项；
 >     
->     groupId：群组标识，字符串类型，必选项；
+>  groupId：群组标识，字符串类型，必选项；
 
 callBackFun：操作回调函数，函数具有json类型入参，入参定义如下：
 
@@ -434,7 +434,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_8">**void getGroups(callbackFun)**</span>  
+<span id="ff_8">**getGroups(callBackFun:Function): void**</span>  
 
 <code>获取通讯录已存在群组信息</code> 
 
@@ -464,7 +464,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_9">**void getGroupById(jsonData ,callbackFun)**</span>  
+<span id="ff_9">**getGroupById(jsonData :string,callBackFun:Function): void**</span>  
 
 <code>获取通讯录中指定群组信息</code>  
 
@@ -498,7 +498,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_10">**void addGroup(jsonData，callbackFun)**</span>  
+<span id="ff_10">**addGroup(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>添加群组至通讯录</code>  
 
@@ -529,7 +529,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_11">**void deleteGroup(jsonData，callbackFun)**</span>  
+<span id="ff_11">**deleteGroup(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>从通讯录中移除群组</code>   
 
@@ -552,7 +552,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_12">**void updateGroup(jsonData，callbackFun)**</span>  
+<span id="ff_12">**updateGroup(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>更新群组至通讯录</code> 
 

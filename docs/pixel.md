@@ -16,14 +16,14 @@ var pixel = require("Pixel");
 
 本节目录：
 
->[ number getDensity()  获取设备屏幕密度 ](#ff_0)
+>[ getDensity(): number  获取设备屏幕密度 ](#ff_0)
 > 
-> [number px2dp(pxValue)  将绝对像素px转换为相对像素dp ](#ff_1)
+> [px2dp(pxValue:number): number  将绝对像素px转换为相对像素dp ](#ff_1)
 >
->[ number dp2px(dpValue)  将相对像素dp转换为绝对像素px  ](#ff_2)
+>[ dp2px(dpValue:number): number  将相对像素dp转换为绝对像素px  ](#ff_2)
 
 
-<span id="ff_0">**number getDensity()**</span>  
+<span id="ff_0">**getDensity(): number**</span>  
 
 <code>获取设备屏幕密度</code>     
 
@@ -42,7 +42,7 @@ var pixel = require("Pixel");
 > 3.5：Nexus 6等；
 
 
-<span id="ff_1">**number px2dp(pxValue)**</span>  
+<span id="ff_1">**px2dp(pxValue:number): number**</span>  
 
 <code>将绝对像素px转换为相对像素dp</code>   
 
@@ -53,7 +53,7 @@ pxValue：待转换绝对像素，单位px，数字类型
 返回值：转换后的相对像素，单位dp，数字类型
 
 
-<span id="ff_2">**number dp2px(dpValue)**</span>  
+<span id="ff_2">**dp2px(dpValue:number): number**</span>  
 
 <code>将相对像素dp转换为绝对像素px</code>  
 

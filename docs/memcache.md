@@ -17,15 +17,15 @@ var memcache = require("MemCache");
 
 本节目录：
 
->[ void setItem(key,value)  内存缓存数据 ](#ff_0)
+>[ setItem(key:string,value:any): void  内存缓存数据 ](#ff_0)
 > 
-> [obj getItem(key)  读取内存缓存数据 ](#ff_1)
+> [getItem(key:string): any  读取内存缓存数据 ](#ff_1)
 >
->[ obj removeItem(key)   移除内存缓存数据  ](#ff_2)
+>[ removeItem(key:string): any   移除内存缓存数据  ](#ff_2)
 
 
 
-<span id="ff_0">**void setItem(key,value)**</span>  
+<span id="ff_0">**setItem(key:string,value:any): void**</span>  
 
 <code>内存缓存数据</code>    
 
@@ -57,14 +57,12 @@ memCache.setItem("key4", {
         "k3" : "v3",
         "k4" : "v4"
 });
-
-
 ```
 
 
 
 
-<span id="ff_1">**obj getItem(key)**</span>  
+<span id="ff_1">**getItem(key:string): any**</span>  
 
 <code>读取内存缓存数据</code>
 
@@ -89,10 +87,9 @@ var value1 = arr[1];
 //读取JSON
 var jso = memCache.getItem("key4");
 var value2 = jso.k1;
+```
 
-````
-
-<span id="ff_2">**obj removeItem(key)**</span>  
+<span id="ff_2">**removeItem(key:string): any**</span>  
 
 <code>移除内存缓存数据</code>   
 

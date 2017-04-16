@@ -20,35 +20,35 @@ var maputil = require("MapUtil");
 
 > **坐标转换**
 > 
->[ void convertToBd09ll(srcJson,callFunction)   将gcj02/wgs84转换为bd09ll百度坐标系 ](#ff_0)
+>[ convertToBd09ll(srcJson:object,callFunction:Function): void   将gcj02/wgs84转换为bd09ll百度坐标系 ](#ff_0)
 > 
-> [void convertToGcj02(jsonData,callBackFun)  将bd09ll/wgs84转换为gcj02国测坐标系 ](#ff_1)
+> [convertToGcj02(jsonData:object,callBackFun:Function): void  将bd09ll/wgs84转换为gcj02国测坐标系 ](#ff_1)
 >
 >**地理编码转换**
 > 
-> [void geocode(jsonData,callBackFun)    根据地址查询百度地图坐标系经纬度 ](#ff_2)
+> [geocode(jsonData:object,callBackFun:Function): void    根据地址查询百度地图坐标系经纬度 ](#ff_2)
 > 
-> [void reverseGeocode (jsonData,callBackFun)  根据经纬度获取地址详细信息](#ff_3)
+> [reverseGeocode (jsonData:object,callBackFun:Function): void  根据经纬度获取地址详细信息](#ff_3)
 > 
-> [void reverseGeocode (jsonData,callBackFun)  根据经纬度获取地址详细信息](#ff_4)
+> [reverseGeocode (jsonData:object,callBackFun:Function): void  根据经纬度获取地址详细信息](#ff_4)
 >
 >**Poi搜索**
 > 
-> [void searchInCity(jsonData，callFunction)  百度地图市内搜索](#ff_5)
+> [searchInCity(jsonData:object,callFunction:Function): void  百度地图市内搜索](#ff_5)
 > 
-> [void searchInBounds(jsonData，callFunction)  百度地图矩形区域内搜索](#ff_6)
+> [searchInBounds(jsonData:object,callFunction:Function): void  百度地图矩形区域内搜索](#ff_6)
 > 
-> [void searchNearBy(jsonData，callFunction)  百度地图圆形区域内搜索](#ff_7)
+> [searchNearBy(jsonData:object,callFunction:Function): void  百度地图圆形区域内搜索](#ff_7)
 >
 >**其他**
 >
-> [number getDistance(startJson,endJson)  计算两点间实际地理距离](#ff_9)
+> [getDistance(startJson:object,endJson:object): number  计算两点间实际地理距离](#ff_9)
 
 
 
 
 
-<span id="ff_0">**void convertToBd09ll(srcJson,callFunction)**</span>  
+<span id="ff_0">**convertToBd09ll(srcJson:object,callFunction:Function): void**</span>  
 
 <code>将gcj02/wgs84转换为bd09ll百度坐标系</code>  
 
@@ -86,7 +86,7 @@ callFunction，坐标转换执行回调函数，该函数具有Json对象入参�
 
 
 
-<span id="ff_1">**void convertToGcj02(jsonData,callBackFun)**</span>  
+<span id="ff_1">**convertToGcj02(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>将bd09ll/wgs84转换为gcj02国测坐标系</code>   
 
@@ -129,7 +129,7 @@ callFunction，坐标转换执行回调函数，该函数具有Json对象入参�
 
 
 
-<span id="ff_2">**void geocode(jsonData,callBackFun)**</span>  
+<span id="ff_2">**geocode(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>根据地址查询百度地图坐标系经纬度</code>  
 
@@ -159,7 +159,7 @@ callBackFun：查询结果回调函数，该函数具有Json对象入参，定�
 返回值：无
 
 
-<span id="ff_3">**void reverseGeocode (jsonData,callBackFun)**</span>  
+<span id="ff_3">**reverseGeocode (jsonData:object,callBackFun:Function): void**</span>  
 
 <code>根据经纬度获取地址详细信息</code> 
 
@@ -208,7 +208,7 @@ callBackFun：查询结果回调函数，该函数具有Json对象入参，定�
 返回值：无
 
 
-<span id="ff_4">**void searchInCity(jsonData，callFunction)**</span>  
+<span id="ff_4">**searchInCity(jsonData:object,callFunction:Function): void**</span>  
 
 <code>百度地图市内搜索</code>  
 
@@ -282,7 +282,7 @@ callFunction：查询结果回调，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_5">**void searchInBounds(jsonData，callFunction)**</span>  
+<span id="ff_5">**searchInBounds(jsonData:object,callFunction:Function): void**</span>  
 
 <code>百度地图矩形区域内搜索</code>   
 
@@ -361,7 +361,7 @@ callFunction：查询结果回调，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_6">**void searchNearBy(jsonData，callFunction)**</span>  
+<span id="ff_6">**searchNearBy(jsonData:object,callFunction:Function): void**</span>  
 
 <code>百度地图圆形区域内搜索</code> 
 
@@ -438,7 +438,7 @@ callFunction：查询结果回调，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_7">**number getDistance(startJson,endJson)**</span>  
+<span id="ff_7">**getDistance(startJson:object,endJson:object): number**</span>  
 
 <code>计算两点间实际地理距离并返回</code>
 

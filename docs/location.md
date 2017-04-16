@@ -13,7 +13,7 @@ var location = require("Location");
 
 <h2 id="cid_1">js方法</h2>  
 
-<span id="ff_0">**void start(jsonData，callFunction)**</span>  
+<span id="ff_0">**start(jsonData:object,callFunction:Function): void**</span>  
 
 <code>启动系统单次定位</code>  
 
@@ -21,7 +21,7 @@ var location = require("Location");
 
 jsonData：Json对象，定义如下：  
 
-> mode：定位模式，字符串枚举型，[gps/gpsFirst/network/networkFirst]，可选项，仅对Android生效
+> mode：定位模式，字符串枚举型，[gps,gpsFirst,network,networkFirst]，可选项，仅对Android生效
 > 
 > -   gps：GPS定位（默认）
 > 

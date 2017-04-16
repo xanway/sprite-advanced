@@ -23,65 +23,65 @@ var dbcipher = require("DbCipher");
 
 > 同步方法 
 > 
->[ bool open(jsonData)   打开或新建并打开指定名称数据库 ](#ff_0)
+>[ open(jsonData:object): boolean   打开或新建并打开指定名称数据库 ](#ff_0)
 > 
-> [bool isOpen(dbName)   判断指定路径文件是否存在 ](#ff_1)
+> [isOpen(dbName:string): boolean   判断指定路径文件是否存在 ](#ff_1)
 > 
-> [bool reKey(jsonData)  修改已打开加密数据库密码](#ff_24)
+> [reKey(jsonData:object): boolean  修改已打开加密数据库密码](#ff_24)
 >
->[ bool close(dbName)  关闭已打开数据库  ](#ff_2)
+>[ close(dbName:string): boolean  关闭已打开数据库  ](#ff_2)
 >
-> [bool tableExists (jsonData)   数据库中指定数据表是否存在 ](#ff_3)
+> [tableExists (jsonData:object): boolean   数据库中指定数据表是否存在 ](#ff_3)
 > 
->[bool dropTable(jsonData)   在数据库中移除指定数据表 ](#ff_4)
+>[dropTable(jsonData:object): boolean   在数据库中移除指定数据表 ](#ff_4)
 > 
-> [Array getTableColumns(jsonData)  在数据库中获取指定数据表列名数组 ](#ff_5)
+> [getTableColumns(jsonData:object): Array&lt;string&gt;  在数据库中获取指定数据表列名数组 ](#ff_5)
 >
->[ bool execute(jsonData)   执行sql语句 ](#ff_6)
+>[ execute(jsonData:object): boolean   执行sql语句 ](#ff_6)
 >
-> [bool executes(jsonData)   执行多条sql语句 ](#ff_7)
+> [executes(jsonData:object): boolean   执行多条sql语句 ](#ff_7)
 >
->[ Array query(jsonData)   执行查询语句 ](#ff_8)
+>[ query(jsonData:object): Array&lt;object&gt;   执行查询语句 ](#ff_8)
 > 
-> [bool beginTransaction(dbName)  数据库中开启事务 ](#ff_9)
+> [beginTransaction(dbName:string): boolean  数据库中开启事务 ](#ff_9)
 >
->[ bool commitTransaction(dbName)  数据库中提交事务  ](#ff_10)
+>[ commitTransaction(dbName:string): boolean  数据库中提交事务  ](#ff_10)
 >
-> [bool rollbackTransaction(dbName)  数据库中回滚事务 ](#ff_11)
+> [rollbackTransaction(dbName:string): boolean  数据库中回滚事务 ](#ff_11)
 > 
 > 异步方法
 > 
->[void encryptDbAsyn (jsonData,callFunction)  根据输入密码对未加密的sqlite数据库文件进行加密](#ff_26)
+>[encryptDbAsyn (jsonData:object,callFunction:Function): void  根据输入密码对未加密的sqlite数据库文件进行加密](#ff_26)
 > 
->[ void openAsyn(jsonData,callFunction)    打开或新建并打开指定名称数据库 ](#ff_12)
+>[ openAsyn(jsonData:object,callFunction:Function): void    打开或新建并打开指定名称数据库 ](#ff_12)
 >
-> [void isOpenAsyn (dbName,callFunction)    判断数据库是否已经打开 ](#ff_13)
+> [isOpenAsyn (dbName:string,callFunction:Function): void    判断数据库是否已经打开 ](#ff_13)
 > 
-> [void reKeyAsyn(jsonData,callFunction)  修改已打开加密数据库密码](#ff_25)
+> [reKeyAsyn(jsonData:object,callFunction:Function): void  修改已打开加密数据库密码](#ff_25)
 > 
-> [void closeAsyn (dbName,callFunction)   关闭已打开数据库 ](#ff_14)
+> [closeAsyn (dbName:string,callFunction:Function): void   关闭已打开数据库 ](#ff_14)
 > 
-> [void tableExistsAsyn (jsonData,callFunction)  数据库中指定数据表是否存在 ](#ff_15)
+> [tableExistsAsyn (jsonData:object,callFunction:Function): void  数据库中指定数据表是否存在 ](#ff_15)
 > 
->[void dropTableAsyn (jsonData,callFunction)   在数据库中移除指定数据表 ](#ff_16)
+>[dropTableAsyn (jsonData:object,callFunction:Function): void   在数据库中移除指定数据表 ](#ff_16)
 > 
-> [void getTableColumnsAsyn (jsonData,callFunction)  在数据库中获取指定数据表列名数组 ](#ff_17)
+> [getTableColumnsAsyn (jsonData:object,callFunction:Function): void  在数据库中获取指定数据表列名数组 ](#ff_17)
 >
->[ void executeAsyn (jsonData,callFunction)   执行sql语句 ](#ff_18)
+>[ executeAsyn (jsonData:object,callFunction:Function): void   执行sql语句 ](#ff_18)
 >
-> [void executesAsyn (jsonData,callFunction)   执行多条sql语句 ](#ff_19)
+> [executesAsyn (jsonData:object,callFunction:Function): void   执行多条sql语句 ](#ff_19)
 >
->[ void queryAsyn (jsonData,callFunction)  执行查询语句 ](#ff_20)
+>[ queryAsyn (jsonData:object,callFunction:Function): void  执行查询语句 ](#ff_20)
 > 
-> [void beginTransactionAsyn (dbName,callFunction)  数据库中开启事务 ](#ff_21)
+> [beginTransactionAsyn (dbName:string,callFunction:Function): void  数据库中开启事务 ](#ff_21)
 >
->[ void commitTransactionAsyn (dbName,callFunction) 数据库中提交事务  ](#ff_22)
+>[ commitTransactionAsyn (dbName:string,callFunction:Function): void 数据库中提交事务  ](#ff_22)
 >
-> [void rollbackTransactionAsyn (dbName,callFunction)   数据库中回滚事务 ](#ff_23)
+> [rollbackTransactionAsyn (dbName:string,callFunction:Function): void   数据库中回滚事务 ](#ff_23)
 
 
 
-<span id="ff_0">**bool open(jsonData)**</span>  
+<span id="ff_0">**open(jsonData:object): boolean**</span>  
 
 <code>打开或新建并打开指定名称数据库</code>    
 
@@ -122,7 +122,7 @@ if(!flag){
 
 
 
-<span id="ff_1">**bool isOpen(dbName)**</span>  
+<span id="ff_1">**isOpen(dbName:string): boolean**</span>  
 
 <code>判断数据库是否已经打开</code>
 
@@ -155,7 +155,7 @@ if(!flag){
 ```
 
 
-<span id="ff_24">**bool reKey(jsonData)**</span>  
+<span id="ff_24">**reKey(jsonData:object): boolean**</span>  
 
 <code>修改已打开加密数据库密码</code>   
 
@@ -180,7 +180,7 @@ if(!flag){
 
 
 
-<span id="ff_2">**bool close(dbName)**</span>  
+<span id="ff_2">**close(dbName:string): boolean**</span>  
 
 <code>关闭已打开数据库</code>   
 
@@ -197,7 +197,7 @@ dbName：数据库别名，必选项，字符串
 
 
 
-<span id="ff_3">**bool tableExists (jsonData)**</span>  
+<span id="ff_3">**tableExists (jsonData:object): boolean**</span>  
 
 <code>数据库中指定数据表是否存在</code>  
 
@@ -217,7 +217,7 @@ jsonData：查询传入参数，Json对象，定义如下：
 
 
 
-<span id="ff_4">**bool dropTable(jsonData)**</span>  
+<span id="ff_4">**dropTable(jsonData:object): boolean**</span>  
 
 <code>在数据库中移除指定数据表</code>  
 
@@ -238,7 +238,7 @@ jsonData：查询传入参数，Json对象，定义如下：
 
 
 
-<span id="ff_5">**Array getTableColumns(jsonData)**</span>  
+<span id="ff_5">**getTableColumns(jsonData:object): Array&lt;string&gt;**</span>  
 
 <code>在数据库中获取指定数据表列名数组</code>  
 
@@ -254,7 +254,7 @@ jsonData：查询传入参数，Json对象，定义如下：
 
 
 
-<span id="ff_6">**bool execute(jsonData)**</span>  
+<span id="ff_6">**execute(jsonData:object): boolean**</span>  
 
 <code>执行sql语句</code>  
 
@@ -284,7 +284,7 @@ json.sql = "create table jy(sid nvarchar(256),name nvarchar(256),age nvarchar(25
 db.execute(json);
 ```
 
-<span id="ff_7">**bool executes(jsonData)**</span>  
+<span id="ff_7">**executes(jsonData:object): boolean**</span>  
 
 <code>执行多条sql语句</code>  
 
@@ -304,7 +304,7 @@ jsonData：传入参数，Json对象，定义如下：
 
 
 
-<span id="ff_8">**Array query(jsonData)**</span>  
+<span id="ff_8">**query(jsonData:object): Array&lt;object&gt;**</span>  
 
 <code>执行查询语句</code>  
 
@@ -329,7 +329,7 @@ var json = {};
 json.dbName = dbName;
 json.sql = "select * from " + tableName;
 
-var quarray = db.query(json);
+var qu= db.query(json:string): Array&lt;object&gt;;
 if( quarray.length == 0 ){
    // 查询无结果或失败
     return;
@@ -341,7 +341,7 @@ for( var i=0; i<quarray.length; i++ ){
 
 ```
 
-<span id="ff_9">**bool beginTransaction(dbName)**</span>  
+<span id="ff_9">**beginTransaction(dbName:string): boolean**</span>  
 
 <code>数据库中开启事务</code>  
 
@@ -400,7 +400,7 @@ if(flag2){
 ```
 
 
-<span id="ff_10">**bool commitTransaction(dbName)**</span>  
+<span id="ff_10">**commitTransaction(dbName:string): boolean**</span>  
 
 <code>数据库中提交事务</code>  
 
@@ -416,7 +416,7 @@ dbName：数据库别名，必选项，字符串
 
 
 
-<span id="ff_11">**bool rollbackTransaction(dbName)**</span>  
+<span id="ff_11">**rollbackTransaction(dbName:string): boolean**</span>  
 
 <code>数据库中回滚事务</code>  
 
@@ -434,7 +434,7 @@ dbName：数据库别名，必选项，字符串
 
 
 
-<span id="ff_26">void encryptDbAsyn (jsonData,callFunction)</span>  
+<span id="ff_26">encryptDbAsyn (jsonData:object,callFunction:Function): void</span>  
 
 <code>根据输入密码对未加密的sqlite数据库文件进行加密</code>  
 
@@ -461,7 +461,7 @@ callFunction：数据库加密回调函数，入参为数字，标识加密数�
 
 
 
-<span id="ff_12">**void openAsyn(jsonData,callFunction)**</span>  
+<span id="ff_12">**openAsyn(jsonData:object,callFunction:Function): void**</span>  
 
 <code>打开或新建并打开指定名称数据库</code>    
 
@@ -506,7 +506,7 @@ var flag = db.openAsyn(json,function(n){
 
 
 
-<span id="ff_13">**void isOpenAsyn (dbName,callFunction)**</span>  
+<span id="ff_13">**isOpenAsyn (dbName:string,callFunction:Function): void**</span>  
 
 <code>判断数据库是否已经打开</code>
 
@@ -526,7 +526,7 @@ callFunction：判断数据库是否已经打开
 
 
 
-<span id="ff_25">void reKeyAsyn(jsonData,callFunction)</span>  
+<span id="ff_25">reKeyAsyn(jsonData:object,callFunction:Function): void</span>  
 
 <code>修改已打开加密数据库密码</code>
 
@@ -551,7 +551,7 @@ callFunction：修改已打开加密数据库密码回调函数，入参为数�
 
 
 
-<span id="ff_14">**void closeAsyn (dbName,callFunction)**</span>  
+<span id="ff_14">**closeAsyn (dbName:string,callFunction:Function): void**</span>  
 
 <code>关闭已打开数据库</code>   
 
@@ -571,7 +571,7 @@ callFunction：数据库关闭完毕回调函数，入参为数字，标识关�
 
 
 
-<span id="ff_15">**void tableExistsAsyn (jsonData,callFunction)**</span>  
+<span id="ff_15">**tableExistsAsyn (jsonData:object,callFunction:Function): void**</span>  
 
 <code>数据库中指定数据表是否存在</code>  
 
@@ -594,7 +594,7 @@ callFunction：查询完毕回调函数，入参为数字，标识数据库中�
 
 
 
-<span id="ff_16">**void dropTableAsyn (jsonData,callFunction)**</span>  
+<span id="ff_16">**dropTableAsyn (jsonData:object,callFunction:Function): void**</span>  
 
 <code>在数据库中移除指定数据表</code>  
 
@@ -618,7 +618,7 @@ callFunction：移除指定数据表回调函数，入参为数字，标识在�
 
 
 
-<span id="ff_17">**void getTableColumnsAsyn (jsonData,callFunction)**</span>  
+<span id="ff_17">**getTableColumnsAsyn (jsonData:object,callFunction:Function): void**</span>  
 
 <code>在数据库中获取指定数据表列名数组</code>  
 
@@ -637,7 +637,7 @@ callFunction：在数据库中获取指定数据表列名数组回调函数，�
 
 
 
-<span id="ff_18">**void executeAsyn (jsonData,callFunction)**</span>  
+<span id="ff_18">**executeAsyn (jsonData:object,callFunction:Function): void**</span>  
 
 <code>执行sql语句</code>  
 
@@ -661,7 +661,7 @@ callFunction：执行sql语句回调函数，入参为数字，标识执行sql�
 
 
 
-<span id="ff_19">**void executesAsyn (jsonData,callFunction)**</span>  
+<span id="ff_19">**executesAsyn (jsonData:object,callFunction:Function): void**</span>  
 
 <code>执行多条sql语句</code>  
 
@@ -684,7 +684,7 @@ callFunction：执行sql语句回调函数，入参为数字，标识执行sql�
 
 
 
-<span id="ff_20">**void queryAsyn (jsonData,callFunction)**</span>  
+<span id="ff_20">**queryAsyn (jsonData:object,callFunction:Function): void**</span>  
 
 <code>执行查询语句</code>  
 
@@ -704,7 +704,7 @@ callFunction：在数据库中执行查询sql语句回调函数，入参为查�
 
 
 
-<span id="ff_21">**void beginTransactionAsyn (dbName,callFunction)**</span>  
+<span id="ff_21">**beginTransactionAsyn (dbName:string,callFunction:Function): void**</span>  
 
 <code>数据库中开启事务</code>  
 
@@ -724,7 +724,7 @@ callFunction：数据库中开启事务回调函数，入参为数字，标识�
 
 
 
-<span id="ff_22">**void commitTransactionAsyn (dbName,callFunction)**</span>  
+<span id="ff_22">**commitTransactionAsyn (dbName:string,callFunction:Function): void**</span>  
 
 <code>数据库中提交事务</code>  
 
@@ -743,7 +743,7 @@ callFunction：数据库中提交事务回调函数，入参为数字，标识�
 
 
 
-<span id="ff_23">**void rollbackTransactionAsyn (dbName,callFunction)**</span>  
+<span id="ff_23">**rollbackTransactionAsyn (dbName:string,callFunction:Function): void**</span>  
 
 <code>数据库中回滚事务</code>  
 

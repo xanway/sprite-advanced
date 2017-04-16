@@ -17,15 +17,15 @@ var diskcache = require("DiskCache");
 
 本节目录：
 
->[ void setItem(key,value)  磁盘缓存数据 ](#ff_0)
+>[ setItem(key:string,value:any): void  磁盘缓存数据 ](#ff_0)
 > 
-> [obj getItem(key)  读取磁盘缓存数据 ](#ff_1)
+> [getItem(key:string): any  读取磁盘缓存数据 ](#ff_1)
 >
->[ obj removeItem(key)   移除磁盘缓存数据  ](#ff_2)
+>[ removeItem(key:string): any   移除磁盘缓存数据  ](#ff_2)
 
 
 
-<span id="ff_0">**void setItem(key,value)**</span>  
+<span id="ff_0">**setItem(key:string,value:any): void**</span>  
 
 <code>磁盘缓存数据</code>    
 
@@ -60,7 +60,7 @@ diskCache.setItem("key4", {
 
 ```
 
-<span id="ff_1">**obj getItem(key)**</span>  
+<span id="ff_1">**getItem(key:string): any**</span>  
 
 <code>读取磁盘缓存数据</code>
 
@@ -88,7 +88,7 @@ var value2 = jso.k1;
 
 ````
 
-<span id="ff_2">**obj removeItem(key)**</span>  
+<span id="ff_2">**removeItem(key:string): any**</span>  
 
 <code>移除磁盘缓存数据</code>   
 
@@ -98,7 +98,7 @@ key：需移除数据key值，字符串类型；
 
 返回值：已移除的数据value值，支持数字，字符串，数组，JSON类型，若获取失败则返回null；
 
-<span id="ff_3">**void clear()**</span>  
+<span id="ff_3">**clear(): void**</span>  
 
 <code>清空磁盘缓存数据</code>   
 

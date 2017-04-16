@@ -17,35 +17,35 @@ var encryption = require("Encryption");
 
 本节目录：
 
->[ base64Encode(src)  对传入的src字符串进行base64编码 ](#ff_0)
+>[ base64Encode(src:string): string  对传入的src字符串进行base64编码 ](#ff_0)
 > 
-> [ String base64Decode(src)  对传入的src字符串进行base64解码 ](#ff_1)
+> [ base64Decode(src:string): string  对传入的src字符串进行base64解码 ](#ff_1)
 >
->[ String uuid()   生成唯一UUID字符串  ](#ff_2)
+>[ uuid(): string   生成唯一UUID字符串  ](#ff_2)
 >
-> [String md5(src)  对传入的src字符串进行md5加密 ](#ff_3)
+> [md5(src:string): string  对传入的src字符串进行md5加密 ](#ff_3)
 > 
-> [String sha(src,type)   对传入的src字符串进行hash编码  ](#ff_4)
+> [sha(src:string,type:string): string   对传入的src字符串进行hash编码  ](#ff_4)
 > 
->[ String urlEncode(src,type)   对传入的src字符串进行UrlEncode  ](#ff_5)
+>[ urlEncode(src:string,type:string): string   对传入的src字符串进行UrlEncode  ](#ff_5)
 >
->[ String escapeXml(str)  转换xml中需要转义的字符  ](#ff_6)
+>[ escapeXml(str:string): string  转换xml中需要转义的字符  ](#ff_6)
 >
->[ String unEscapeXml(str)  逆转xml中转义符  ](#ff_7)
+>[ unEscapeXml(str:string): string  逆转xml中转义符  ](#ff_7)
 >
->[ String rgbToHex(rgbJson)  将rgb格式转换为#rrggbb格式字符串  ](#ff_8)
+>[ rgbToHex(rgbJson:object): string  将rgb格式转换为#rrggbb格式字符串  ](#ff_8)
 >
->[ Json hexToRgb(hex)   将#rrggbb格式字符串转换为rgb格式  ](#ff_9)
+>[ hexToRgb(hex:string): object   将#rrggbb格式字符串转换为rgb格式  ](#ff_9)
 > 
-> [String rgbaToHex(rgba)   将rgba格式字符串转换为#aarrggbb  ](#ff_10)
+> [rgbaToHex(rgba:string): string   将rgba格式字符串转换为#aarrggbb  ](#ff_10)
 > 
-> [Json hexToRgba(hex)  将#aarrggbb格式字符串转换为rgba](#ff_11)  
+> [hexToRgba(hex:string): object  将#aarrggbb格式字符串转换为rgba](#ff_11)  
 
 
 
 
 
-<span id="ff_0">**String base64Encode(src)**</span>  
+<span id="ff_0">**base64Encode(src:string): string **</span>  
 
 <code>对传入的src字符串进行base64编码</code>  
 
@@ -57,7 +57,7 @@ src：需要进行编码的字符串，字符串类型
 
 
 
-<span id="ff_1">**String base64Decode(src)**</span>  
+<span id="ff_1">**base64Decode(src:string): string**</span>  
 
 <code>对传入的src字符串进行base64解码</code>
 
@@ -69,7 +69,7 @@ src：需要base64解码的字符串，字符串类型
 
 
 
-<span id="ff_2">**String uuid()**</span>  
+<span id="ff_2">**uuid(): string**</span>  
 
 <code>生成唯一UUID字符串</code>   
 
@@ -82,7 +82,7 @@ src：需要base64解码的字符串，字符串类型
 
 
 
-<span id="ff_3">**String md5(src)**</span>  
+<span id="ff_3">**md5(src:string): string**</span>  
 
 <code>对传入的src字符串进行md5加密</code>  
 
@@ -94,7 +94,7 @@ src：需要Md5加密的字符串，字符串类型
 
 
 
-<span id="ff_4">**String sha(src,type)**</span>  
+<span id="ff_4">**sha(src:string,type:string): string**</span>  
 
 <code>对传入的src字符串进行hash编码</code> 
 
@@ -109,7 +109,7 @@ type：hash加密类型，字符串枚举型，[SHA1,SHA224,SHA256,SHA384,SHA512
 
 
 
-<span id="ff_5">**String urlEncode(src,type)**</span>  
+<span id="ff_5">**urlEncode(src:string,type:string): string**</span>  
 
 <code>对传入的src字符串进行UrlEncode编码</code> 
 
@@ -126,7 +126,7 @@ type：编码类型，数字，取值为[ 0, 1 ]，默认为0。
 返回值：返回urlEncode编码后字符串数据
 
 
-<span id="ff_6">**String escapeXml(str)**</span>  
+<span id="ff_6">**escapeXml(str:string): string**</span>  
 
 <code>转换xml中需要转义的字符</code>   
 
@@ -149,7 +149,7 @@ str：包含转义字符的字符串，字符串类型
 > &quot; 转换后 &amp;quot;
 
 
-<span id="ff_7">**String unEscapeXml(str)**</span>  
+<span id="ff_7">**unEscapeXml(str:string): string**</span>  
 
 <code>逆转xml中转义符</code>   
 
@@ -173,7 +173,7 @@ str：包含转义后字符的字符串，字符串类型
 > &amp;quot; 转换后 "
 
 
-<span id="ff_8">**String rgbToHex(rgbJson)**</span>  
+<span id="ff_8">**rgbToHex(rgbJson:object): string**</span>  
 
 <code>将rgb格式转换为#rrggbb格式字符串</code>    
 
@@ -188,7 +188,7 @@ rgb：待转换的rgb数据，Json对象，定义如下：
 返回值：转换后#rrggbb格式字符串，如：#ff0000
 
 
-<span id="ff_9">**Json hexToRgb(hex)**</span>  
+<span id="ff_9">**hexToRgb(hex:string): object**</span>  
 
 <code>将#rrggbb格式字符串转换为rgb格式</code>  
 
@@ -205,7 +205,7 @@ hex：待转换的#rrggbb格式字符串，字符串类型，如：#ff0000
 > blue：blue色值，数字，0-255；
 
 
-<span id="ff_10">**String rgbaToHex(rgba)**</span>  
+<span id="ff_10">**rgbaToHex(rgba:string): string**</span>  
 
 <code>将rgba格式字符串转换为#aarrggbb</code>   
 
@@ -224,7 +224,7 @@ rgba：待转换的rgba数据，Json对象，定义如下：
 返回值：转换后#aarrggbb格式字符串，如：#ccff0000
 
 
-<span id="ff_11">**Json hexToRgba(hex)**</span>  
+<span id="ff_11">**hexToRgba(hex:string): object**</span>  
 
 <code>将#aarrggbb格式字符串转换为rgba</code>   
 

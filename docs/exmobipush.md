@@ -20,26 +20,26 @@ var exmobipush = require("ExMobiPush");
 
 本节目录：
 
-[void init(jsonData)   初始化Push推送配置 ](#ff_0) 
+[init(jsonData:object): void   初始化Push推送配置 ](#ff_0) 
 
-[void start()  启动推送服务 ](#ff_1)
+[start(): void  启动推送服务 ](#ff_1)
 
-[void stop()  停止推送服务 ](#ff_2) 
+[stop(): void  停止推送服务 ](#ff_2) 
 
-[String getVersion()  获取Push SDK版本信息 ](#ff_3) 
+[getVersion(): string  获取Push SDK版本信息 ](#ff_3) 
 
-[bool setWorkday(workday) 设置推送工作日](#ff_4)
+[setWorkday(workday:string): boolean 设置推送工作日](#ff_4)
 
-[String getWorkDay()  获取配置的推送工作日](#ff_5)
+[getWorkDay(): string  获取配置的推送工作日](#ff_5)
 
-[bool setDisturbMode(jsonData)  配置工作日推送工作时间](#ff_6)
+[setDisturbMode(jsonData:object): boolean  配置工作日推送工作时间](#ff_6)
 
-[String getDisturbMode()   获取配置的工作日推送时间](#ff_7)
-
-
+[getDisturbMode(): object   获取配置的工作日推送时间](#ff_7)
 
 
-<span id="ff_0">**void init(jsonData)**</span>  
+
+
+<span id="ff_0">**init(jsonData:object): void**</span>  
 
 <code>初始化Push推送配置</code>  
 
@@ -70,7 +70,7 @@ jsonData，初始化参数设置，Json类型，定义如下：
 - sprite标准客户端Android的包名为：com.fiberhome.sprite.client，Ios用的是bundleid：cn.com.fiberhome.sprite
 
 
-<span id="ff_1">**void start()**</span>  
+<span id="ff_1">**start(): void**</span>  
 
 <code>启动推送服务</code>   
 
@@ -82,7 +82,7 @@ jsonData，初始化参数设置，Json类型，定义如下：
 
 **注：** 该方法建议在程序入口js中使用
 
-<span id="ff_2">**void stop()**</span>  
+<span id="ff_2">**stop(): void**</span>  
 
 <code>停止推送服务</code>  
 
@@ -96,7 +96,7 @@ jsonData，初始化参数设置，Json类型，定义如下：
 
 
 
-<span id="ff_3">**String getVersion()**</span>  
+<span id="ff_3">**getVersion(): string**</span>  
 
 <code>获取Push SDK版本信息</code>  
 
@@ -105,7 +105,7 @@ jsonData，初始化参数设置，Json类型，定义如下：
 返回值：Push SDK版本信息，字符串类型
 
 
-<span id="ff_4">**bool setWorkday(workday)**</span>  
+<span id="ff_4">**setWorkday(workday:string): boolean**</span>  
 
 <code>设置推送工作日</code>  
 
@@ -122,7 +122,7 @@ jsonData，初始化参数设置，Json类型，定义如下：
 - 如果IOS也想有类似的效果，建议这种推送策略在服务端执行，由业务系统来控制具体什么时候推送消息。
 
 
-<span id="ff_5">**String getWorkDay()**</span>  
+<span id="ff_5">**getWorkDay(): string**</span>  
 
 <code>获取配置的推送工作日</code>   
 
@@ -133,7 +133,7 @@ jsonData，初始化参数设置，Json类型，定义如下：
 注：仅Android支持
 
 
-<span id="ff_6">**bool setDisturbMode(jsonData)**</span>  
+<span id="ff_6">**setDisturbMode(jsonData:object): boolean**</span>  
 
 <code>配置工作日推送工作时间</code>
 
@@ -156,11 +156,12 @@ jsonData：配置工作日推送时间参数，Json对象，定义如下：
 **注：** 仅Android支持
 
 
-<span id="ff_6">**String getDisturbMode()**</span>  
+<span id="ff_6">**getDisturbMode(): object**</span>  
 
 <code>获取配置的工作日推送时间</code>
 
-参数：无
+参数：无  
+
 返回值：配置的工作日推送时间，Json对象，定义如下：  
 
 > startHour：开始小时，24 小时制，取值范围 0~23

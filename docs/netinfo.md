@@ -17,16 +17,16 @@ var netinfo = require("NetInfo");
 
 本节目录：
 
->[ int getStatus()  获取当前网络连接状态 ](#ff_0)
+>[ getStatus(): number  获取当前网络连接状态 ](#ff_0)
 > 
-> [Array getIps()  获取连接所有网络ip地址](#ff_1)
+> [getIps(): Array&lt;string&gt; 获取连接所有网络ip地址](#ff_1)
 > 
->[ jsonData getWifiInfo()  获取当前连接的wifi网络信息](#ff_2)
+>[ getWifiInfo(): object  获取当前连接的wifi网络信息](#ff_2)
 
 
 
 
-<span id="ff_0">**int getStatus()**</span>  
+<span id="ff_0">**getStatus(): number**</span>  
 
 <code>获取当前网络连接状态</code>  
 
@@ -42,7 +42,7 @@ var netinfo = require("NetInfo");
 
 
 
-<span id="ff_1">**Array getIps()**</span>  
+<span id="ff_1">**getIps(): Array&lt;string&gt;**</span>  
 
 <code>获取连接所有网络ip地址</code>
  
@@ -53,7 +53,7 @@ var netinfo = require("NetInfo");
 
 
 
-<span id="ff_2">**jsonData getWifiInfo()**</span>  
+<span id="ff_2">**getWifiInfo(): object**</span>  
 
 <code>获取当前连接的wifi网络信息</code>   
 
@@ -75,13 +75,13 @@ var netinfo = require("NetInfo");
 
 事件的操作支持以下方法：
 
-> [void on(messageName,function)   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
+> [on(messageName:string,callback:Function): void   组件注册事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_1)   
 > 
-> [void fire(messageName,params)  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
+> [fire(messageName:string,params:Array&lt;any&gt;): void  组件事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_2)   
 > 
-> [void off(messageName,function)  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
+> [off(messageName:string,callback:Function): void  组件移除事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_3)  
 >  
-> [Array getOn(messageName)  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
+> [getOn(messageName:string): Array&lt;Function&gt;  获取已绑定的事件的触发函数](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#jjxg_4)   
 
 **netChanged**  
 

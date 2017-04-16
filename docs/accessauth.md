@@ -19,13 +19,13 @@ var accessauth = require("AccessAuth");
 
 本节目录：
 
->[ void init (jsonData)  初始化ExMobi服务端鉴权SDK ](#ff_0)
+>[ init (jsonData:object): void  初始化ExMobi服务端鉴权SDK ](#ff_0)
 > 
-> [void getToken (jsonData,callbackFun)  ExMobi服务端SDK获取指定服务token值 ](#ff_1)
+> [getToken (jsonData:object,callBackFun:Function): void  ExMobi服务端SDK获取指定服务token值 ](#ff_1)
 
 
 
-<span id="ff_0">**void init (jsonData)**</span>  
+<span id="ff_0">**init (jsonData:object): void**</span>  
 
 <code>初始化ExMobi服务端鉴权SDK</code>     
 
@@ -39,7 +39,7 @@ jsonData：初始化鉴权SDK参数，Json对象定位如下：
 
 
 
-<span id="ff_1">**void getToken (jsonData,callbackFun)**</span>  
+<span id="ff_1">**getToken (jsonData:object,callBackFun:Function): void**</span>  
 
 <code>ExMobi服务端SDK获取指定服务token值</code>   
 

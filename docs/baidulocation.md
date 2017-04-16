@@ -23,15 +23,15 @@ var baidulocation = require("BaiduLocation");
 
 本节目录：
 
-> [void start(jsonData)   启动定位 ](#ff_0)
+> [start(jsonData:object): void   启动定位 ](#ff_0)
 > 
-> [bool isStarted() 百度定位是否正在运行 ](#ff_1)
+> [isStarted(): boolean 百度定位是否正在运行 ](#ff_1)
 >
-> [void stop()   百度定位是否正在运行 ](#ff_2)
+> [stop(): void   百度定位是否正在运行 ](#ff_2)
 
 
 
-<span id="ff_0">**void start(jsonData)**</span>  
+<span id="ff_0">**start(jsonData:object): void**</span>  
 
 <code>启动定位</code>  
 
@@ -72,7 +72,7 @@ jsonData：Json对象，定义如下：
 
 
 
-<span id="ff_1">**bool isStarted()**</span>  
+<span id="ff_1">**isStarted(): boolean**</span>  
 
 <code>百度定位是否正在运行</code>   
 
@@ -84,7 +84,7 @@ jsonData：Json对象，定义如下：
 > 
 > false：百度定位未启动
 
-<span id="ff_2">**void stop()**</span>  
+<span id="ff_2">**stop(): void**</span>  
 
 <code>关闭百度定位</code>  
 
@@ -185,5 +185,5 @@ param对象为Json对象，定义如下：
 > 
 > operators：运营商信息，数字，定位类型为 network时可用，仅Android支持
 
-**注： ** 由于ios的百度定位sdk没有提供详细地理位置信息， ios如果想要获取地理位置详细描述信息需要开发者通过经纬度直接去百度官方定位接口获取。可以参考接口说明：[http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-geocoding](http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-geocoding)，可以使用MapUtil 地图工具类中的[void reverseGeocode (jsonData,callBackFun)  根据经纬度获取地址详细信息](https://gitdocument.exmobi.cn/sprite-advanced/maputil.html#ff_3)
+**注： ** 由于ios的百度定位sdk没有提供详细地理位置信息， ios如果想要获取地理位置详细描述信息需要开发者通过经纬度直接去百度官方定位接口获取。可以参考接口说明：[http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-geocoding](http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-geocoding)，可以使用MapUtil 地图工具类中的[reverseGeocode (jsonData:object,callBackFun:Function): void  根据经纬度获取地址详细信息](https://gitdocument.exmobi.cn/sprite-advanced/maputil.html#ff_3)
 

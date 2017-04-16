@@ -16,22 +16,22 @@ var sangforvpn = require("SangforVpn");
 
 本节目录：
 
-> [void init(jsonData,callBackFun)    初始化深信服Vpn服务器 ](#ff_0) 
+> [init(jsonData:object,callBackFun:Function): void    初始化深信服Vpn服务器 ](#ff_0) 
 > 
-> [void login(jsonData,callBackFun)  登录深信服Vpn服务器 ](#ff_1)
+> [login(jsonData:object,callBackFun:Function): void  登录深信服Vpn服务器 ](#ff_1)
 > 
-> [void logout(callBackFun)  注销深信服Vpn服务器 ](#ff_2) 
+> [logout(callBackFun:Function): void  注销深信服Vpn服务器 ](#ff_2) 
 > 
-> [void smsLogin(jsonData,callBackFun)  启动深信服vpn短信验证码登录 ](#ff_3) 
+> [smsLogin(jsonData:object,callBackFun:Function): void  启动深信服vpn短信验证码登录 ](#ff_3) 
 > 
-> [void smsRefresh() 向vpn服务器发送通知重新获取短信验证码](#ff_4)
+> [smsRefresh(): void 向vpn服务器发送通知重新获取短信验证码](#ff_4)
 > 
-> [number getVpnStatus()  返回深信服vpn当前连接状态](#ff_5)
+> [getVpnStatus(): number  返回深信服vpn当前连接状态](#ff_5)
 
 
 
 
-<span id="ff_0">**void init(jsonData,callBackFun)**</span>  
+<span id="ff_0">**init(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>初始化深信服Vpn服务器</code>  
 
@@ -54,7 +54,7 @@ callBackFun，初始化Vpn服务器结果回调函数，函数具有json类型�
 注：若IP和端口发生变化需调用app.reload()方法重载应用
 
 
-<span id="ff_1">**void login(jsonData,callBackFun)**</span>  
+<span id="ff_1">**login(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>登录深信服Vpn服务器</code>   
 
@@ -82,7 +82,7 @@ callBackFun，初始化Vpn服务器结果回调函数，函数具有json类型�
 > 
 > - 3：vpn服务器设置硬件特征码校验，等待管理员审批 
 
-<span id="ff_2">**void logout(callBackFun)**</span>  
+<span id="ff_2">**logout(callBackFun:Function): void**</span>  
 
 <code>注销深信服Vpn服务器</code>  
 
@@ -96,7 +96,7 @@ callBackFun，注销Vpn服务器结果回调函数，函数具有json类型入�
 > 
 > - 1：注销失败
 
-<span id="ff_3">**void smsLogin(jsonData,callBackFun)**</span>  
+<span id="ff_3">**smsLogin(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>启动深信服vpn短信验证码登录</code>  
 
@@ -114,7 +114,7 @@ callBackFun，短信验证码登录结果回调函数，函数具有json类型�
 > 
 > - 1：短信登录失败
 
-<span id="ff_4">**void smsRefresh()**</span>  
+<span id="ff_4">**smsRefresh(): void**</span>  
 
 <code>向vpn服务器发送通知重新获取短信验证码</code>  
 
@@ -124,7 +124,7 @@ callBackFun，短信验证码登录结果回调函数，函数具有json类型�
 
 **注：** vpn服务器设置有短信发送间隔周期，如在此间隔周期内多次获取短信验证码则无效
 
-<span id="ff_5">**number getVpnStatus()**</span>  
+<span id="ff_5">**getVpnStatus(): number**</span>  
 
 <code>返回深信服vpn当前连接状态</code>   
 

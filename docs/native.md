@@ -19,22 +19,22 @@ var native = require("Native");
 
 
 > 
->[ void openApp(jsonData，callFunction)   启动第三方应用并传值 ](#ff_0)
+>[ openApp(jsonData:object,callFunction:Function): void   启动第三方应用并传值 ](#ff_0)
 > 
-> [ void openFile(path)  调用系统第三方程序打开指定文件 ](#ff_1)
+> [ openFile(path:string): void  调用系统第三方程序打开指定文件 ](#ff_1)
 >
->[ void browser(url)   调用系统浏览器打开指定url地址  ](#ff_2)
+>[ browser(url:string): void   调用系统浏览器打开指定url地址  ](#ff_2)
 >
-> [bool apkInstalled(package)  设备是否安装apk应用 ](#ff_3)
+> [apkInstalled(package:string): boolean  设备是否安装apk应用 ](#ff_3)
 > 
-> [void installApk(apkPath,callFunction)   安装指定路径apk安装包  ](#ff_4)
+> [installApk(apkPath:string,callFunction:Function): void   安装指定路径apk安装包  ](#ff_4)
 > 
->[ void uninstallApk(packageName,callFunction)   卸载指定应用  ](#ff_5)
+>[ uninstallApk(packageName:string,callFunction:Function): void   卸载指定应用  ](#ff_5)
  
 
 
 
-<span id="ff_0">**void openApp(jsonData，callFunction)**</span>  
+<span id="ff_0">**openApp(jsonData:object,callFunction:Function): void**</span>  
 
 <code>启动第三方应用并传值</code>  
 
@@ -97,7 +97,7 @@ function openAppCallback(data) {
 ```
 
 
-<span id="ff_1">**void openFile(path)**</span>  
+<span id="ff_1">**openFile(path:string): void**</span>  
 
 <code>调用系统第三方程序打开指定文件</code>
 
@@ -113,7 +113,7 @@ path：需要打开本地文件地址，支持res: file:前缀，字符串类型
 
 
 
-<span id="ff_2">**void browser(url)**</span>  
+<span id="ff_2">**browser(url:string): void**</span>  
 
 <code>调用系统浏览器打开指定url地址</code>   
 
@@ -129,7 +129,7 @@ url：需要打开url地址，字符串类型，必选项；
 
 
 
-<span id="ff_3">**bool apkInstalled(package)**</span>  
+<span id="ff_3">**apkInstalled(package:string): boolean**</span>  
 
 <code>设备是否安装apk应用</code>  
 
@@ -142,7 +142,7 @@ package：需查询apk应用包名，字符串类型，必选项
 **注：** 仅Android支持
 
 
-<span id="ff_4">**void installApk(apkPath,callFunction)**</span>  
+<span id="ff_4">**installApk(apkPath:string,callFunction:Function): void**</span>  
 
 <code>安装指定路径apk安装包</code> 
 
@@ -161,7 +161,7 @@ callFunction：安装回调函数，入参为Json对象，定义如下：
 **注：** 仅Android支持  
 
 
-<span id="ff_5">**void uninstallApk(packageName,callFunction)**</span>  
+<span id="ff_5">**uninstallApk(packageName:string,callFunction:Function): void**</span>  
 
 <code>卸载指定应用</code> 
 

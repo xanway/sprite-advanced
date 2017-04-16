@@ -17,25 +17,25 @@ var weibo = require("WeiBo");
 
 >**微博登录**
 >
->[bool isWeiboInstalled()   新浪微博是否安装 ](#ff_0)
+>[isWeiboInstalled(): boolean   新浪微博是否安装 ](#ff_0)
 > 
-> [void login(jsonData，callBackFun)  向新浪微博平台认证授权用户登录 ](#ff_1)
+> [login(jsonData:object,callBackFun:Function): void  向新浪微博平台认证授权用户登录 ](#ff_1)
 >
-> [void logout(callBackFun)    新浪微博用户登出 ](#ff_2)
+> [logout(callBackFun:Function): void    新浪微博用户登出 ](#ff_2)
 >
-> [void getUserInfo(jsonData，callBackFun)   获取已登录新浪微博用户基本信息 ](#ff_3)
+> [getUserInfo(jsonData:object,callBackFun:Function): void   获取已登录新浪微博用户基本信息 ](#ff_3)
 >
 >**微博分享**
 >
-> [void shareText(jsonData，callBackFun)   分享文本到新浪微博 ](#ff_4)
+> [shareText(jsonData:object,callBackFun:Function): void   分享文本到新浪微博 ](#ff_4)
 >
-> [void shareImage(jsonData，callBackFun)   分享图片到新浪微博参数 ](#ff_5)
+> [shareImage(jsonData:object,callBackFun:Function): void   分享图片到新浪微博参数 ](#ff_5)
 >
-> [void shareNews(jsonData，callBackFun)  分享新闻（图文信息）到新浪微博 ](#ff_6)
+> [shareNews(jsonData:object,callBackFun:Function): void  分享新闻（图文信息）到新浪微博 ](#ff_6)
 
 
 
-<span id="ff_0">**bool isWeiboInstalled()**</span>  
+<span id="ff_0">**isWeiboInstalled(): boolean**</span>  
 
 <code>新浪微博是否安装</code>  
 
@@ -49,7 +49,7 @@ var weibo = require("WeiBo");
 
 
 
-<span id="ff_1">**void login(jsonData，callBackFun)**</span>  
+<span id="ff_1">**login(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>向新浪微博平台认证授权用户登录</code> 
 
@@ -84,7 +84,7 @@ callbackFun：新浪微博用户授权认证回调，该函数具有json类型�
 
 
 
-<span id="ff_2">**void logout(callBackFun)**</span>  
+<span id="ff_2">**logout(callBackFun:Function): void**</span>  
 
 <code>新浪微博用户登出</code> 
 
@@ -100,7 +100,7 @@ callbackFun：新浪微博用户授权认证回调，该函数具有json类型�
 
 
 
-<span id="ff_3">**void getUserInfo(jsonData，callBackFun)**</span>  
+<span id="ff_3">**getUserInfo(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>获取已登录新浪微博用户基本信息</code>   
 
@@ -187,7 +187,7 @@ callbackFun：新浪微博登录用户授权认证回调，该函数具有json�
 
 
 
-<span id="ff_4">**void shareText(jsonData，callBackFun)**</span>  
+<span id="ff_4">**shareText(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>分享文本到新浪微博</code>
 
@@ -210,7 +210,7 @@ callbackFun：分享回调，该函数具有json类型入参，入参定义如�
 返回值：无
 
 
-<span id="ff_5">**void shareImage(jsonData，callBackFun)**</span>  
+<span id="ff_5">**shareImage(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>分享图片到新浪微博参数</code>  
 
@@ -234,7 +234,7 @@ callbackFun：分享回调，该函数具有json类型入参，入参定义如�
 
 
 
-<span id="ff_6">**void shareNews(jsonData，callBackFun)**</span>  
+<span id="ff_6">**shareNews(jsonData:object,callBackFun:Function): void**</span>  
 
 <code>分享新闻（图文信息）到新浪微博</code>
 
