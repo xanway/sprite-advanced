@@ -69,7 +69,7 @@ title.on("rtextClick", function (e) {
 
 
 
-<span id="ff_2">**background(): void**</span>  
+<span id="ff_3">**background(): void**</span>  
 
 <code>切换程序至后台</code>    
 
@@ -81,7 +81,7 @@ title.on("rtextClick", function (e) {
 
 
 
-<span id="ff_3">**reload(): void**</span>  
+<span id="ff_4">**reload(): void**</span>  
 
 <code>重启程序</code>  
 
