@@ -23,7 +23,7 @@ var document = require("Document");
 > 
 >[ getRootElement(): IElement  获取页面根对象  ](#ff_2)
 > 
-> [createElement(tagName:string,propsData:object,domObj:IElement): IElement  创建UI控件对象 ](#ff_3)
+> [createElement(tagName:string,propsData:Object,domObj:IElement): IElement  创建UI控件对象 ](#ff_3)
 > 
 > [createElementByXml(xml:string,domObj:IElement):IElement  通过xml文本创建UI控件对象  ](#ff_4)
 > 
@@ -100,7 +100,7 @@ if(rootObj !=null){
 ```
 
 
-<span id="ff_3">**createElement(tagName:string,propsData:object,domObj:IElement): IElement**</span>  
+<span id="ff_3">**createElement(tagName:string,propsData:Object,domObj:IElement): IElement**</span>  
 
 <code>创建UI控件对象</code>  
 
@@ -161,7 +161,7 @@ domObj：当前js运行环境对象，可选参数，component模板中使用，
 
 var popxmlstr = '<box id="box_1" ><text>123</text></box>';
 //创建一个box
-var popmenu= document.createElementByXml(popxmlstr:string): object;
+var popmenu= document.createElementByXml(popxmlstr:string): Object;
 popbgid.appendChild(popmenuobj);  
 document.refresh();
 ```

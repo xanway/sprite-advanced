@@ -17,7 +17,7 @@ var audioplay = require("AudioPlay");
 
 本节目录：
 
->[ init(jsonData:object): void  初始化当前播放音频信息 ](#ff_0)
+>[ init(jsonData:Object): void  初始化当前播放音频信息 ](#ff_0)
 > 
 > [start(): void  播放音频 ](#ff_1)
 > 
@@ -40,7 +40,7 @@ var audioplay = require("AudioPlay");
 
 
 
-<span id="ff_0">**init(jsonData:object): void**</span>  
+<span id="ff_0">**init(jsonData:Object): void**</span>  
 
 <code>初始化当前播放音频信息</code>  
 

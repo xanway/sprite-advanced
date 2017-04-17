@@ -23,23 +23,23 @@ var db = require("Db");
 
 > 同步方法 
 > 
->[ open(jsonData:object): boolean   打开或新建并打开指定名称数据库 ](#ff_0)
+>[ open(jsonData:Object): boolean   打开或新建并打开指定名称数据库 ](#ff_0)
 > 
 > [isOpen(dbName:string): boolean   判断指定路径文件是否存在 ](#ff_1)
 >
 >[ close(dbName:string): boolean  关闭已打开数据库  ](#ff_2)
 >
-> [tableExists (jsonData:object): boolean   数据库中指定数据表是否存在 ](#ff_3)
+> [tableExists (jsonData:Object): boolean   数据库中指定数据表是否存在 ](#ff_3)
 > 
->[dropTable(jsonData:object): boolean   在数据库中移除指定数据表 ](#ff_4)
+>[dropTable(jsonData:Object): boolean   在数据库中移除指定数据表 ](#ff_4)
 > 
-> [getTableColumns(jsonData:object): Array&lt;object&gt;  在数据库中获取指定数据表列名数组 ](#ff_5)
+> [getTableColumns(jsonData:Object): Array&lt;Object&gt;  在数据库中获取指定数据表列名数组 ](#ff_5)
 >
->[ execute(jsonData:object): boolean   执行sql语句 ](#ff_6)
+>[ execute(jsonData:Object): boolean   执行sql语句 ](#ff_6)
 >
-> [executes(jsonData:object): boolean   执行多条sql语句 ](#ff_7)
+> [executes(jsonData:Object): boolean   执行多条sql语句 ](#ff_7)
 >
->[ query(jsonData:object): Array&lt;object&gt;   执行查询语句 ](#ff_8)
+>[ query(jsonData:Object): Array&lt;Object&gt;   执行查询语句 ](#ff_8)
 > 
 > [beginTransaction(dbName:string): boolean  数据库中开启事务 ](#ff_9)
 >
@@ -49,23 +49,23 @@ var db = require("Db");
 > 
 > 异步方法
 > 
->[ openAsyn(jsonData:object,callFunction:Function): void    打开或新建并打开指定名称数据库 ](#ff_12)
+>[ openAsyn(jsonData:Object,callFunction:Function): void    打开或新建并打开指定名称数据库 ](#ff_12)
 >
 > [isOpenAsyn (dbName:string,callFunction:Function): void    判断数据库是否已经打开 ](#ff_13)
 > 
 > [closeAsyn (dbName:string,callFunction:Function): void   关闭已打开数据库 ](#ff_14)
 > 
-> [tableExistsAsyn (jsonData:object,callFunction:Function): void  数据库中指定数据表是否存在 ](#ff_15)
+> [tableExistsAsyn (jsonData:Object,callFunction:Function): void  数据库中指定数据表是否存在 ](#ff_15)
 > 
->[dropTableAsyn (jsonData:object,callFunction:Function): void   在数据库中移除指定数据表 ](#ff_16)
+>[dropTableAsyn (jsonData:Object,callFunction:Function): void   在数据库中移除指定数据表 ](#ff_16)
 > 
-> [getTableColumnsAsyn (jsonData:object,callFunction:Function): void  在数据库中获取指定数据表列名数组 ](#ff_17)
+> [getTableColumnsAsyn (jsonData:Object,callFunction:Function): void  在数据库中获取指定数据表列名数组 ](#ff_17)
 >
->[ executeAsyn (jsonData:object,callFunction:Function): void   执行sql语句 ](#ff_18)
+>[ executeAsyn (jsonData:Object,callFunction:Function): void   执行sql语句 ](#ff_18)
 >
-> [executesAsyn (jsonData:object,callFunction:Function): void   执行多条sql语句 ](#ff_19)
+> [executesAsyn (jsonData:Object,callFunction:Function): void   执行多条sql语句 ](#ff_19)
 >
->[ queryAsyn (jsonData:object,callFunction:Function): void  执行查询语句 ](#ff_20)
+>[ queryAsyn (jsonData:Object,callFunction:Function): void  执行查询语句 ](#ff_20)
 > 
 > [beginTransactionAsyn (dbName:string,callFunction:Function): void  数据库中开启事务 ](#ff_21)
 >
@@ -75,7 +75,7 @@ var db = require("Db");
 
 
 
-<span id="ff_0">**open(jsonData:object): boolean**</span>  
+<span id="ff_0">**open(jsonData:Object): boolean**</span>  
 
 <code>打开或新建并打开指定名称数据库</code>    
 
@@ -161,7 +161,7 @@ dbName：数据库别名，必选项，字符串
 
 
 
-<span id="ff_3">**tableExists (jsonData:object): boolean**</span>  
+<span id="ff_3">**tableExists (jsonData:Object): boolean**</span>  
 
 <code>数据库中指定数据表是否存在</code>  
 
@@ -181,7 +181,7 @@ jsonData：查询传入参数，Json对象，定义如下：
 
 
 
-<span id="ff_4">**dropTable(jsonData:object): boolean**</span>  
+<span id="ff_4">**dropTable(jsonData:Object): boolean**</span>  
 
 <code>在数据库中移除指定数据表</code>  
 
@@ -202,7 +202,7 @@ jsonData：查询传入参数，Json对象，定义如下：
 
 
 
-<span id="ff_5">**getTableColumns(jsonData:object): Array&lt;object&gt;**</span>  
+<span id="ff_5">**getTableColumns(jsonData:Object): Array&lt;Object&gt;**</span>  
 
 <code>在数据库中获取指定数据表列名数组</code>  
 
@@ -218,7 +218,7 @@ jsonData：查询传入参数，Json对象，定义如下：
 
 
 
-<span id="ff_6">**execute(jsonData:object): boolean**</span>  
+<span id="ff_6">**execute(jsonData:Object): boolean**</span>  
 
 <code>执行sql语句</code>  
 
@@ -248,7 +248,7 @@ json.sql = "create table jy(sid nvarchar(256),name nvarchar(256),age nvarchar(25
 db.execute(json);
 ```
 
-<span id="ff_7">**executes(jsonData:object): boolean**</span>  
+<span id="ff_7">**executes(jsonData:Object): boolean**</span>  
 
 <code>执行多条sql语句</code>  
 
@@ -268,7 +268,7 @@ jsonData：传入参数，Json对象，定义如下：
 
 
 
-<span id="ff_8">**query(jsonData:object): Array&lt;object&gt;**</span>  
+<span id="ff_8">**query(jsonData:Object): Array&lt;Object&gt;**</span>  
 
 <code>执行查询语句</code>  
 
@@ -293,7 +293,7 @@ var json = {};
 json.dbName = dbName;
 json.sql = "select * from " + tableName;
 
-var qu= db.query(json:string): Array&lt;object&gt;;
+var qu= db.query(json:string): Array&lt;Object&gt;;
 if( quarray.length == 0 ){
    // 查询无结果或失败
     return;
@@ -399,7 +399,7 @@ dbName：数据库别名，必选项，字符串
 
 
 
-<span id="ff_12">**openAsyn(jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_12">**openAsyn(jsonData:Object,callFunction:Function): void**</span>  
 
 <code>打开或新建并打开指定名称数据库</code>    
 
@@ -482,7 +482,7 @@ callFunction：数据库关闭完毕回调函数，入参为数字，标识关�
 
 
 
-<span id="ff_15">**tableExistsAsyn (jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_15">**tableExistsAsyn (jsonData:Object,callFunction:Function): void**</span>  
 
 <code>数据库中指定数据表是否存在</code>  
 
@@ -505,7 +505,7 @@ callFunction：查询完毕回调函数，入参为数字，标识数据库中�
 
 
 
-<span id="ff_16">**dropTableAsyn (jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_16">**dropTableAsyn (jsonData:Object,callFunction:Function): void**</span>  
 
 <code>在数据库中移除指定数据表</code>  
 
@@ -529,7 +529,7 @@ callFunction：移除指定数据表回调函数，入参为数字，标识在�
 
 
 
-<span id="ff_17">**getTableColumnsAsyn (jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_17">**getTableColumnsAsyn (jsonData:Object,callFunction:Function): void**</span>  
 
 <code>在数据库中获取指定数据表列名数组</code>  
 
@@ -548,7 +548,7 @@ callFunction：在数据库中获取指定数据表列名数组回调函数，�
 
 
 
-<span id="ff_18">**executeAsyn (jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_18">**executeAsyn (jsonData:Object,callFunction:Function): void**</span>  
 
 <code>执行sql语句</code>  
 
@@ -572,7 +572,7 @@ callFunction：执行sql语句回调函数，入参为数字，标识执行sql�
 
 
 
-<span id="ff_19">**executesAsyn (jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_19">**executesAsyn (jsonData:Object,callFunction:Function): void**</span>  
 
 <code>执行多条sql语句</code>  
 
@@ -595,7 +595,7 @@ callFunction：执行sql语句回调函数，入参为数字，标识执行sql�
 
 
 
-<span id="ff_20">**queryAsyn (jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_20">**queryAsyn (jsonData:Object,callFunction:Function): void**</span>  
 
 <code>执行查询语句</code>  
 

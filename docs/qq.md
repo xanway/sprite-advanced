@@ -19,21 +19,21 @@ var qq = require("Qq");
 >
 >[isQQInstalled(): boolean   QQ是否安装 ](#ff_0)
 > 
-> [login(jsonData:object,callBackFun:Function): void  启动QQ进行登录用户授权认证 ](#ff_1)
+> [login(jsonData:Object,callBackFun:Function): void  启动QQ进行登录用户授权认证 ](#ff_1)
 > 
 > [isLogin(): boolean    QQ用户是否已经登录](#ff_2)
 >
 > [logout(): void    登出QQ ](#ff_3)
 >
-> [getUserInfo(jsonData:object,callBackFun:Function): void   获取授权QQ用户信息 ](#ff_4)
+> [getUserInfo(jsonData:Object,callBackFun:Function): void   获取授权QQ用户信息 ](#ff_4)
 >
 >**QQ分享**
 >
-> [shareImage(jsonData:object,callBackFun:Function): void   分享图片到QQ好友 ](#ff_5)
+> [shareImage(jsonData:Object,callBackFun:Function): void   分享图片到QQ好友 ](#ff_5)
 >
-> [shareNews(jsonData:object,callBackFun:Function): void   分享新闻（图文信息）到QQ空间/QQ好友 ](#ff_6)
+> [shareNews(jsonData:Object,callBackFun:Function): void   分享新闻（图文信息）到QQ空间/QQ好友 ](#ff_6)
 >
-> [shareMusic(jsonData:object,callBackFun:Function): void  分享音乐到QQ空间/QQ好友 ](#ff_7)
+> [shareMusic(jsonData:Object,callBackFun:Function): void  分享音乐到QQ空间/QQ好友 ](#ff_7)
 
 
 
@@ -53,7 +53,7 @@ var qq = require("Qq");
 
 
 
-<span id="ff_1">**login(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_1">**login(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>启动QQ进行登录用户授权认证</code> 
 
@@ -112,7 +112,7 @@ callbackFun：QQ登录用户授权认证回调，该函数具有json类型入参
 
 
 
-<span id="ff_4">**getUserInfo(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_4">**getUserInfo(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>获取授权QQ用户信息</code>   
 
@@ -163,7 +163,7 @@ callbackFun：QQ登录用户授权认证回调，该函数具有json类型入参
 
 
 
-<span id="ff_5">**shareImage(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_5">**shareImage(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>分享图片到QQ好友</code>  
 
@@ -185,7 +185,7 @@ callbackFun：分享回调，该函数具有json类型入参，入参定义如�
 返回值：无
 
 
-<span id="ff_6">**shareNews(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_6">**shareNews(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>分享新闻（图文信息）到QQ空间/QQ好友</code>
 
@@ -222,7 +222,7 @@ callbackFun：分享回调，该函数具有json类型入参，入参定义如�
 
 
 
-<span id="ff_7">**shareMusic(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_7">**shareMusic(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>分享音乐到QQ空间/QQ好友</code>
 

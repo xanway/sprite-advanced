@@ -13,7 +13,7 @@ var location = require("Location");
 
 <h2 id="cid_1">js方法</h2>  
 
-<span id="ff_0">**start(jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_0">**start(jsonData:Object,callFunction:Function): void**</span>  
 
 <code>启动系统单次定位</code>  
 

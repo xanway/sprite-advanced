@@ -17,13 +17,13 @@ var window = require("Window");
 
 本节目录：
 
->[ open(jsonData:object): void   打开新窗口（通过地址） ](#ff_0)
+>[ open(jsonData:Object): void   打开新窗口（通过地址） ](#ff_0)
 > 
-> [openData(jsonData:object): void  打开新窗口（通过内容）](#ff_1)
+> [openData(jsonData:Object): void  打开新窗口（通过内容）](#ff_1)
 > 
->[ close(jsonData:object): void  关闭当前窗口  ](#ff_2)
+>[ close(jsonData:Object): void  关闭当前窗口  ](#ff_2)
 > 
-> [getData(): object  获取上层窗口传递的数据](#ff_3)
+> [getData(): Object  获取上层窗口传递的数据](#ff_3)
 > 
 > [getOrientation(): string  获取当前窗口屏幕横竖屏状态  ](#ff_4)
 > 
@@ -39,7 +39,7 @@ var window = require("Window");
 
 
 
-<span id="ff_0">**open(jsonData:object): void**</span>  
+<span id="ff_0">**open(jsonData:Object): void**</span>  
 
 <code>打开新窗口（通过地址）</code>  
 
@@ -156,7 +156,7 @@ function openpagetest(){
 }
 ```
 
-<span id="ff_1">**openData(jsonData:object): void**</span>  
+<span id="ff_1">**openData(jsonData:Object): void**</span>  
 
 <code>打开新窗口（通过内容）</code>
 
@@ -274,7 +274,7 @@ function openpagetest(){
 ```
 
 
-<span id="ff_2">**close(jsonData:object): void**</span>  
+<span id="ff_2">**close(jsonData:Object): void**</span>  
 
 <code>关闭当前窗口</code>   
 
@@ -305,7 +305,7 @@ window.on("result",function(e,data){
 });
 ```
 
-<span id="ff_3">**getData(): object**</span>  
+<span id="ff_3">**getData(): Object**</span>  
 
 <code>获取上层窗口传递的数据</code>  
 

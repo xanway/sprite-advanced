@@ -18,11 +18,11 @@ var xmlelement = require("XmlElement");
 
 >[ getElements(): Array&lt;XmlElement&gt; 获取所有子节点 ](#ff_0)
 > 
-> [getElementsByTag(tagName:string): Array&lt;object&gt;  获取指定Tag的所有子节点 ](#ff_1)
+> [getElementsByTag(tagName:string): Array&lt;Object&gt;  获取指定Tag的所有子节点 ](#ff_1)
 >
 >[ getTag(): string   获取Xml对象Tag名  ](#ff_2)
 >
->[ getAttrs(): object  获取节点所有属性  ](#ff_3)
+>[ getAttrs(): Object  获取节点所有属性  ](#ff_3)
 >
 >[ getAttr(attrName:string):string  获取节点属性值  ](#ff_4)
 >
@@ -62,7 +62,7 @@ tagName：节点tag名，字符串类型
 返回值：Xml对象Tag名，字符串类型
 
 
-<span id="ff_3">**getAttrs(): object**</span>  
+<span id="ff_3">**getAttrs(): Object**</span>  
 
 <code>获取节点所有属性</code>
 

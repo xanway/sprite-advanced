@@ -20,29 +20,29 @@ var weixin = require("WeiXin");
 >
 >[isWeixinInstalled(): boolean   微信是否安装 ](#ff_0)
 > 
-> [getAuthCode(jsonData:object,callBackFun:Function): void  启动微信进行登录用户授权认证 ](#ff_1)
+> [getAuthCode(jsonData:Object,callBackFun:Function): void  启动微信进行登录用户授权认证 ](#ff_1)
 > 
-> [getAccessToken (jsonData:object,callBackFun:Function): void   通过code码向微信平台获取access_token等信息 ](#ff_2)
+> [getAccessToken (jsonData:Object,callBackFun:Function): void   通过code码向微信平台获取access_token等信息 ](#ff_2)
 >
-> [authAccessToken (jsonData:object,callBackFun:Function): void    检验授权凭证accessToken是否有效 ](#ff_3)
+> [authAccessToken (jsonData:Object,callBackFun:Function): void    检验授权凭证accessToken是否有效 ](#ff_3)
 >
-> [refreshAccessToken (jsonData:object,callBackFun:Function): void    刷新或续期accessToken使用 ](#ff_4)
+> [refreshAccessToken (jsonData:Object,callBackFun:Function): void    刷新或续期accessToken使用 ](#ff_4)
 >
-> [getUserInfo(jsonData:object,callBackFun:Function): void    开发者可通过OpenID来获取用户基本信息 ](#ff_5)
+> [getUserInfo(jsonData:Object,callBackFun:Function): void    开发者可通过OpenID来获取用户基本信息 ](#ff_5)
 > 
 >**微信支付**
 >
 > [isSupportPay(): boolean    是否支持微信支付 ](#ff_6)
 >
-> [payOrder(jsonData:object,callBackFun:Function): void    调用微信支付订单，并返回授权结果 ](#ff_7)
+> [payOrder(jsonData:Object,callBackFun:Function): void    调用微信支付订单，并返回授权结果 ](#ff_7)
 >
 >**微信分享**
 >
-> [shareText(jsonData:object,callBackFun:Function): void   分享文本到微信好友/微信朋友圈 ](#ff_8)
+> [shareText(jsonData:Object,callBackFun:Function): void   分享文本到微信好友/微信朋友圈 ](#ff_8)
 >
-> [shareImage(jsonData:object,callBackFun:Function): void   分享图片到微信好友/微信朋友圈 ](#ff_9)
+> [shareImage(jsonData:Object,callBackFun:Function): void   分享图片到微信好友/微信朋友圈 ](#ff_9)
 >
-> [shareNews(jsonData:object,callBackFun:Function): void  分享新闻（图文信息）到微信好友/微信朋友圈 ](#ff_10)
+> [shareNews(jsonData:Object,callBackFun:Function): void  分享新闻（图文信息）到微信好友/微信朋友圈 ](#ff_10)
 
 
 <span id="ff_0">**isWeixinInstalled(): boolean**</span>  
@@ -61,7 +61,7 @@ var weixin = require("WeiXin");
 
 
 
-<span id="ff_1">**getAuthCode(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_1">**getAuthCode(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>启动微信进行登录用户授权认证</code> 
 
@@ -138,7 +138,7 @@ function authCall(jsonData){
 
 
 
-<span id="ff_2">**getAccessToken (jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_2">**getAccessToken (jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>通过code码向微信平台获取access_token等信息</code> 
 
@@ -172,7 +172,7 @@ callbackFun：微信登录用户授权认证回调，该函数具有json类型�
 
 
 
-<span id="ff_3">**authAccessToken (jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_3">**authAccessToken (jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>检验授权凭证accessToken是否有效</code> 
 
@@ -198,7 +198,7 @@ callbackFun：微信登录用户授权认证回调，该函数具有json类型�
 
 
 
-<span id="ff_4">**refreshAccessToken (jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_4">**refreshAccessToken (jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>刷新或续期accessToken使用</code> 
 
@@ -234,7 +234,7 @@ callbackFun：微信登录用户授权认证回调，该函数具有json类型�
 
 
 
-<span id="ff_5">**getUserInfo(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_5">**getUserInfo(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>开发者可通过OpenID来获取用户基本信息</code>   
 
@@ -298,7 +298,7 @@ callbackFun：微信登录用户授权认证回调，该函数具有json类型�
 **注：** 微信5.0以上版本支持支付功能
 
 
-<span id="ff_7">**payOrder(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_7">**payOrder(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>调用微信支付订单，并返回授权结果</code>
 
@@ -334,7 +334,7 @@ jsonData：Json对象，定义如下：
 
 
 
-<span id="ff_8">**shareText(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_8">**shareText(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>分享文本到微信好友/微信朋友圈</code>
 
@@ -365,7 +365,7 @@ callbackFun：分享回调，该函数具有json类型入参，入参定义如�
 
 
 
-<span id="ff_9">**shareImage(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_9">**shareImage(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>分享图片到微信好友/微信朋友圈</code>
 
@@ -394,7 +394,7 @@ callbackFun：分享回调，该函数具有json类型入参，入参定义如�
 返回值：无
 
 
-<span id="ff_10">**shareNews(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_10">**shareNews(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>分享新闻（图文信息）到微信好友/微信朋友圈</code>
 

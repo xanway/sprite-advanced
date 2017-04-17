@@ -60,9 +60,9 @@
 
 [公共方法](#ff_1)
 
-[load(jsonData:object,callBackFun:Function): void  手写签批组件加载已有图片](#ff_2)
+[load(jsonData:Object,callBackFun:Function): void  手写签批组件加载已有图片](#ff_2)
 
-[save(jsonData:object,callback:Function): void  将手写签名绘制保存为图片](#ff_3)  
+[save(jsonData:Object,callback:Function): void  将手写签名绘制保存为图片](#ff_3)  
 
 [clear(): void  清空绘制区域 ](#ff_4) 
 
@@ -84,23 +84,23 @@
 [动画相关](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_1)，包括： 
 
 
-> [startAnimation(jsonData:object,callback:Function): void  启动UI组件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_1)  
+> [startAnimation(jsonData:Object,callback:Function): void  启动UI组件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_1)  
 > 
-> [startAnimator(jsonData:object,callback:Function): void  启动UI组件属性动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_2)   
+> [startAnimator(jsonData:Object,callback:Function): void  启动UI组件属性动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_2)   
 > 
-> [startKeyFrameAnimator(jsonData:object,callback:Function): void  启动UI组件关键帧动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_3)  
+> [startKeyFrameAnimator(jsonData:Object,callback:Function): void  启动UI组件关键帧动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_3)  
 >  
 > [ releaseAnimator(): void  结束控件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_4)   
 
 [尺寸和位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_2)，包括：  
 
-> [getFrame(): object  获取组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_1)   
+> [getFrame(): Object  获取组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_1)   
 > 
-> [setFrame(frame:object): void  设置组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_2)   
+> [setFrame(frame:Object): void  设置组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_2)   
 > 
-> [getCenter(): object  获取组件中心点在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_3)  
+> [getCenter(): Object  获取组件中心点在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_3)  
 >
-> [getAbsoluteFrame(): object  获取组件在绘制窗口中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_4)   
+> [getAbsoluteFrame(): Object  获取组件在绘制窗口中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_4)   
 
 
 [普通Dom节点操作](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_3)，包括：  
@@ -118,7 +118,7 @@
 >
 > [getAttr(attrName:string):string  获取节点属性值](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_7) 
 >
-> [getAttrs(): object  获取节点所有属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_8) 
+> [getAttrs(): Object  获取节点所有属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_8) 
 >
 > [removeAttr(attrName:string): void  移除节点属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_9) 
 >
@@ -139,7 +139,7 @@
 > [getId(): string  获取UI组件Id标识](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_19) 
 
 
-<span id="ff_2">**load(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_2">**load(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>手写签批组件加载已有图片</code>  
 
@@ -162,7 +162,7 @@ callBackFun：加载图片回调，该回调函数具有Json对象入参，定�
 返回值：无
 
 
-<span id="ff_2">**save(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_2">**save(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>将手写签名绘制保存为图片</code> 
 

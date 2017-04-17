@@ -17,7 +17,7 @@ va raudiorecord = require("AudioRecord");
 
 本节目录：
 
->[ start(jsonData:object): void   开始录音 ](#ff_0)
+>[ start(jsonData:Object): void   开始录音 ](#ff_0)
 > 
 > [stop(): void  停止录音 ](#ff_1)
 > 
@@ -31,7 +31,7 @@ va raudiorecord = require("AudioRecord");
 
 
 
-<span id="ff_0">** start(jsonData:object): void **</span>  
+<span id="ff_0">** start(jsonData:Object): void **</span>  
 
 <code>开始录音</code>  
 

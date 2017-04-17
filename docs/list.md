@@ -263,14 +263,14 @@ list.on("itemClick", function (e, position, sectionPostion) {
 
 [setAdapter(adapter:Adapter): void  绑定List容器与ListAdapter对象关系](#ff_2)
 
-[scrollTo(jsonData:object): void   将容器内的当前内容滚动到指定位置](#ff_3)  
+[scrollTo(jsonData:Object): void   将容器内的当前内容滚动到指定位置](#ff_3)  
 
-[scrollToType(jsonData:object): void  将容器内的当前内容滚动到特定位置 ](#ff_4) 
+[scrollToType(jsonData:Object): void  将容器内的当前内容滚动到特定位置 ](#ff_4) 
 
-[scrollToPosition(jsonData:object): void  将容器内的当前内容滚动到特定索引位置  ](#ff_5) 
+[scrollToPosition(jsonData:Object): void  将容器内的当前内容滚动到特定索引位置  ](#ff_5) 
 
 
-[scrollBy(jsonData:object): void  容器基于相对位置滚动 ](#ff_6) 
+[scrollBy(jsonData:Object): void  容器基于相对位置滚动 ](#ff_6) 
 
 [getScrollY(): number   获取滚动容器y轴动点坐标  ](#ff7)  
 
@@ -279,7 +279,7 @@ list.on("itemClick", function (e, position, sectionPostion) {
 [showHeader(): void  显示列表顶部区域](#ff_9)  
 
 
-[dom getHeader()   获取列表header区域 ](#ff_10)  
+[getHeader():IElement   获取列表header区域 ](#ff_10)  
 
 [refreshHeader(): void  刷新列表heade区域  ](#ff_11) 
 
@@ -287,7 +287,7 @@ list.on("itemClick", function (e, position, sectionPostion) {
 
 [showFooter(): void  显示列表底部区域  ](#ff_13)
 
-[dom getFooter()  获取列表Footer区域](#ff_14)  
+[getFooter():IElement  获取列表Footer区域](#ff_14)  
 
 [refreshFooter(): void  刷新列表footer区域](#ff_15)
 
@@ -312,23 +312,23 @@ list.on("itemClick", function (e, position, sectionPostion) {
 
 [动画相关](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_1)，包括： 
  
-> [startAnimation(jsonData:object,callback:Function): void  启动UI组件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_1)   
+> [startAnimation(jsonData:Object,callback:Function): void  启动UI组件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_1)   
 > 
-> [startAnimator(jsonData:object,callback:Function): void  启动UI组件属性动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_2)   
+> [startAnimator(jsonData:Object,callback:Function): void  启动UI组件属性动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_2)   
 > 
-> [startKeyFrameAnimator(jsonData:object,callback:Function): void  启动UI组件关键帧动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_3)  
+> [startKeyFrameAnimator(jsonData:Object,callback:Function): void  启动UI组件关键帧动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_3)  
 >  
 > [ releaseAnimator(): void  结束控件动画](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_4)   
 
 [尺寸和位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_2)，包括：  
 
-> [getFrame(): object  获取组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_1)   
+> [getFrame(): Object  获取组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_1)   
 > 
-> [setFrame(frame:object): void  设置组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_2)   
+> [setFrame(frame:Object): void  设置组件在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_2)   
 > 
-> [getCenter(): object  获取组件中心点在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_3)  
+> [getCenter(): Object  获取组件中心点在父容器中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_3)  
 >
-> [getAbsoluteFrame(): object  获取组件在绘制窗口中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_4)   
+> [getAbsoluteFrame(): Object  获取组件在绘制窗口中的位置](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cchwz_4)   
 
 
 [普通Dom节点操作](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#cid_3)，包括：  
@@ -341,12 +341,13 @@ list.on("itemClick", function (e, position, sectionPostion) {
 > 
 > [remove(): void  从父容器中移除自身](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_4)  
 > 
- 
+> [clone(isDeep:boolean):IElement  对当前Dom节点进行克隆](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_5)  
+>  
 > [setAttr(attrName:string,attrValue:string): void  设置节点属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_6)   
 >
 > [getAttr(attrName:string):string  获取节点属性值](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_7) 
 >
-> [getAttrs(): object  获取节点所有属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_8) 
+> [getAttrs(): Object  获取节点所有属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_8) 
 >
 > [removeAttr(attrName:string): void  移除节点属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_9) 
 >
@@ -380,7 +381,7 @@ adapter：需要绑定的List显示数据，ListAdapter类型；
 
 
 
-<span id="ff_3">**scrollTo(jsonData:object): void**</span>  
+<span id="ff_3">**scrollTo(jsonData:Object): void**</span>  
 
 <code>将容器内的当前内容滚动到指定位置</code>  
 
@@ -397,7 +398,7 @@ jsonData：滚动参数，Json对象，定义如下：
 返回值：无
 
 
-<span id="ff_4">**scrollToType(jsonData:object): void**</span>  
+<span id="ff_4">**scrollToType(jsonData:Object): void**</span>  
 
 <code>将容器内的当前内容滚动到特定位置</code>    
 
@@ -418,7 +419,7 @@ jsonData：滚动参数，Json对象，定义如下：
 返回值：无
 
 
-<span id="ff_5">**scrollToPosition(jsonData:object): void**</span>
+<span id="ff_5">**scrollToPosition(jsonData:Object): void**</span>
 
 <code>将容器内的当前内容滚动到特定索引位置</code>  
 
@@ -438,7 +439,7 @@ jsonData：滚动参数，Json对象，定义如下：
 
 
 
-<span id="ff_6">**scrollBy(jsonData:object): void**</span>
+<span id="ff_6">**scrollBy(jsonData:Object): void**</span>
 
 <code>容器基于相对位置滚动</code>  
 
@@ -483,7 +484,7 @@ jsonData：滚动参数，Json对象，定义如下：
 返回值：无
 
 
-<span id="ff_10">**dom getHeader()**</span>
+<span id="ff_10">**getHeader():IElement**</span>
 
 <code>获取列表header区域</code>  
 
@@ -523,7 +524,7 @@ list的header区域可以像box一样操作，如果内部布局有变动必须�
 
 返回值：无
 
-<span id="ff_14">**dom getFooter()**</span>
+<span id="ff_14">**getFooter():IElement**</span>
 
 <code>获取列表Footer区域</code>  
 
@@ -678,7 +679,7 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
                 var section= datas[0];
                 var json = sectionJson.cells[0];
                 json.message = "更新item";
-                adapter.refresh(): object;
+                adapter.refresh(): Object;
             });
 
             var testfooter = document.getElement("testfooter");
@@ -787,7 +788,7 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
             if (datas.length <= 0) {
                 var section= {};
                 sectionJson.title = "第0个section";
-                sectionJson.cells = new Array(): object;
+                sectionJson.cells = new Array(): Object;
 
                 var json = new MyObject();
                 json.type = "cell";
@@ -798,7 +799,7 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
                 datas.push(sectionJson);
             } else {
                 var section= datas[0];
-                var json = new MyObject(): object;
+                var json = new MyObject(): Object;
                 json.type = "cell";
                 json.image = "res:spritetest/image/touxiang.png";
                 json.name = "华文斌";
@@ -814,7 +815,7 @@ caputueTouchEvent：滚动容器是否拦截子组件touch事件，bool型：
             for (var i = 0; i < 4; i++) {
                 var section= {};
                 sectionJson.title = "第" + i + "个section";
-                sectionJson.cells = new Array(): object;
+                sectionJson.cells = new Array(): Object;
 
                 var count = 0;
                 for (var j = 0; j < 10; j++) {

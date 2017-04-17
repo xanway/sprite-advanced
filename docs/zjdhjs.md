@@ -84,7 +84,7 @@ Sprite动画包括：页面过场动画，控件UI动画，控件属性动画，
 - backgroundColor：背景色设置，字符串类型，#aarrggbb
 
 调用方式：UI组件对象方法 startAnimator(jsonData,function)，[详见该函数说明](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_2) 和 
-startKeyFrameAnimator(jsonData:object,callback:Function): void [详见该函数说明](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_3) 
+startKeyFrameAnimator(jsonData:Object,callback:Function): void [详见该函数说明](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_3) 
 
 **其他**  
 
@@ -159,7 +159,7 @@ UI组件本身提供缺省动画，如slider容器左右滑动切换动画等。
                     //旋转
                     var = {};
                     jsonData.fillAfter = 0;
-                    var animationSet = new Array(): object;
+                    var animationSet = new Array(): Object;
                     var rotateAni = {};
                     rotateAni.type = "rotate";
                     rotateAni.delay = 0;
@@ -399,7 +399,7 @@ UI组件本身提供缺省动画，如slider容器左右滑动切换动画等。
             });
 
             var = {};
-            var aniAry = new Array(): object;
+            var aniAry = new Array(): Object;
 
 
             var jsonAni = {};
@@ -450,7 +450,7 @@ UI组件本身提供缺省动画，如slider容器左右滑动切换动画等。
             var timeid = time.setInterval(function () {
                 s = s + 6;
                 var = {};
-                var aniAry = new Array(): object;
+                var aniAry = new Array(): Object;
                 var jsonAni = {};
                 jsonAni.pivotX = 0.5;
                 jsonAni.pivotY = 1;

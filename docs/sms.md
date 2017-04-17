@@ -16,12 +16,12 @@ var sms = require("Sms");
 
 本节目录：
 
->[ sendSms(jsonData:object): void 打开短信发送界面发送短信 ](#ff_0)
+>[ sendSms(jsonData:Object): void 打开短信发送界面发送短信 ](#ff_0)
 > 
-> [sendSmsAsyn(jsonData:object,callBackFun:Function): void 后台发送短信 ](#ff_1)
+> [sendSmsAsyn(jsonData:Object,callBackFun:Function): void 后台发送短信 ](#ff_1)
  
 
-<span id="ff_0">**sendSms(jsonData:object): void**</span>  
+<span id="ff_0">**sendSms(jsonData:Object): void**</span>  
 
 <code>打开短信发送界面发送短信</code>     
 
@@ -36,7 +36,7 @@ jsonData：短信发送传递参数，json类型，必选项，定义如下：
 返回值：无
 
 
-<span id="ff_1">**sendSmsAsyn(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_1">**sendSmsAsyn(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>后台发送短信</code>   
 

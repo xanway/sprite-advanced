@@ -21,7 +21,7 @@ var netinfo = require("NetInfo");
 > 
 > [getIps(): Array&lt;string&gt; 获取连接所有网络ip地址](#ff_1)
 > 
->[ getWifiInfo(): object  获取当前连接的wifi网络信息](#ff_2)
+>[ getWifiInfo(): Object  获取当前连接的wifi网络信息](#ff_2)
 
 
 
@@ -53,7 +53,7 @@ var netinfo = require("NetInfo");
 
 
 
-<span id="ff_2">**getWifiInfo(): object**</span>  
+<span id="ff_2">**getWifiInfo(): Object**</span>  
 
 <code>获取当前连接的wifi网络信息</code>   
 

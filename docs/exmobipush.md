@@ -20,7 +20,7 @@ var exmobipush = require("ExMobiPush");
 
 本节目录：
 
-[init(jsonData:object): void   初始化Push推送配置 ](#ff_0) 
+[init(jsonData:Object): void   初始化Push推送配置 ](#ff_0) 
 
 [start(): void  启动推送服务 ](#ff_1)
 
@@ -32,14 +32,14 @@ var exmobipush = require("ExMobiPush");
 
 [getWorkDay(): string  获取配置的推送工作日](#ff_5)
 
-[setDisturbMode(jsonData:object): boolean  配置工作日推送工作时间](#ff_6)
+[setDisturbMode(jsonData:Object): boolean  配置工作日推送工作时间](#ff_6)
 
-[getDisturbMode(): object   获取配置的工作日推送时间](#ff_7)
-
-
+[getDisturbMode(): Object   获取配置的工作日推送时间](#ff_7)
 
 
-<span id="ff_0">**init(jsonData:object): void**</span>  
+
+
+<span id="ff_0">**init(jsonData:Object): void**</span>  
 
 <code>初始化Push推送配置</code>  
 
@@ -133,7 +133,7 @@ jsonData，初始化参数设置，Json类型，定义如下：
 注：仅Android支持
 
 
-<span id="ff_6">**setDisturbMode(jsonData:object): boolean**</span>  
+<span id="ff_6">**setDisturbMode(jsonData:Object): boolean**</span>  
 
 <code>配置工作日推送工作时间</code>
 
@@ -156,7 +156,7 @@ jsonData：配置工作日推送时间参数，Json对象，定义如下：
 **注：** 仅Android支持
 
 
-<span id="ff_6">**getDisturbMode(): object**</span>  
+<span id="ff_6">**getDisturbMode(): Object**</span>  
 
 <code>获取配置的工作日推送时间</code>
 

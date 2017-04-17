@@ -15,7 +15,7 @@ var baiduvoice = require("BaiduVoice");
 <h2 id="cid_1">js方法</h2>  
 
 
-<span id="ff_0">**record(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_0">**record(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>启动百度语音识别</code>  
 

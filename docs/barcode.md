@@ -18,13 +18,13 @@ var barcode = require("Barcode");
 
 本节目录：
 
->[ scan(jsonData:object,callBackFun:Function): void  启动条码扫描 ](#ff_0)
+>[ scan(jsonData:Object,callBackFun:Function): void  启动条码扫描 ](#ff_0)
 > 
-> [decodeImage(jsonData:object,callBackFun:Function): void  传入图片路径进行二维码扫码 ](#ff_1)
+> [decodeImage(jsonData:Object,callBackFun:Function): void  传入图片路径进行二维码扫码 ](#ff_1)
 >
->[ createImage(jsonData:object,callBackFun:Function): void   根据传入字符串生成条码编码图片并保存  ](#ff_2)
+>[ createImage(jsonData:Object,callBackFun:Function): void   根据传入字符串生成条码编码图片并保存  ](#ff_2)
 
-<span id="ff_0">**scan(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_0">**scan(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>启动条码扫描</code>    
 
@@ -113,7 +113,7 @@ barcode.scan(jsonData,function(json){
 
 
 
-<span id="ff_1">**decodeImage(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_1">**decodeImage(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>传入图片路径进行二维码扫码</code>
 
@@ -137,7 +137,7 @@ jsonData：Json对象，定义如下：
 > codeType：二维码类别，字符串，扫码成功有效
 
 
-<span id="ff_2">**createImage(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_2">**createImage(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>根据传入字符串生成条码编码图片并保存</code>  
 

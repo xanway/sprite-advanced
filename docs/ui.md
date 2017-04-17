@@ -17,31 +17,31 @@ var ui = require("UI");
 
 本节目录：
 
->[ alert(jsonData:object,callFunction:Function): void  弹出提示框 ](#ff_0)
+>[ alert(jsonData:Object,callFunction:Function): void  弹出提示框 ](#ff_0)
 > 
-> [confirm(jsonData:object,callFunction:Function): void  弹出提示选择框 ](#ff_1)
+> [confirm(jsonData:Object,callFunction:Function): void  弹出提示选择框 ](#ff_1)
 >
->[ toast(jsonData:object): void   弹出Toast提示  ](#ff_2)
+>[ toast(jsonData:Object): void   弹出Toast提示  ](#ff_2)
 >
-> [actionSheet(jsonData:object,callFunction:Function): void 弹出底部菜单选择 ](#ff_3)
+> [actionSheet(jsonData:Object,callFunction:Function): void 弹出底部菜单选择 ](#ff_3)
 > 
->[selectDate(jsonData:object,callFunction:Function): void  弹出系统日期选择 ](#ff_4)
+>[selectDate(jsonData:Object,callFunction:Function): void  弹出系统日期选择 ](#ff_4)
 > 
-> [selectTime(jsonData:object,callFunction:Function): void   弹出系统时间选择 ](#ff_5)
+> [selectTime(jsonData:Object,callFunction:Function): void   弹出系统时间选择 ](#ff_5)
 >
->[ showImages(jsonData:object): void   显示图片集  ](#ff_6)
+>[ showImages(jsonData:Object): void   显示图片集  ](#ff_6)
 >
-> [selectFile(jsonData:object,callBackFun:Function): void    通过js实现文件选择器调用 ](#ff_7)
+> [selectFile(jsonData:Object,callBackFun:Function): void    通过js实现文件选择器调用 ](#ff_7)
 >
->[ selectVideo(jsonData:object,callBackFun:Function): void   选择设备中单个视频 ](#ff_8)
+>[ selectVideo(jsonData:Object,callBackFun:Function): void   选择设备中单个视频 ](#ff_8)
 > 
-> [selectImage(jsonData:object,callBackFun:Function): void  选择设备中单张图片 ](#ff_9)
+> [selectImage(jsonData:Object,callBackFun:Function): void  选择设备中单张图片 ](#ff_9)
 >
->[ selectImages(jsonData:object,callBackFun:Function): void  选择设备中多张图片  ](#ff_10)
+>[ selectImages(jsonData:Object,callBackFun:Function): void  选择设备中多张图片  ](#ff_10)
 
 
 
-<span id="ff_0">**alert(jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_0">**alert(jsonData:Object,callFunction:Function): void**</span>  
 
 <code>弹出提示框</code>    
 
@@ -65,7 +65,7 @@ callFunction：点击触发回调函数，可选参数
 
 
 
-<span id="ff_1">**confirm(jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_1">**confirm(jsonData:Object,callFunction:Function): void**</span>  
 
 <code>弹出选择提示框</code>
 
@@ -87,7 +87,7 @@ callFunction：点击触发回调函数，入参为数字，标识点击索引�
 
 
 
-<span id="ff_2">**toast(jsonData:object): void**</span>  
+<span id="ff_2">**toast(jsonData:Object): void**</span>  
 
 <code>弹出Toast提示</code>   
 
@@ -109,7 +109,7 @@ jsonData：Toast提示传入参数，Json对象，定义如下：
 
 
 
-<span id="ff_3">**actionSheet(jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_3">**actionSheet(jsonData:Object,callFunction:Function): void**</span>  
 
 <code>弹出底部菜单选择</code>  
 
@@ -125,7 +125,7 @@ callFunction：点击触发回调函数，入参为数字，标识点击索引�
 
 
 
-<span id="ff_4">**selectDate(jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_4">**selectDate(jsonData:Object,callFunction:Function): void**</span>  
 
 <code>弹出系统日期选择</code>  
 
@@ -150,7 +150,7 @@ callFunction：点击触发回调函数，必选参数，入参为Json对象定�
 **注： ** 弹出手机系统日期选择，不同手机效果不一样。
 
 
-<span id="ff_5">**selectTime(jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_5">**selectTime(jsonData:Object,callFunction:Function): void**</span>  
 
 <code>弹出系统时间选择</code>  
 
@@ -172,7 +172,7 @@ callFunction：点击触发回调函数，必选参数，入参为Json对象定�
 
 
 
-<span id="ff_6">**showImages(jsonData:object): void**</span>  
+<span id="ff_6">**showImages(jsonData:Object): void**</span>  
 
 <code>显示图片集</code>  
 
@@ -201,7 +201,7 @@ callFunction：点击触发回调函数，必选参数，入参为Json对象定�
 
 
 
-<span id="ff_7">**selectFile(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_7">**selectFile(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>通过js实现文件选择器调用</code>  
 
@@ -222,7 +222,7 @@ callBackFun，结果回调函数，函数具有json类型入参，必选项，�
 > filePath：用户选择文件全路径，字符串类型，若用户取消选择，则该值为null；
 
 
-<span id="ff_8">**selectVideo(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_8">**selectVideo(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>选择设备中单个视频</code>  
 
@@ -246,7 +246,7 @@ callBackFun：结果回调函数，函数具有json类型入参，必选项，�
 
 
 
-<span id="ff_9">**selectImage(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_9">**selectImage(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>选择设备中单张图片</code>  
 
@@ -275,7 +275,7 @@ callBackFun：结果回调函数，函数具有json类型入参，必选项，�
 > imagePath：选择图片文件全路径，字符串类型，取消选择返回null
 
 
-<span id="ff_10">**selectImages(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_10">**selectImages(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>选择设备中多张图片</code>  
 

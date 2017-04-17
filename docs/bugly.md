@@ -18,7 +18,7 @@ var bugly = require("Bugly");
 
 > **异常上报**
 > 
-> [init(jsonData:object): void  启动Bugly错误日志收集](#ff_0)
+> [init(jsonData:Object): void  启动Bugly错误日志收集](#ff_0)
 > 
 > [setUserId(userId:string): void  设置用户Id，用于精确定位到应用中某个用户异常 ](#ff_1)
 > 
@@ -28,7 +28,7 @@ var bugly = require("Bugly");
 > 
 > [getTag(): number   获取当前设置标签值](#ff_4)
 > 
-> [setUserData(jsonData:object): void  设置自定义Map参数](#ff_5)
+> [setUserData(jsonData:Object): void  设置自定义Map参数](#ff_5)
 > 
 > [getUserData(key:string): string  获取已设置自定义Map参数](#ff_6)
 > 
@@ -51,7 +51,7 @@ var bugly = require("Bugly");
 
 
 
-<span id="ff_0">**init(jsonData:object): void**</span>  
+<span id="ff_0">**init(jsonData:Object): void**</span>  
 
 <code>启动Bugly错误日志收集</code>  
 
@@ -121,7 +121,7 @@ tag：自定义标签值，在Bugly标签管理中配置生成，数字类型，
 
 返回值：当前设置标签值，数字类型
 
-<span id="ff_5">**setUserData(jsonData:object): void**</span>  
+<span id="ff_5">**setUserData(jsonData:Object): void**</span>  
 
 <code>设置自定义Map参数</code>
 

@@ -135,11 +135,11 @@ sectionIndex：section栏索引，数字类型
 
 > [refresh(): void 刷新数据并通知list容器更新](#ff_1)
 > 
-> [notifyItemRangeInserted(jsonData:object): void  插入列表数据后通知list容器局部刷新](#ff_2)
+> [notifyItemRangeInserted(jsonData:Object): void  插入列表数据后通知list容器局部刷新](#ff_2)
 > 
-> [notifyItemRangeChanged(jsonData:object): void  更新列表数据后通知list容器局部刷新](#ff_3)
+> [notifyItemRangeChanged(jsonData:Object): void  更新列表数据后通知list容器局部刷新](#ff_3)
 > 
-> [notifyItemRangeRemoved (jsonData:object): void   移除列表数据后通知list容器局部刷新](#ff_4)
+> [notifyItemRangeRemoved (jsonData:Object): void   移除列表数据后通知list容器局部刷新](#ff_4)
 
 <span id="ff_1">**refresh(): void**</span>
 
@@ -152,7 +152,7 @@ sectionIndex：section栏索引，数字类型
 **注：** 该方法是更新整个list列表所有内容，建议不要经常用该方法更新list内容，可以使用局部刷新来更新list内容，除非整个list内容进行更新。
 
 
-<span id="ff_2">**notifyItemRangeInserted(jsonData:object): void**</span>  
+<span id="ff_2">**notifyItemRangeInserted(jsonData:Object): void**</span>  
 
 <code>插入列表数据后通知list容器局部刷新</code> 
 
@@ -171,7 +171,7 @@ jsonData：刷新参数，json格式，定义如下：
 **注：**  使用局部插入刷新后，要保证数据源对应进行插入操作，否者可能出错。
 
 
-<span id="ff_3">**notifyItemRangeChanged(jsonData:object): void**</span>   
+<span id="ff_3">**notifyItemRangeChanged(jsonData:Object): void**</span>   
 
 <code>更新列表数据后通知list容器局部刷新</code>  
 
@@ -190,7 +190,7 @@ jsonData：刷新参数，json格式，定义如下：
 **注：**  使用局部更新刷新后，要保证数据源对应进行修改操作，否者可能出错。
 
 
-<span id="ff_4">**notifyItemRangeRemoved (jsonData:object): void**</span>  
+<span id="ff_4">**notifyItemRangeRemoved (jsonData:Object): void**</span>  
 
 <code>移除列表数据后通知list容器局部刷新</code>   
 

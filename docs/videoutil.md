@@ -16,13 +16,13 @@ var videoutil = require("VideoUtil");
 
 本节目录：
 
->[ recordShortVideo(jsonData:object,callFunction:Function): void  启动小视频录制 ](#ff_0)
+>[ recordShortVideo(jsonData:Object,callFunction:Function): void  启动小视频录制 ](#ff_0)
 > 
-> [openVideo(jsonData:object): void  调用系统播放器播放视频 ](#ff_1)
+> [openVideo(jsonData:Object): void  调用系统播放器播放视频 ](#ff_1)
 
 
 
-<span id="ff_0">**recordShortVideo(jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_0">**recordShortVideo(jsonData:Object,callFunction:Function): void**</span>  
 
 <code>启动小视频录制</code>     
 
@@ -88,7 +88,7 @@ videoutil.recordShortVideo(json,function(dataJson){
 ```
 
 
-<span id="ff_1">**openVideo(jsonData:object): void**</span>  
+<span id="ff_1">**openVideo(jsonData:Object): void**</span>  
 
 <code>调用系统播放器播放视频</code>   
 

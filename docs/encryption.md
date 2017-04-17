@@ -33,13 +33,13 @@ var encryption = require("Encryption");
 >
 >[ unEscapeXml(str:string): string  逆转xml中转义符  ](#ff_7)
 >
->[ rgbToHex(rgbJson:object): string  将rgb格式转换为#rrggbb格式字符串  ](#ff_8)
+>[ rgbToHex(rgbJson:Object): string  将rgb格式转换为#rrggbb格式字符串  ](#ff_8)
 >
->[ hexToRgb(hex:string): object   将#rrggbb格式字符串转换为rgb格式  ](#ff_9)
+>[ hexToRgb(hex:string): Object   将#rrggbb格式字符串转换为rgb格式  ](#ff_9)
 > 
 > [rgbaToHex(rgba:string): string   将rgba格式字符串转换为#aarrggbb  ](#ff_10)
 > 
-> [hexToRgba(hex:string): object  将#aarrggbb格式字符串转换为rgba](#ff_11)  
+> [hexToRgba(hex:string): Object  将#aarrggbb格式字符串转换为rgba](#ff_11)  
 
 
 
@@ -173,7 +173,7 @@ str：包含转义后字符的字符串，字符串类型
 > &amp;quot; 转换后 "
 
 
-<span id="ff_8">**rgbToHex(rgbJson:object): string**</span>  
+<span id="ff_8">**rgbToHex(rgbJson:Object): string**</span>  
 
 <code>将rgb格式转换为#rrggbb格式字符串</code>    
 
@@ -188,7 +188,7 @@ rgb：待转换的rgb数据，Json对象，定义如下：
 返回值：转换后#rrggbb格式字符串，如：#ff0000
 
 
-<span id="ff_9">**hexToRgb(hex:string): object**</span>  
+<span id="ff_9">**hexToRgb(hex:string): Object**</span>  
 
 <code>将#rrggbb格式字符串转换为rgb格式</code>  
 
@@ -224,7 +224,7 @@ rgba：待转换的rgba数据，Json对象，定义如下：
 返回值：转换后#aarrggbb格式字符串，如：#ccff0000
 
 
-<span id="ff_11">**hexToRgba(hex:string): object**</span>  
+<span id="ff_11">**hexToRgba(hex:string): Object**</span>  
 
 <code>将#aarrggbb格式字符串转换为rgba</code>   
 

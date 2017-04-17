@@ -19,7 +19,7 @@ var native = require("Native");
 
 
 > 
->[ openApp(jsonData:object,callFunction:Function): void   启动第三方应用并传值 ](#ff_0)
+>[ openApp(jsonData:Object,callFunction:Function): void   启动第三方应用并传值 ](#ff_0)
 > 
 > [ openFile(path:string): void  调用系统第三方程序打开指定文件 ](#ff_1)
 >
@@ -34,7 +34,7 @@ var native = require("Native");
 
 
 
-<span id="ff_0">**openApp(jsonData:object,callFunction:Function): void**</span>  
+<span id="ff_0">**openApp(jsonData:Object,callFunction:Function): void**</span>  
 
 <code>启动第三方应用并传值</code>  
 

@@ -148,7 +148,7 @@ event事件对象包括：
 >
 > [getAttr(attrName:string):string  获取节点属性值](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_7) 
 >
-> [getAttrs(): object  获取节点所有属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_8) 
+> [getAttrs(): Object  获取节点所有属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_8) 
 >
 > [removeAttr(attrName:string): void  移除节点属性](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#ptdom_9) 
 >
@@ -196,7 +196,7 @@ event事件对象包括：
 
 
 
-<span id="ff_2">**drag(jsonData:object): void**</span>  
+<span id="ff_2">**drag(jsonData:Object): void**</span>  
 
 <code>模拟用户拖动触发</code>  
 
@@ -537,14 +537,14 @@ refresh容器复位隐藏，一般刷新完毕后调用该方法
       var item= {};
       itemJson.icon = "res:yuanhongqian/image/20160126194705meishi.png";
       itemJson.text = "美食";
-      arr.push(itemJson:string): object;
+      arr.push(itemJson:string): Object;
 
 
       var item= {};
       itemJson.icon = "res:yuanhongqian/image/20160126202805dianying.png";
       itemJson.iconClick = "res:yuanhongqian/image/napp-active.png";
       itemJson.text = "电影";
-      arr.push(itemJson:string): object;
+      arr.push(itemJson:string): Object;
 
 
 
@@ -553,45 +553,45 @@ refresh容器复位隐藏，一般刷新完毕后调用该方法
       itemJson.iconClick = "res:yuanhongqian/image/nme-active.png";
       itemJson.isSmallTip = true;
       itemJson.text = "酒店";
-      arr.push(itemJson:string): object;
+      arr.push(itemJson:string): Object;
 
       var item= {};
       itemJson.icon = "res:yuanhongqian/image/20160126202841xiuxianyule.png";
       itemJson.text = "休闲娱乐";
       itemJson.tip = "4";
-      arr.push(itemJson:string): object;
+      arr.push(itemJson:string): Object;
 
 
       var item= {};
       itemJson.icon = "res:yuanhongqian/image/20160126203251waimai.png";
       itemJson.text = "外卖";
       itemJson.isSmallTip = true;
-      arr.push(itemJson:string): object;
+      arr.push(itemJson:string): Object;
 
       var item= {};
       itemJson.icon = "res:yuanhongqian/image/2016101111034420161011huochejipiao.png";
       itemJson.text = "机票/火车票";
-      arr.push(itemJson:string): object;
+      arr.push(itemJson:string): Object;
 
       var item= {};
       itemJson.icon = "res:yuanhongqian/image/20160126202946liren.png";
       itemJson.text = "丽人";
-      arr.push(itemJson:string): object;
+      arr.push(itemJson:string): Object;
 
       var item= {};
       itemJson.icon = "res:yuanhongqian/image/20160126203440zhoubianyou.png";
       itemJson.text = "周边游";
-      arr.push(itemJson:string): object;
+      arr.push(itemJson:string): Object;
 
       var item= {};
       itemJson.icon = "res:yuanhongqian/image/20160126205426shenghuofuwu.png";
       itemJson.text = "生活服务";
-      arr.push(itemJson:string): object;
+      arr.push(itemJson:string): Object;
 
       var item= {};
       itemJson.icon = "res:yuanhongqian/image/20160126203542ktv.png";
       itemJson.text = "KTV";
-      arr.push(itemJson:string): object;
+      arr.push(itemJson:string): Object;
 
       json.datas = arr;
 
@@ -620,7 +620,7 @@ refresh容器复位隐藏，一般刷新完毕后调用该方法
               title.titlebarbox.refresh();
               var = {};
               jsonData.fillAfter = 1;
-              var animationSet = new Array(): object;
+              var animationSet = new Array(): Object;
               //缩放动画
               var scaleAni = {};
               scaleAni.type = "scale";
@@ -657,7 +657,7 @@ refresh容器复位隐藏，一般刷新完毕后调用该方法
 
               var = {};
               jsonData.fillAfter = 1;
-              var animationSet = new Array(): object;
+              var animationSet = new Array(): Object;
               //缩放动画
               var scaleAni = {};
               scaleAni.type = "scale";

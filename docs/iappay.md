@@ -19,7 +19,7 @@ var iappay = require("IapPay");
 
 >[ canMakePay(): boolean   是否支持虚拟支付功能 ](#ff_0)
 > 
-> [getProducts(jsonData:object,callBackFun:Function): void  获取有效商品详细信息列表 ](#ff_1)
+> [getProducts(jsonData:Object,callBackFun:Function): void  获取有效商品详细信息列表 ](#ff_1)
 > 
 > [pay(dataJson:string, callBackFun:Function): void   购买虚拟商品 ](#ff_2)
 >
@@ -47,7 +47,7 @@ var iappay = require("IapPay");
 
 
 
-<span id="ff_1">**getProducts(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_1">**getProducts(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>获取有效商品详细信息列表</code>   
 

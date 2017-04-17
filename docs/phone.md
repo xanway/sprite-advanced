@@ -22,7 +22,7 @@ var phone = require("Phone");
 > 
 > [faceTime(faceTimeNumber:string): void   调用IOS平台系统的FaceTime进行视频通话 ](#ff_2)
 > 
-> [getCallRecords(jsonData:object,callBackFun:Function): void    获取系统通话记录 ](#ff_3)
+> [getCallRecords(jsonData:Object,callBackFun:Function): void    获取系统通话记录 ](#ff_3)
 > 
 
 <span id="ff_0">**tel(phone:string): void **</span>  
@@ -63,7 +63,7 @@ faceTimeNumber：进行视频通话的号码，字符串类型，必选项，当
 **注：** 仅iOS平台支持
 
 
-<span id="ff_3">**getCallRecords(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_3">**getCallRecords(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>获取系统通话记录</code>  
 

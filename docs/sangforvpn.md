@@ -16,13 +16,13 @@ var sangforvpn = require("SangforVpn");
 
 本节目录：
 
-> [init(jsonData:object,callBackFun:Function): void    初始化深信服Vpn服务器 ](#ff_0) 
+> [init(jsonData:Object,callBackFun:Function): void    初始化深信服Vpn服务器 ](#ff_0) 
 > 
-> [login(jsonData:object,callBackFun:Function): void  登录深信服Vpn服务器 ](#ff_1)
+> [login(jsonData:Object,callBackFun:Function): void  登录深信服Vpn服务器 ](#ff_1)
 > 
 > [logout(callBackFun:Function): void  注销深信服Vpn服务器 ](#ff_2) 
 > 
-> [smsLogin(jsonData:object,callBackFun:Function): void  启动深信服vpn短信验证码登录 ](#ff_3) 
+> [smsLogin(jsonData:Object,callBackFun:Function): void  启动深信服vpn短信验证码登录 ](#ff_3) 
 > 
 > [smsRefresh(): void 向vpn服务器发送通知重新获取短信验证码](#ff_4)
 > 
@@ -31,7 +31,7 @@ var sangforvpn = require("SangforVpn");
 
 
 
-<span id="ff_0">**init(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_0">**init(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>初始化深信服Vpn服务器</code>  
 
@@ -54,7 +54,7 @@ callBackFun，初始化Vpn服务器结果回调函数，函数具有json类型�
 注：若IP和端口发生变化需调用app.reload()方法重载应用
 
 
-<span id="ff_1">**login(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_1">**login(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>登录深信服Vpn服务器</code>   
 
@@ -96,7 +96,7 @@ callBackFun，注销Vpn服务器结果回调函数，函数具有json类型入�
 > 
 > - 1：注销失败
 
-<span id="ff_3">**smsLogin(jsonData:object,callBackFun:Function): void**</span>  
+<span id="ff_3">**smsLogin(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>启动深信服vpn短信验证码登录</code>  
 
