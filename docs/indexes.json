@@ -79,6 +79,10 @@
 				{
 					"subject": "handsign 手写涂鸦组件",
 					"mdlink": "handsign"
+				},
+				{
+					"subject": "baidumap 百度地图组件",
+					"mdlink": "baidumap"
 				}
 			 ]
         },
