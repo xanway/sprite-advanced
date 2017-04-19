@@ -17,16 +17,16 @@ var http = require("Http");
 
 本节目录：
 
->[ String ajax(option,callFunction)   ajax异步请求 ](#ff_0)
+>[ ajax(option:Object,callFunction:Function):string   ajax异步请求 ](#ff_0)
 > 
-> [ String formSubmit (option,callFunction,requestProgressFunction,responseProgressFunction) 异步表单提交 ](#ff_1)
+> [formSubmit (option:Object,callFunction:Function,requestProgressFunction:Function,responseProgressFunction:Function):string 异步表单提交 ](#ff_1)
 >
->[ String download(option,callFunction, responseProgressFunction)   异步文件下载 ](#ff_2)
+>[download(option:Object,callFunction:Function, responseProgressFunction:Function)   异步文件下载 ](#ff_2)
 >
 >[ cancel(id:string): void   关闭http请求 ](#ff_3)
 
 
-<span id="ff_0">**String ajax(option,callFunction) **</span>  
+<span id="ff_0">**ajax(option:Object,callFunction:Function):string**</span>  
 
 <code>ajax异步请求</code>    
 
@@ -96,7 +96,7 @@ Http.ajax(option, function (json) {
 ```
 
 
-<span id="ff_1">**String formSubmit (option,callFunction,requestProgressFunction,responseProgressFunction)**</span>  
+<span id="ff_1">**formSubmit (option:Object,callFunction:Function,requestProgressFunction:Function,responseProgressFunction:Function):string**</span>  
 
 <code>异步表单提交</code>
 
@@ -211,7 +211,7 @@ httpId = Http.formSubmit(option, function(responseData){
 
 
 
-<span id="ff_2">**String download(option,callFunction, responseProgressFunction)**</span>  
+<span id="ff_2">**download(option:Object,callFunction:Function, responseProgressFunction:Function)**</span>  
 
 <code>异步文件下载</code>  
 

@@ -20,9 +20,9 @@ var contact = require("contact");
 > 
 > [getVcards(jsonData:Object,callBackFun:Function): void   获取通讯录用户信息 ](#ff_1)
 > 
-> [getVcardById((jsonData:Object,callBackFun:Function): void   根据用户标识查询用户信息 ](#ff_2)
+> [getVcardById(jsonData:Object,callBackFun:Function): void   根据用户标识查询用户信息 ](#ff_2)
 > 
-> [getVcardsByName((jsonData:Object,callBackFun:Function): void   根据用户名查询用户信息 ](#ff_3)
+> [getVcardsByName(jsonData:Object,callBackFun:Function): void   根据用户名查询用户信息 ](#ff_3)
 > 
 > [addVcard(jsonData:Object,callBackFun:Function): void   添加用户信息至通讯录 ](#ff_4)
 > 
@@ -140,7 +140,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 返回值：无
 
 
-<span id="ff_2">**getVcardById((jsonData:Object,callBackFun:Function): void**</span>  
+<span id="ff_2">**getVcardById(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>根据用户标识查询用户信息</code>    
 
@@ -204,7 +204,7 @@ callBackFun：操作回调函数，函数具有json类型入参，入参定义�
 
 
 
-<span id="ff_3">**getVcardsByName((jsonData:Object,callBackFun:Function): void**</span>  
+<span id="ff_3">**getVcardsByName(jsonData:Object,callBackFun:Function): void**</span>  
 
 <code>根据用户名查询用户信息</code>  
 

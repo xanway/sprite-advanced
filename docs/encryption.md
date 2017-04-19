@@ -1,4 +1,4 @@
-# Encryption 原生程序相关操作类
+# Encryption 字符串编解码类
 
 ----------
 
