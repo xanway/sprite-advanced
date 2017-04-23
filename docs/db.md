@@ -25,7 +25,7 @@ var db = require("Db");
 > 
 >[ open(jsonData:Object): boolean   打开或新建并打开指定名称数据库 ](#ff_0)
 > 
-> [isOpen(dbName:string): boolean   判断指定路径文件是否存在 ](#ff_1)
+> [isOpen(dbName:string): boolean   判断数据库是否已经打开 ](#ff_1)
 >
 >[ close(dbName:string): boolean  关闭已打开数据库  ](#ff_2)
 >
@@ -293,7 +293,7 @@ var json = {};
 json.dbName = dbName;
 json.sql = "select * from " + tableName;
 
-var qu= db.query(json:string): Array&lt;Object&gt;;
+var quarray = db.query(json);
 if( quarray.length == 0 ){
    // 查询无结果或失败
     return;
