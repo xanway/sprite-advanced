@@ -295,7 +295,7 @@
 				},
 				{
 					"subject": "事件触发机制",
-					"mdlink": "jjcfjz"
+					"mdlink": "sjcfjz"
 				},
 				{
 					"subject": "数据存储共享",
@@ -312,10 +312,6 @@
 				{
 					"subject": "push推送",
 					"mdlink": "pushts"
-				},
-				{
-					"subject": "应用加密",
-					"mdlink": "yyjm"
 				}
 			 ]
         }
