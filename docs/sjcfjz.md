@@ -6,7 +6,7 @@ Spirite中所有触发事件都是通过js事件绑定来实现,不支持在ui�
 
 正确用法：
 
-```
+```html
 <button value="Sprite"/>
    
 spriteButton.on("click",function(){
@@ -17,7 +17,7 @@ spriteButton.on("click",function(){
 
 错误用法：
 
-```
+```html
 <button onclick="test()" value="Sprite"/> 
 ```
 
