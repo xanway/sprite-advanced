@@ -105,6 +105,24 @@ progress组件用于展现圆形进度条效果，支持环状 ，饼状样式 �
 > 
 > 当type是水波状时，数字，单位dp，默认为2；
 
+**line-progress-size**
+
+<code>进度线条宽度</code>
+
+> 当type是环状时，默认值4；
+
+
+**solid-progress-color**
+
+<code>进度填充色</code>
+
+> 当type是饼状时，默认值#ffffff；
+> 
+> 当type是水波状时，默认值#0a7fff；
+
+
+
+
 
 
 <h2 id="cid_2">事件</h2>
