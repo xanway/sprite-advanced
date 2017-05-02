@@ -16,7 +16,7 @@ Sprite中升级包括应用资源升级和应用升级,现分别予以说明。
  
  4：客户端通过[Http.download()](https://gitdocument.exmobi.cn/sprite-advanced/http.html#ff_2)下载新版本应用插件升级zip包，下载到通过[File.unZip()](https://gitdocument.exmobi.cn/sprite-advanced/file.html#ff_23)本地解压或根据文件md5值差量文件更新 即可；
 
-示例可见封装组件pluginupdate组件
+示例可见[封装组件pluginupdate组件](https://gitdocument.exmobi.cn/sprite-official-ui/pluginupdate.html)
 
 
 <h2 id="cid_1">应用升级</h2>
