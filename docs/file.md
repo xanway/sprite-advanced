@@ -563,7 +563,7 @@ callFunction：解压回调函数，入参Json对象，定义如下：
 > 
 > - -1：解压失败；
 > 
->  dstPath：解压成功后文件全路径，字符串类型；
+> dstPath：解压成功后文件全路径，字符串类型；
 
 
 <span id="ff_24">**getAbsolutePath (path:string): string**</span>  
