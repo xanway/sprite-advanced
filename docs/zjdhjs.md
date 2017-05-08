@@ -35,9 +35,9 @@ Sprite动画包括：页面过场动画，控件UI动画，控件属性动画，
 
 - fade：淡入淡出 
 
- 打窗动画：Window.open()，[详见该函数说明](https://gitdocument.exmobi.cn/sprite-advanced/window.html#ff_0)
+ 打窗动画：Window.open()，[详见该函数说明](https://gitdocument.exmobi.cn/sprite-api/window.html#ff_0)
 
- 关窗动画：Window.close()，[详见该函数说明](https://gitdocument.exmobi.cn/sprite-advanced/window.html#ff_2)
+ 关窗动画：Window.close()，[详见该函数说明](https://gitdocument.exmobi.cn/sprite-api/window.html#ff_2)
 
 
 **控件UI动画**  
@@ -52,7 +52,7 @@ Sprite动画包括：页面过场动画，控件UI动画，控件属性动画，
 
 -  rotate旋转动画；
 
- 调用方式：UI组件对象方法 startAnimation(jsonData,function)，[详见该函数说明](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_1)
+ 调用方式：UI组件对象方法 startAnimation(jsonData,function)，[详见该函数说明](https://gitdocument.exmobi.cn/sprite-api/ggff.html#dhxg_1)
 
 
 **控件属性动画和属性帧动画**  
@@ -83,8 +83,8 @@ Sprite动画包括：页面过场动画，控件UI动画，控件属性动画，
 
 - backgroundColor：背景色设置，字符串类型，#aarrggbb
 
-调用方式：UI组件对象方法 startAnimator(jsonData,function)，[详见该函数说明](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_2) 和 
-startKeyFrameAnimator(jsonData:Object,callback:Function): void [详见该函数说明](https://gitdocument.exmobi.cn/sprite-begin/ggff.html#dhxg_3) 
+调用方式：UI组件对象方法 startAnimator(jsonData,function)，[详见该函数说明](https://gitdocument.exmobi.cn/sprite-api/ggff.html#dhxg_2) 和 
+startKeyFrameAnimator(jsonData:Object,callback:Function): void [详见该函数说明](https://gitdocument.exmobi.cn/sprite-api/ggff.html#dhxg_3) 
 
 **其他**  
 

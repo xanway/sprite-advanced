@@ -54,7 +54,7 @@ ExMobi Push并非Sprite的默认模块，若应用需要使用ExMobi推送，则
 
 <h2 id="cid_1">示例讲解</h2>  
 
-关于ExMobiPush工具类API说明，这里不做详细介绍，开发者可以查看  [ExMobiPush 工具类](https://gitdocument.exmobi.cn/sprite-advanced/exmobipush.html)  
+关于ExMobiPush工具类API说明，这里不做详细介绍，开发者可以查看  [ExMobiPush 工具类](https://gitdocument.exmobi.cn/sprite-api/exmobipush.html)  
 
 下面我们就通过一个示例来详细讲解如可开发一个push功能。
 

@@ -8,7 +8,7 @@
 
 <code>MemCache应用级存储</code>：
 
-通过MemCache工具类来存储/获取所需数据,应用允许过程中可跨页面使用,支持对数字,字符串,数组,JSON类型的直接存入及读取,[详见MemCache类说明](https://gitdocument.exmobi.cn/sprite-advanced/memcache.html)；
+通过MemCache工具类来存储/获取所需数据,应用允许过程中可跨页面使用,支持对数字,字符串,数组,JSON类型的直接存入及读取,[详见MemCache类说明](https://gitdocument.exmobi.cn/sprite-api/memcache.html)；
 
 示例：
 
@@ -46,7 +46,7 @@
 
 <code>Clipboard系统剪切板</code>：
 
-使用Clipboard系统剪切板工具类,可实现系统级对字符串数据存储,[详见Clipboard类说明](https://gitdocument.exmobi.cn/sprite-advanced/clipboard.html)。
+使用Clipboard系统剪切板工具类,可实现系统级对字符串数据存储,[详见Clipboard类说明](https://gitdocument.exmobi.cn/sprite-api/clipboard.html)。
 
 
 <code>全局变量页面存储</code>：
@@ -72,7 +72,7 @@ function getName(){
 <code>DiskCache文件缓存</code>：
 
 
-使用DiskCache工具类来存储/获取所需数据,应用退出后重新进入数据依然保存,[详见DiskCache类说明](https://gitdocument.exmobi.cn/sprite-advanced/diskcache.html)；
+使用DiskCache工具类来存储/获取所需数据,应用退出后重新进入数据依然保存,[详见DiskCache类说明](https://gitdocument.exmobi.cn/sprite-api/diskcache.html)；
 
 示例：
 
@@ -110,22 +110,22 @@ function getName(){
 
 <code>标准文件存储</code>：
 
-使用File工具类实现对文件读/写操作,可用于开发者保存所需格式数据,[详见File类说明](https://gitdocument.exmobi.cn/sprite-advanced/file.html)。
+使用File工具类实现对文件读/写操作,可用于开发者保存所需格式数据,[详见File类说明](https://gitdocument.exmobi.cn/sprite-api/file.html)。
 
 <code>数据库</code>：
 
-使用Db数据库操作类实现对sqllite数据库操作,[详见Db类说明](https://gitdocument.exmobi.cn/sprite-advanced/ui.html)。
+使用Db数据库操作类实现对sqllite数据库操作,[详见Db类说明](https://gitdocument.exmobi.cn/sprite-api/ui.html)。
 
 
 <code>加密数据库</code>：
 
-使用DbCipher加密数据库操作类实现对sqllite加密数据库操作,[详见DbCipher类说明](https://gitdocument.exmobi.cn/sprite-advanced/dbcipher.html)。
+使用DbCipher加密数据库操作类实现对sqllite加密数据库操作,[详见DbCipher类说明](https://gitdocument.exmobi.cn/sprite-api/dbcipher.html)。
 
 <h2 id="cid_1">数据传递</h2>
 
 **消息传递** 
 
-通过on()订阅消息,fire()发送消息,off()退订消息实现数据消息传递,支持页面内消息传递及跨页面消息传递,[详见事件触发相关说明](https://gitdocument.exmobi.cn/sprite-advanced/jjcfjz.html)。
+通过on()订阅消息,fire()发送消息,off()退订消息实现数据消息传递,支持页面内消息传递及跨页面消息传递,[详见事件触发相关说明](https://gitdocument.exmobi.cn/sprite-api/jjcfjz.html)。
 
 
 **页面数据传递**
