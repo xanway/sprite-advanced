@@ -4,17 +4,16 @@
 
 烽火官方封装了mvvm模型框架，框架的使用说明可以参考[Agile VM移动前端框架](https://gitdocument.exmobi.cn/agile-vm/index.html)
 
-本节组要提供示例讲解。
+本节主要提供示例讲解。
 
 
 Agile VM移动前端框架是一个数据视图双向绑定的框架，帮助开发者将数据层和视图层分离更彻底，所以我们在开发的时候就可以实现数据和视图相分离。
 
 请看下面示例：
 
-在uixml页面的布局里面是关系视图层，如：
+在uixml页面的布局里面是视图层，如：
 
 ```html
-
 <ui>
         <box class="rootBox" id="rootBox" v-on:click="rootBoxClick">
             <titlebar v-bind:title="title" licon="image/detail_topbar_icon_back.png" v-on:liconClick="doBack" />
@@ -55,7 +54,13 @@ Agile VM移动前端框架是一个数据视图双向绑定的框架，帮助开
 
 该示例里面用到了 v-text 、v-on、v-like、v-model、v-bind，v-if 还有给文本赋值的另外种写法{{key}}
 
-布局准备好后，我们只需要关系数据即可，只要数据变动，那么就会影响布局
+注意在Sprite中使用Agile VM框架需要，引入：
+
+```javascript
+ var $ = require("res:mvvm/agile.vm.sprite.js");
+```
+
+布局准备好后，我们只需要关心数据即可，只要数据变动，那么就会影响布局
 
 那么该布局对应的js代码如下：
 
