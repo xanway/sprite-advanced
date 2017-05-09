@@ -257,7 +257,7 @@ $.ui.refreshDom(this.getElement("list"));
 
 不过需要注意的是如果只是简单的列表数据展示，用Agile VM框架这种写法可以大大减少代码编写量，是个不错的选择，不过由于ListAdapter被封装了,可能做不了太复杂的操作。如果需要提高列表的展示性能，并做在ListAdapter的相关事件里面做复杂的操作，还是需要用基础的list方式来写代码。比如list进行局部刷新和局部插入用ListAdapter提供的局部刷新方法，可以大大提高列表的性能问题。
 
-上述两个示例基本上涵盖了Agile VM框架的主要核心用法，完整示例下载：
+上述两个示例基本上涵盖了Agile VM框架的主要核心用法，完整示例下载：[qiandao_sprite.sprite](https://github.com/yuanhongqian/sprite-advanced/blob/master/src/qiandao_sprite.sprite)
 
 
 
