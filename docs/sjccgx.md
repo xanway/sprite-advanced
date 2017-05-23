@@ -138,6 +138,8 @@ function getName(){
 
 2：B页面通过Window对象getData()方法获取传递参数；
 
+详情参考：[window对象用法](https://gitdocument.exmobi.cn/sprite-api/window.html)
+
 <code>关闭页面数据传递及获取</code>：
 
 1：A页面打开B页面；
@@ -146,5 +148,6 @@ function getName(){
 
 3：A页面设置对系统事件 "result" 监听,可获取相关B页面关闭回传数据；
 
+详情参考：[window对象用法](https://gitdocument.exmobi.cn/sprite-api/window.html)
 
 
