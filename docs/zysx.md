@@ -66,9 +66,7 @@
 
 31. box的background-image只支持本地图片，如果想支持网络图片或者.9图片，可以使用image控件，然后在box内部进行绝对定位布局。  
 
-
 32.  text的maxlines属性设置后，会空出最大行数的位置。  
-
 
 33.  image图片组件支持加载点九图,固定采用拉伸模式，图片以 .9.png为后缀，如border.9.png，Android系统支持直接加载点九图，iOS系统需要通过point9area设置点九图四边不拉伸区域范围。  
 
