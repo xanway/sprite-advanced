@@ -10,6 +10,15 @@
 			 ]
         },
 		{
+			"group": "Sprite开发经验汇总",
+			"contains": [
+				{
+					"subject": "Sprite注意事项及开发经验",
+					"mdlink": "zysx"
+				}
+			 ]
+        },
+		{
 			"group": "MVVM模型开发方式",
 			"contains": [
 				{
