@@ -24,11 +24,11 @@
 
 9.  opacity设置的是整个控件的透明，如果控件是容器，那么容器内部所有的控件都会跟着一起变透明。如果想实现背景色透明，可以使用background-color:rgba(255, 0, 0, 0.5)来设置。  
 
-10.  如果想设置文字为省略样式，首先必须设置文本单行显示，如text样式singleline：true，并且text宽度应该小于等于父容器的宽度。  
+10.  如果想设置文字为省略样式，首先必须固定文本区域大小，并制定文字固定的行数，如text样式singleline：true，并且text宽度应该小于等于父容器的宽度。  
 
 11. 使用display样式显隐控件后，需要调用document.refresh()刷新布局，如果容器区域大小确定，可以对容器内部刷新 xxxdom.refresh()；  
 
-12.  在使用显影控制时，如果不涉及整个页面布局变动，建议用visibility来做显影，这样就不要刷新布局，提高显影效率。那么什么情况下是布局变动呢，比如隐藏一个控件后，这个控件下面的控件都会往上移动，这种情况下需要使用document.refresh()刷新页面布局。  
+12.  在使用显隐控制时，如果不涉及整个页面布局变动，建议用visibility来做显隐，这样就不要刷新布局，提高显隐效率。那么什么情况下是布局变动呢，比如隐藏一个控件后，这个控件下面的控件都会往上移动，这种情况下需要使用document.refresh()刷新页面布局。  
 
 13.    getFrame()方法获取的是组件布局完毕后在父容器中的实际位置，与样式中的width和height是有区别的，比如style样式里面设置的是flex:1，该组件布局完成后就会有个实际的width、height、x和y值，但是样式是没有设置width和height样式属性的，所以只能通过v.getFrame().width来得到宽度，不能通过v.getStyle("width");得到宽度，如果没有定义width样式v.getStyle("width")会得到一个null值。  
 
@@ -98,7 +98,7 @@
 
 46. 所有的dom相关操作必须放在window的loaded事件之后才能执行。    
 
-47.  list中cell里面的dom对象比较特殊，运行时手机只会加载一屏幕的数据在内存中，只能在ListAdapter中的getView中获取。而且不能做有dom布局改动的操作。显影只能用visibility，或者定义多个不同的cell用来显示不同布局的列表内容。
+47.  list中cell里面的dom对象比较特殊，运行时手机只会加载一屏幕的数据在内存中，只能在ListAdapter中的getView中获取。尽量不要有dom布局改动的操作。最好使用visibility来做显隐，或者定义多个不同的cell用来显示不同布局的列表内容。如果避免不了有dom的修改，修改后必须使用adapter的notifyItemRangeChanged方法刷新当前局部的列表数据。
 
 48.  在sprite基础控件布局中，除了box，text，scroll，grid 这几个控件在不设置高宽的时候能被内部控件撑开（text的高宽会自动根据文字大小撑开），其余的基础控件都必须设置规定高宽才能显示。
 
