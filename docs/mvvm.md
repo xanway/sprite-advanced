@@ -2,7 +2,7 @@
 
 ----------
 
-烽火官方封装了mvvm模型框架，框架的使用说明可以参考[Agile VM移动前端框架](https://gitdocument.exmobi.cn/agile-vm/index.html)
+先维官方封装了mvvm模型框架，框架的使用说明可以参考[Agile VM移动前端框架](https://gitdocument.exmobi.cn/agile-vm/index.html)
 
 本节主要提供示例讲解。
 
